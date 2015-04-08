@@ -21,12 +21,12 @@ Dans la fonction [`matrix()`](http://www.rdocumentation.org/packages/base/functi
 -L'argument `byrow` indique que la matrice est remplie en ligne avec la collection d'éléments. Si nous voulions que la matrice soit remplie par les colonnes, nous préciserions juste `byrow = FALSE`. 
 -Le troisième argument `nrow` indique que la matrice a trois lignes.
 
-
-
 *** =instructions
 Construire une matrice avec 3 lignes contenant les chiffres 1 à 9. Cliquez sur le bouton `Envoyer réponse` et regardez la sortie dans la console.
+
 *** =hint
 Lisez attentivement les instructions, la réponse est déjà donnée ;-).
+
 *** =pre_exercise_code
 ```{r eval=FALSE}
 # no pec
@@ -58,13 +58,8 @@ Il est maintenant temps de vous salir les mains. Dans les exercices suivants, vo
 
 Dans l'éditeur, les trois vecteurs sont définis. Chacun d'eux représente les chiffres de la billetterie des trois premiers films Star Wars, on va préférer ne pas aborder le cas des autres.... Le premier élément de chaque vecteur indique les recettes du Box-Office américain, le deuxième élément se rapporte à la billetterie non-américaine (source : Wikipedia).
 
-
-
-
 *** =instructions
-
-
-Construire une matrice avec une ligne pour chaque film (donc 3 lignes). La première colonne est pour les recettes du Box-Office américain et la deuxième colonne pour les recettes de billetterie non-américaine. Nommez la matrice `star_wars_matrix`.
+Construisez une matrice avec une ligne pour chaque film (donc 3 lignes). La première colonne est pour les recettes du Box-Office américain et la deuxième colonne pour les recettes de billetterie non-américaine. Nommez la matrice `star_wars_matrix`.
 
 
 *** =hint
@@ -135,7 +130,6 @@ colnames(ma_matrix) <- nom_colonnes_vector
 *** =instructions
 - Donnez aux colonnes de `star_wars_matrix` les noms `"Américain"` et `"non-Américain"`.
 - Donnez aux lignes de la matrice les noms des 3 films. Au cas ou vous ne soyez pas un fan, les noms sont : "Un nouvel espoir","L'Empire contre-attaque" et "Le Retour du Jedi"
-
 
 *** =hint
 Faites attention, R distingue les majuscules et les minuscules, les vecteurs de noms à utiliser sont :
@@ -574,17 +568,13 @@ Par exemple: `2 * ma_matrix` multiplie chaque élément de `ma_matrix` par deux.
 
 En tant que statisticien nouvellement engagé pour Lucasfilm, c'est votre job de savoir combien de visiteurs sont allés à chaque film pour chaque zone géographique. Vous avez déjà les chiffres de revenus totaux en `star_wars_matrix`. Supposons que le prix d'un billet était de 5 dollars. Les montants de billetterie, divisés par le prix du billet, vous donnent le nombre de visiteurs.
 
-
-
-
-
 *** =instructions
--Fabriquer la matrice `visiteur` avec le nombre estimé de visiteurs non-Américain et de visiteurs américain pour les trois films.
--Affichez la variable résultante sur la console.
-
+- Fabriquer la matrice `visiteur` avec le nombre estimé de visiteurs non-Américain et de visiteurs américain pour les trois films.
+- Affichez la variable résultante sur la console.
 
 *** =hint
 Le nombre de visiteurs est le revenu (ce qui est stocké dans `star_wars_matrix`), divisé par le prix du billet (considérée comme 5 $).
+
 *** =pre_exercise_code
 ```{r eval=FALSE}
 # no pec
@@ -645,21 +635,16 @@ Tout comme `2*ma_matrix` multiplie tous les éléments de `ma_matrix' par deux, 
 
 Après avoir regardé le résultat de l'exercice précédent, le grand patron de LucasFilms souligne que le prix des billets a augmenté au fil du temps à raison d'un dollar par film. Il demande de refaire l'analyse basée sur les prix que vous pouvez trouver dans `ticket_prices_matrix` (source : imagination).
 
-Ceux qui sont familiers des matrices doivent noter qu'il ne s'agit pas ici de multiplication matricielle standard... pour celle-là vous devez utiliser `%*%' dans R. _
-
-
-
+Ceux qui sont familiers des matrices doivent noter qu'il ne s'agit pas ici de multiplication matricielle standard... pour celle-là vous devez utiliser `%*%' dans R.
 
 *** =instructions
--Assignez à `visiteurs` la matrice avec votre nombre estimé de visiteurs non-Américain et Américain pour les trois films.
--Assignez à `moyenne_visiteurs_americains` le nombre moyen de visiteurs Américains pour un film de Star Wars.
--Assignez à `moyenne_visiteurs_non_americains` le nombre moyen de visiteurs non-Américains pour un film de Star Wars.
+- Assignez à `visiteurs` la matrice avec votre nombre estimé de visiteurs non-Américain et Américain pour les trois films.
+- Assignez à `moyenne_visiteurs_americains` le nombre moyen de visiteurs Américains pour un film de Star Wars.
+- Assignez à `moyenne_visiteurs_non_americains` le nombre moyen de visiteurs non-Américains pour un film de Star Wars.
 
 *** =hint
--Vous pouvez utiliser la fonction `mean()` pour calculer la moyenne.
--Pour obtenir le nombre de visiteurs américains, sélectionnez la première colonne de `visiteurs` en utilisant `visiteurs[, 1]`.
-
-
+- Vous pouvez utiliser la fonction `mean()` pour calculer la moyenne.
+- Pour obtenir le nombre de visiteurs américains, sélectionnez la première colonne de `visiteurs` en utilisant `visiteurs[, 1]`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}

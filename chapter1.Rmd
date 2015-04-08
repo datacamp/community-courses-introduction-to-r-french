@@ -16,9 +16,7 @@ Bien entendu ces commentaires ne sont pas interprétés par R, ils n'influençen
 
 Lorsque vous allez envoyer des instructions à R, celui-ci va vous répondre dans la **console** en bas à droite de votre écran. Les éventuels graphiques arriveront en haut à droite de votre écran.
 
-
 *** =instructions
-
 - Cliquez sur "Submit réponse" et observez la console, plusieurs lignes vont apparaître. Ces instructions sont générées automatiquement par la commande `demo("graphics")` 
 Plusieurs graphiques ont été générés, vous pouvez naviguer de l'un à l'autre via les boutons "previous plot" et "next plot".
 - La toute dernière ligne doit afficher `7` il s'agit du résultat de l'instruction `3+4` que vous venez d'exécuter. De la manière la plus basique, R peut être utilisé en tant que calculatrice, mais permet aussi, vous l'avez vu, de générer des graphiques... et bien plus encore.
@@ -168,7 +166,7 @@ my_variable <- 4
 ```
 
 *** =instructions
-Compléter le code dans l'éditeur de telle sorte qu'il assigne la valeur 42 à la variable `x`. Cliquez sur 'Submit Answer'. Notez que lorsque vous demandez à R d'afficher `x`, la valeur 42 apparaît.
+Complétez le code dans l'éditeur de telle sorte qu'il assigne la valeur 42 à la variable `x`. Cliquez sur 'Submit Answer'. Notez que lorsque vous demandez à R d'afficher `x`, la valeur 42 apparaît.
 
 *** =hint
 Regardez comment la valeur 4 a été attribuée à `ma_variable` dans le début du script. Faites exactement la même chose dans l'éditeur, cette fois en assignant 42 à la variable `x`.
@@ -207,8 +205,8 @@ success_msg("Bon boulot! Avez-vous remarqué que R n'imprime pas la valeur d'une
 ## Assignation de variable (2)
 
 Supposons que vous ayez un panier de fruits avec cinq pommes. En tant que statisticien en formation, vous souhaitez stocker le nombre de pommes dans une variable avec le nom `mes_pommes`. 
-*** =instructions
 
+*** =instructions
 -Tapez le code suivant dans l'éditeur: `mes_pommes <- 5`. Cela affectera la valeur 5 à `mes_pommes`.
 -Tapez: `mes_pommes` sous le deuxième commentaire. Cet exemple affiche la valeur de `mes_pommes`.
 -Cliquez sur `Soumettre la réponse` et regardez la console : vous voyez que le numéro 5 est imprimé. R associe maintenant la variable `mes_pommes` à la valeur 5.
@@ -261,8 +259,8 @@ mes_pommes + mes_oranges
 ```
 
 *** =instructions
-- Assigner à `mes_oranges` la valeur 6.
-- R vous permet de combiner les variables `mes_pommes` et `mes_oranges` dans une nouvelle variable `mes_fruits`. Créer cette nouvelle variable `mes_fruits`, qui est le nombre total de fruits dans votre corbeille de fruits.
+- Assignez à `mes_oranges` la valeur 6.
+- R vous permet de combiner les variables `mes_pommes` et `mes_oranges` dans une nouvelle variable `mes_fruits`. Créez cette nouvelle variable `mes_fruits`, qui est le nombre total de fruits dans votre corbeille de fruits.
 
 *** =hint
 `mes_fruits` est simplement la somme `mes_pommes` et `mes_oranges`. Vous pouvez utiliser l'opérateur `+` pour sommer les deux et `<-` pour stocker le résultat dans la variable `mes_fruits`.
@@ -322,7 +320,7 @@ Les variables `mes_pommes` et `mes_oranges` de l'exercice précédent contiennen
 
 *** =instructions
 - Cliquez sur  'Submit Answer' et lisez le message d'erreur. Prenez le temps de bien comprendre pourquoi cela ne fonctionne pas.
-- Ajuster le code afin que R soit au courant que vous avez 6 oranges et donc un panier de fruits avec 11 fruits.
+- Ajustez le code afin que R soit au courant que vous avez 6 oranges et donc un panier de fruits avec 11 fruits.
 
 *** =hint
 Vous devez affecter la valeur numérique `6` à la variable `mes_oranges` au lieu de la chaîne de caractère '"six" '. Notez comment les guillemets servent à indiquer que '"six"' est un caractère.

@@ -34,7 +34,6 @@ factor_genre_vector <- factor(genre_vector)
 ``` 
 
 *** =instructions
-
 Assigner, à `factor_genre_vector`, le vecteur de caractères `genre_vector` converti en un **factor** . Regardez la console et notez que R va afficher les niveaux de facteur en dessous des valeurs. Ils sont précédé de la mention **levels**.
 
 *** =hint
@@ -81,7 +80,6 @@ En revanche, les variables ordinales ont un ordre naturel. Considérons par exem
 
 
 *** =instructions
-
 Cliquez sur 'Submit Answer' pour observer comment R construit et affiche les variables nominales ou ordinales. Ne vous inquiétez pas si vous ne comprenez pas tout le code pour le moment.
 
 *** =hint
@@ -153,9 +151,8 @@ Ensuite, lorsque vous voulez commencer votre analyse de données, votre principa
 
 
 *** =instructions
-
--Convertissez le vecteur de caractères `enquete_vector` dans un vecteur de facteurs. Assignez-le à « factor_enquete_vector ».
--Changez les niveaux de facteurs de `factor_enquete_vector` à `"Masculin"` et `"Féminin"`.
+- Convertissez le vecteur de caractères `enquete_vector` dans un vecteur de facteurs. Assignez-le à `factor_enquete_vector`.
+- Changez les niveaux de facteurs de `factor_enquete_vector` à `"Masculin"` et `"Féminin"`.
 
 
 *** =hint
@@ -216,13 +213,8 @@ summary(une_variable)
 
 Pour en revenir à notre enquête, vous souhaitez savoir combien de réponses `"Masculin"` et combien de réponses `"Féminin"` vous avez dans votre étude. La fonction [`summary()`] (http://www.rdocumentation.org/packages/base/functions/summary) vous donne la réponse à cette question.
 
-
-
 *** =instructions
-
 Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. Interpréter les résultats de ces deux vecteurs. Sont-ils équivalents dans ce cas ?
-
-
 
 *** =hint
 Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. C'est aussi simple que cela !
@@ -282,8 +274,10 @@ Dans `factor_enquete_vector`, nous avons un facteur à deux niveaux : Masculin e
 
 *** =instructions
 Lire le code dans l'éditeur, puis cliquez sur 'Submit Answer' pour voir si les hommes valent plus que les femmes.
+
 *** =hint
 Il suffit de cliquez sur 'Submit Answer' et jetez un oeil sur la sortie qui est affichée dans la console.
+
 *** =pre_exercise_code
 ```{r eval=FALSE}
 # no pec
@@ -337,16 +331,12 @@ Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vo
 
 
 *** =instructions
-
 Dans un premier temps, fabriquez `vitesse_vector`, sachant que : 
-
 - Le Statisticien 1 est Rapide, 
 - Le Statisticien 2 est Lent, 
 - Le Statisticien 3 est Lent,
 - Le Statisticien 4 est Rapide et
 - Le Statisticien 5 est Ultra-Rapide.
-
-
 
 Pas besoin pour l'instant de spécifier que ce sont des facteurs
 
@@ -394,20 +384,11 @@ factor(un_vector, ordered = TRUE, levels = c("Level_1", "Level_2" ...))
 
 En définissant l'argument `ordered` à `TRUE` dans la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor), vous indiquez que le factor est ordonné. Avec l'argument `levels` vous donnez les valeurs du factor dans l'ordre correct, par exemple `levels = c("Faible", "Moyen", "Fort")`.
 
-
-
 *** =instructions
-
 L'exemple de code ci-dessus permet de définir une variable `factor_vitesse_vector` en tenant compte du fait qu'il y a un ordre spécifique pour les niveaux de facteur. Ne changez rien aux autres lignes de code, cela imprimera le facteur dans la console et générera un résumé de celui-ci.
 
-
-
 *** =hint
-
 Utilisez la fonction [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor) pour fabriquer `factor_vitesse_vector` à partir de `speed_character_vector`. l'argument order doit être à `TRUE` puisqu'il y a un ordre. Les niveaux de facteurs sont alors: `c("Lent", "Rapide", "Ultra-Rapide")`.
-
-
-
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -467,7 +448,6 @@ Le fait que `factor_vitesse_vector` est maintenant ordonné permet de comparer l
 
 
 *** =instructions
-
 Vérifiez si le statisticien numéro 2 est plus rapide que statisticien numéro 5 et assignez le résultat à `la_comparaison`. N'oubliez pas l'opérateur `>` permet de vérifier si un élément est plus grand que l'autre.
 
 *** =hint

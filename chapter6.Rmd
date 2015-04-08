@@ -16,10 +16,7 @@ Félicitations ! À ce stade du cours vous êtes déjà un (semi-)expert  en :
 
 Pas mal pour un débutant de R, n'est-ce pas ? ;-)
 
-
-
 *** =instructions
-
 Cliquez sur 'Submit Answer' pour commencer à apprendre ce qu'il faut sur les listes !
 
 *** =hint
@@ -95,7 +92,6 @@ Les arguments de la fonction `list` sont les éléments de liste. Rappelez-vous,
 Construire la liste `ma_list`, qui contient les variables `mon_vector`, `ma_matrix` et `mon_df`  en tant qu' éléments de la liste.
 
 *** =hint
-
 Utilisez la fonction [`list()`](http://www.rdocumentation.org/packages/base/functions/list) avec `mon_vector`, `ma_matrix` et `mon_df` en tant qu' arguments, séparés par des virgules.
 
 
@@ -163,10 +159,8 @@ names(ma_list) <- c("nom1", "nom2" ...)
 ```
 
 *** =instructions
-
--Modifiez le code du précédent exercice (voir éditeur) en ajoutant des noms aux éléments. Utiliser pour `ma_matrix` le nom `mat`, pour `mon_vector` le nom `vec` et pour `mon_df` le nom `df`. 
--Affichez la liste dans la console.
-
+- Modifiez le code du précédent exercice (voir éditeur) en ajoutant des noms aux éléments. Utiliser pour `ma_matrix` le nom `mat`, pour `mon_vector` le nom `vec` et pour `mon_df` le nom `df`. 
+- Affichez la liste dans la console.
 
 *** =hint
 La première méthode d'attribution de noms pour vos éléments de liste est la plus facile. Elle commence ainsi: 
@@ -237,14 +231,12 @@ Commencez par créer une liste pour le film "Shining". Nous avons déjà créé 
 
 
 *** =instructions
-
 Créez la variable `shining_list`, une liste qui contient les éléments suivants :
--titre: "Shining"
--acteurs : un vecteur avec les noms des principaux acteurs
--avis : un jeu de données qui contient quelques commentaires
+- titre: "Shining"
+- acteurs : un vecteur avec les noms des principaux acteurs
+- avis : un jeu de données qui contient quelques commentaires
 
 N'oubliez pas de nommer les éléments de liste en conséquence !
-
 
 *** =hint
 Regardez le code suivant :
@@ -307,8 +299,6 @@ Un moyen rapide de vérifier cela est de le taper dans la console. Important : p
 
 Une autre façon de faire est de d'utiliser le noms des éléments. 
 
-
-
 ```
 shining_list[["avis"]]
 ``` 
@@ -323,17 +313,15 @@ Outre la sélection des éléments, vous avez souvent besoin de sélectionner de
 
 
 *** =hint
-
 - Si vous voulez faire les choses bien: `length(shining_list$acteurs)` vous donne le nombre d'acteurs et donc l'élément à sélectionner.
 - Vous pouvez sélectionner les informations de ce second avis avec `shining_list$avis[2, ]`.
-
-
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
 acteurs      <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 sources     <- c("IMDb1","IMDb2","IMDb3")
-commentaires    <-c ("Meilleur Film d'horreur que j'ai jamais vu", "Un film vraiment génial et effrayant de Stanley Kubrick", "Un chef-d'oeuvre de scores      <- c(4.5,4,5)
+commentaires    <-c ("Meilleur Film d'horreur que j'ai jamais vu", "Un film vraiment génial et effrayant de Stanley Kubrick", "Un chef-d'oeuvre de l'horreur psychologique")
+scores      <- c(4.5,4,5)
 avis     <- data.frame(scores,sources,commentaires)
 shining_list <- list(titre="Shining",acteurs=acteurs, avis=avis)
 ```
@@ -376,8 +364,6 @@ success_msg("Bien! La sélection d'éléments de listes est plutôt facile n'est
 ---
 ## Rajouter des éléments à une liste
 
-
-
 Fier de votre première liste, vous la partagez avec les membres de votre ciné club. Cependant, un des membres , un gars nommé M. McDowell, a fait remarquer que vous avez oublié d'ajouter l'année de sortie. Compte tenu de vos ambitions de devenir président du club l'an prochain, vous décidez d'ajouter cette information à la liste. 
 
 Afin de facilement ajouter des éléments aux listes, vous utilisez la fonction combine [`c()`] (http://www.rdocumentation.org/packages/base/functions/c) : 
@@ -395,7 +381,7 @@ c(list1, nouveau_nom = une_variable)
 ```
 
 *** =instructions
-- Complétez le code ci-dessous pour qu'un élément nommé `année` soit ajouté à `shining_list` avec la valeur 1980. Affectez le résultat à `shining_list_full`.
+- Complétez le code ci-dessous pour qu'un élément nommé `annee` soit ajouté à `shining_list` avec la valeur 1980. Affectez le résultat à `shining_list_full`.
 - Enfin, regardez la structure de `shining_list_full` avec la fonction [`str()`](http://www.rdocumentation.org/packages/utils/functions/str).
 
 
@@ -410,7 +396,8 @@ Il faut toujours ajouter du code à la place des ...
 ```{r, eval = FALSE}
 acteurs      <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
 sources     <- c("IMDb1","IMDb2","IMDb3")
-commentaires    <-c ("Meilleur Film d'horreur que j'ai jamais vu", "Un film vraiment génial et effrayant de Stanley Kubrick", "Un chef-d'oeuvre de scores      <- c(4.5,4,5)
+commentaires    <-c ("Meilleur Film d'horreur que j'ai jamais vu", "Un film vraiment génial et effrayant de Stanley Kubrick", "Un chef-d'oeuvre de l'horreur psychologique")
+scores      <- c(4.5,4,5)
 avis     <- data.frame(scores,sources,commentaires)
 shining_list <- list(titre="Shining",acteurs=acteurs, avis=avis)
 ```
@@ -433,7 +420,7 @@ shining_list_full <-
 # 'shining_list', la liste qui contient les titres, acteurs, et avis est pré-chargée dans votre espace de travail
 
 # Nous avons oublié quelque chose, rajoutez l'année à shining_list:
-shining_list_full <- c(shining_list, année = 1980)
+shining_list_full <- c(shining_list, annee = 1980)
 
 # Regardez la structure de shining_list
 str(shining_list_full)
