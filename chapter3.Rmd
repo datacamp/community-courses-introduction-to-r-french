@@ -272,7 +272,7 @@ Dans l'exercice précédent, vous avez calculé le vecteur qui contenait le Box-
 Vous pouvez ajouter une colonne ou plusieurs colonnes à une matrice avec la fonction [`cbind()`] (http://www.rdocumentation.org/packages/base/functions/cbind). Cette fonction fusionne les matrices et vecteurs ensemble par colonne. Par exemple : 
 
 ```
-grosse_matrix <- cbind(matrix1, matrix2, vector1 ...)
+grosse_matrix <- cbind(matrix1, matrix2, vector1...)
 ```
 
 *** =instructions
@@ -496,7 +496,7 @@ Retour à Star Wars avec ces nouvelles connaissances !
 
 
 *** =hint
-Vous pouvez utiliser la fonction [`mean()`] (http://www.rdocumentation.org/packages/base/functions/mean) pour calculer la moyenne des entrées à la fonction. N'oubliez pas que vous pouvez sélectionner toutes les lignes d'une matrice pour une colonne spécifique x en tapant `ma_matrix [, x]`. Les non-américains correspondent à la seconde colonne.
+Vous pouvez utiliser la fonction [`mean()`] (http://www.rdocumentation.org/packages/base/functions/mean) pour calculer la moyenne des entrées à la fonction. N'oubliez pas que vous pouvez sélectionner toutes les lignes d'une matrice pour une colonne spécifique x en tapant `ma_matrix [ , x]`. Les non-américains correspondent à la seconde colonne.
 
 
 *** =pre_exercise_code
@@ -536,7 +536,7 @@ star_wars_matrix <- matrix(box_office_mondial, nrow = 3, byrow = TRUE, dimnames 
 star_wars_matrix 
 
 # Gain moyen par film pour les non-américains
-non_us_total  <- mean(star_wars_matrix[,2])
+non_us_total  <- mean(star_wars_matrix[ ,2])
 
 # Gain moyen des deux premiers films pour les non-américains
 non_us_partiel <- mean(star_wars_matrix[1:2,2])
@@ -563,7 +563,7 @@ success_msg("Très bien ! On passe à l'exercice suivant.")
 
 Tout commence avec que vous avez appris  sur les vecteurs, les opérateurs standard `+`, `-`, `/`, `*`, etc. Ils fonctionnent termes à termes avec les matrices dans R. 
 
-Par exemple: `2 * ma_matrix` multiplie chaque élément de `ma_matrix` par deux. Encore une fois, R recycle la valeur `2` , et construit une matrice contenant uniquement des 2 avec les mêmes dimensions que `ma_matrix'. Puis, R effectue l'opération termes à termes.
+Par exemple: `2 * ma_matrix` multiplie chaque élément de `ma_matrix` par deux. Encore une fois, R recycle la valeur `2`, et construit une matrice contenant uniquement des 2 avec les mêmes dimensions que `ma_matrix'. Puis, R effectue l'opération termes à termes.
 
 En tant que statisticien nouvellement engagé pour Lucasfilm, c'est votre job de savoir combien de visiteurs sont allés à chaque film pour chaque zone géographique. Vous avez déjà les chiffres de revenus totaux en `star_wars_matrix`. Supposons que le prix d'un billet était de 5 dollars. Les montants de billetterie, divisés par le prix du billet, vous donnent le nombre de visiteurs.
 
@@ -643,7 +643,7 @@ Ceux qui sont familiers des matrices doivent noter qu'il ne s'agit pas ici de mu
 
 *** =hint
 - Vous pouvez utiliser la fonction `mean()` pour calculer la moyenne.
-- Pour obtenir le nombre de visiteurs américains, sélectionnez la première colonne de `visiteurs` en utilisant `visiteurs[, 1]`.
+- Pour obtenir le nombre de visiteurs américains, sélectionnez la première colonne de `visiteurs` en utilisant `visiteurs[ , 1]`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}

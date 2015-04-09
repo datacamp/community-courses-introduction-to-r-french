@@ -35,7 +35,7 @@ factor_genre_vector <- factor(genre_vector)
 
 *** =instructions
 
-Assigner, à `factor_genre_vector`, le vecteur de caractères `genre_vector` converti en un **factor** . Regardez la console et notez que R va afficher les niveaux de facteur en dessous des valeurs. Ils sont précédé de la mention **levels**.
+Assigner, à `factor_genre_vector`, le vecteur de caractères `genre_vector` converti en un **factor**. Regardez la console et notez que R va afficher les niveaux de facteur en dessous des valeurs. Ils sont précédé de la mention **levels**.
 
 *** =hint
 Il suffit d'utiliser la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor) sur `genre_vector`. Jetez un oeil aux instructions, la réponse est déjà là, quelque part...
@@ -331,7 +331,7 @@ success_msg("Ouf, il semble que R soit neutre. Ou peut-être veut-il juste reste
 
 `"Masculin"` et `"Feminin"` étant des niveaux non ordonnés (ou nominaux) de facteurs, R retourne un message d'avertissement vous indiquant que le l'opérateur de comparaison n'est pas explicite. Comme vu auparavant, R attache une valeur égale aux niveaux de tels facteurs. 
 
-Mais ce n'est pas toujours le cas ! Parfois il faudra aussi travailler avec des facteurs ordonnés, qui ont un ordre naturel dans les niveaux. Si c'est le cas, nous devons veiller à ce que R le comprenne ... 
+Mais ce n'est pas toujours le cas ! Parfois il faudra aussi travailler avec des facteurs ordonnés, qui ont un ordre naturel dans les niveaux. Si c'est le cas, nous devons veiller à ce que R le comprenne... 
 
 Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vous souhaitez évaluer leur performance. Pour ce faire, vous allez évaluer leur vitesse. Chaque statisticiens sera indiqué comme `"Lent"`, `"Rapide"` ou `"Ultra-Rapide"`. Vous stockerez les résultats dans 'vitesse_vector'.
 
@@ -351,7 +351,7 @@ Dans un premier temps, fabriquez `vitesse_vector`, sachant que :
 Pas besoin pour l'instant de spécifier que ce sont des facteurs
 
 *** =hint
-Fabriquez `vitesse_vector` , il s'agit d'un vecteur contenant les chaînes des caractères :, `"Rapide"`, `"Lent"` ...
+Fabriquez `vitesse_vector`, il s'agit d'un vecteur contenant les chaînes des caractères :, `"Rapide"`, `"Lent"`...
 
 
 *** =pre_exercise_code
@@ -388,7 +388,7 @@ success_msg("Bien joué ! On passe à l'exercice suivant.")
 
 
 ```
-factor(un_vector, ordered = TRUE, levels = c("Level_1", "Level_2" ...))
+factor(un_vector, ordered = TRUE, levels = c("Level_1", "Level_2"...))
 ``` 
 
 
@@ -444,7 +444,7 @@ summary(factor_vitesse_vector)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien au code qui défini <code>vitesse_vector</code> ."
+msg = "Ne changez rien au code qui défini <code>vitesse_vector</code>."
 test_object("vitesse_vector", undefined_msg = msg, incorrect_msg = msg)
 test_correct({
   test_object("factor_vitesse_vector", eq_condition = "equal",

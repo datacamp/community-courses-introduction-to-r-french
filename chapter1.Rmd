@@ -317,7 +317,7 @@ success_msg("Très bien ! Le grand avantage de faire des calculs avec les variab
 ## Des pommes et des oranges
 
 On nous dit souvent de ne pas additionner des pommes et des oranges (sur le même principe qu'il ne faut pas mélanger des choux et des carottes). Cependant, c'est exactement ce que nous venons de faire, non ? 
-Les variables `mes_pommes` et `mes_oranges` de l'exercice précédent contiennent toutes deux des nombres. L'opérateur `+` fonctionne avec des variables de type `numeric`. Si vous essayez vraiment d'additionner des pommes et des oranges en assignant une valeur de type `character` à `mes_oranges` (cf l'éditeur), vous allez essayer d'additionner une variable numérique et une variable chaîne de caractères . Ce n'est pas possible ! 
+Les variables `mes_pommes` et `mes_oranges` de l'exercice précédent contiennent toutes deux des nombres. L'opérateur `+` fonctionne avec des variables de type `numeric`. Si vous essayez vraiment d'additionner des pommes et des oranges en assignant une valeur de type `character` à `mes_oranges` (cf l'éditeur), vous allez essayer d'additionner une variable numérique et une variable chaîne de caractères. Ce n'est pas possible ! 
 
 *** =instructions
 - Cliquez sur  'Submit Answer' et lisez le message d'erreur. Prenez le temps de bien comprendre pourquoi cela ne fonctionne pas.

@@ -1,7 +1,7 @@
 --- 
 title_meta  : Chapitre 2
 title       : les vecteurs
-description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vector . Une fois ce chapitre terminé, vous serez capable de créer des vector, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
+description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vector. Une fois ce chapitre terminé, vous serez capable de créer des vector, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
 
 ---
 
@@ -229,10 +229,10 @@ names(roulette_vector) <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 ```{r eval=FALSE}
 test_object("poker_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de  <code>poker_vector</code>; elles sont déjà écrites pour vous.")
+            incorrect_msg = "Ne modifiez pas les valeurs de  <code>poker_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("roulette_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>roulette_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de  <code>roulette_vector</code>; elles sont déjà écrites pour vous.")
+            incorrect_msg = "Ne modifiez pas les valeurs de  <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("poker_vector",
             eq_condition = "equal",
             incorrect_msg = "Êtes-vous certain d'avoir donné les bons noms aux éléments du vector <code>poker_vector</code>.")
@@ -301,10 +301,10 @@ names(roulette_vector) <- jours_vector
 ```{r eval=FALSE}
 test_object("poker_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code>; elles sont déjà écrites pour vous.")
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("roulette_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>roulette_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code>; elles sont déjà écrites pour vous.")
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("jours_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>jours_vector</code>.",
             incorrect_msg = "Faites attention à bien assigner le bon vecteur à  <code>jours_vector</code>.")
@@ -464,7 +464,7 @@ success_msg("Bien ! On passe à l'exercice suivant.")
 ## Calcul des gains totaux (3)
 
 En regardant les analyses précédentes, il semblerait que vous ayez un mélange de bons et de mauvais jours. 
-Ce n'est pas ce que vous espériez et vous voulez vérifier que vous n'avez pas perdu d'argent ,au total, sur toute la semaine... 
+Ce n'est pas ce que vous espériez et vous voulez vérifier que vous n'avez pas perdu d'argent,au total, sur toute la semaine... 
 La fonction qui va vous permettre d'en avoir le coeur net est la fonction [`sum()`](http://www.rdocumentation.org/packages/base/functions/sum). Elle calcule la somme de tous les éléments d'un vecteur.
 Par exemple pour calculer le total d'argent que vous avez gagné au poker il suffit de taper :
 
@@ -637,8 +637,8 @@ Une autre piste d'investigation serait de comparer vos performances entre le dé
 
 Pour répondre à cela, vous devez vous concentrer essentiellement sur une partie du vecteur `total_vector`.
 En d' autres termes, votre objectif est d'extraire spécifiquement des éléments du vecteur.
-Pour extraire des éléments d'un vecteur ( et plus tard des matrices, data.frame, ...), vous pouvez utiliser les crochets. Et entre ces crochets vous allez indiquer quels éléments vous allez sélectionner.
-Par exemple, pour extraire le premier element de `poker_vector`, vous tapez `poker_vector[1]` . Pour choisir le second élément du vector, vous tapez `poker_vector[2]`, etc.
+Pour extraire des éléments d'un vecteur ( et plus tard des matrices, data.frame,...), vous pouvez utiliser les crochets. Et entre ces crochets vous allez indiquer quels éléments vous allez sélectionner.
+Par exemple, pour extraire le premier element de `poker_vector`, vous tapez `poker_vector[1]`. Pour choisir le second élément du vector, vous tapez `poker_vector[2]`, etc.
 
 *** =instructions
 Récupérez votre résultat de mercredi au poker et stockez cette information dans `poker_Mercredi`.
@@ -770,7 +770,7 @@ success_msg("Bien joué ! On passe à l'exercice suivant pour avancer dans la s�
 ## Sélection dans un vecteur (3)
 
 Sélectionner plusieurs éléments de `poker_vector` avec `c(2,3,4)` n'est pas le plus pratique. Beaucoup de statisticiens sont fainéants par nature, et donc
-ils ont créé un moyen plus efficace de faire cela . En effet, `c(2,3,4)` peut être condensé en `2:4`, cela génère un vecteur qui contient tous les entiers relatifs entre 2 et 4.
+ils ont créé un moyen plus efficace de faire cela. En effet, `c(2,3,4)` peut être condensé en `2:4`, cela génère un vecteur qui contient tous les entiers relatifs entre 2 et 4.
 Donc, une autre façon de sélectionner les valeurs de milieu de semaine est `poker_vector[2:4]`. Remarquez comment le vector `2:4` est placé entre crochets pour sélectionner les éléments de 2 à 4.
 
 *** =instructions
@@ -832,7 +832,7 @@ success_msg("Génial ! L'opérateur <code>:</code> est très pratique et se renc
 
 ## Sélection dans un vecteur (4)
 
-L'autre façon de résoudre l'exercice précédent est d'utiliser les noms des éléments des vecteurs (Lundi, Mardi, ...) au lieu de leur indices de position. Par exemple,
+L'autre façon de résoudre l'exercice précédent est d'utiliser les noms des éléments des vecteurs (Lundi, Mardi,...) au lieu de leur indices de position. Par exemple,
 ```
 poker_vector["Lundi"]
 ```
@@ -1070,7 +1070,7 @@ Comme vous l'avez fait pour le poker, vous voulez aussi connaître les jours où
 - Affectez les montants positifs que vous avez eu à la roulette dans la variable `roulette_jours_gagnants`. Ce vecteur contient donc les gains positifs de `roulette_vector`.
 
 *** =hint
-Jetez un oeil à l'exercice précédent et faites la même analyse , cette fois-ci pour `roulette_vector`.
+Jetez un oeil à l'exercice précédent et faites la même analyse, cette fois-ci pour `roulette_vector`.
 
 *** =pre_exercise_ocde
 ```{r eval=FALSE}

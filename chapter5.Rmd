@@ -7,13 +7,13 @@ description : La plupart des données avec lesquelles vous travaillerez seront s
 ## Qu'est ce qu'un data frame ? 
 
 
-Vous vous souvenez du chapitre sur les matrices  ? Tous les éléments que vous mettiez dans une matrice devaient être du même type ? À l'époque, l'ensemble de vos données sur Star Wars ne contenait que des éléments numériques.
+Vous vous souvenez du chapitre sur les matrices ? Tous les éléments que vous mettiez dans une matrice devaient être du même type ? À l'époque, l'ensemble de vos données sur Star Wars ne contenait que des éléments numériques.
 
 Lors d'une enquête vous avez souvent des questions telles que :
 - 'Êtes-vous marié ? ' qui attendent des réponses du type 'oui/non' (= réponses de type `logical`)
 - 'Quel âge avez-vous ? ' (= réponses de type `numeric`)
 - 'Quelle est votre opinion sur ce produit ? ' ou autres questions 'ouvertes' (= réponses de type `character`)
-- ...
+-...
 
 Les réponses des enquêtés aux questions formulées ci-dessus forment un ensemble de données de différents types. Et généralement vous-même vous travailler avec des ensembles de données qui contiennent des types de données différents au lieu d'un seul.
 
@@ -221,7 +221,7 @@ Assurez-vous que vous avez 8 observations et 5 variables. Le jeu données `plane
 Utilisez la fonction [`str()`](http://www.rdocumentation.org/packages/utils/functions/str) pour étudier la structure de la nouvelle variable `planetes_df`.
 
 *** =hint
-Celui-là est trop facile, pas d'indice :) .
+Celui-là est trop facile, pas d'indice :).
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -258,7 +258,7 @@ success_msg("Génial ! Maintenant que vous avez une compréhension claire de <co
 Tous comme les vecteurs et matrices, vous sélectionnez des éléments d'un jeu de données à l'aide de crochets `[ ]`. À l'aide d'une virgule, vous pouvez indiquer ce qu'il faut respectivement sélectionner dans les lignes et les colonnes. Par exemple :
 
 - `mon_data_frame[1,2]` sélectionne dans la première ligne, le deuxième élément de `mon_data_frame`.
-- `mon_data_frame[1:3,2:4]` sélectionne simultanément les lignes 1,2,3 et colonnes 2,3,4 `mon_data_frame` .
+- `mon_data_frame[1:3,2:4]` sélectionne simultanément les lignes 1,2,3 et colonnes 2,3,4 `mon_data_frame`.
 
 Parfois, vous voulez sélectionner tous les éléments d'une ligne ou une colonne. Pour ce faire, vous pouvez utiliser le code suivant. `mon_data_frame[1, ]` sélectionne tous les éléments de la première ligne. Appliquons maintenant cette technique à `planetes_df` ! 
 
@@ -377,7 +377,7 @@ success_msg("C'est beau ! On passe à l'exercice suivant ! ")
 ---
 ## Seulement les planètes avec anneaux
 
-Souvent, vous voudrez choisir une colonne entière, i.e une variable spécifique d'un jeu de données. Si vous souhaitez sélectionner tous les éléments de la variable `anneaux`, les deux instructions `planetes_df[,5]` et `planetes_df[,"anneaux"]` font le job.
+Souvent, vous voudrez choisir une colonne entière, i.e une variable spécifique d'un jeu de données. Si vous souhaitez sélectionner tous les éléments de la variable `anneaux`, les deux instructions `planetes_df[ ,5]` et `planetes_df[ ,"anneaux"]` font le job.
 
 Cependant, il y a un raccourci. Utilisez le  symbole `$` pour dire à R qu'il n'a qu'à garder tous les éléments de la variable derrière le symbole:
 

@@ -27,12 +27,12 @@ Cliquez simplement 'Submit Answer'
 
 *** =sample_code
 ```{r eval=FALSE}
-# Cliquez simplement sur 'Submit Answer' .
+# Cliquez simplement sur 'Submit Answer'.
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Cliquez simplement sur 'Submit Answer' .
+# Cliquez simplement sur 'Submit Answer'.
 ```
 
 *** =sct
@@ -43,7 +43,7 @@ success_msg("Prêt ? On passe à l'exercice suivant")
 ---
 ## Listes, pourquoi faire ? (2)
 
-Une `list` R est similaire à votre liste de tâches, du travail ou d'école : les différents éléments figurant sur cette liste sont souvent très différents, et différent par leur longueur, caractéristique, type d'activité ...
+Une `list` R est similaire à votre liste de tâches, du travail ou d'école : les différents éléments figurant sur cette liste sont souvent très différents, et différent par leur longueur, caractéristique, type d'activité...
 
 Une liste dasn R permet de recueillir de nombreux objets sous un même nom (autrement dit, le nom de la liste) d'une manière ordonnée. Ces objets peuvent être des matrices, des vecteurs, des jeux de données, ou même d'autres listes, etc.. Il n'est pas même nécessaire que ces objets soient liés les uns aux autres. Vous pouvez tout mélanger. 
 
@@ -81,7 +81,7 @@ success_msg("Cool !  Mettons un peu les mains dans le cambouis ! ")
 Créons notre première liste ! Pour construire une liste, il faut utiliser la fonction [`list()`](http://www.rdocumentation.org/packages/base/functions/list): 
 
 ```
-ma_list <- list(component1, component2 ...)
+ma_list <- list(component1, component2...)
 ```
 
 Les arguments de la fonction `list` sont les éléments de liste. Rappelez-vous, ces éléments peuvent être : des matrices, des vecteurs... 
@@ -145,15 +145,15 @@ Tout comme sur votre liste de tâches, vous voulez vous souvenir des éléments 
 
 ```
 ma_list <- list(name1 = element1, 
-                name2 = element2 ...)
+                name2 = element2...)
 ``` 
 
 Cela crée une liste avec les éléments `"nom1"` et `"nom2"` et ainsi de suite. Si vous souhaitez nommer vos listes après les avoir créées, vous pouvez utiliser la fonction `names()` de la même façon que vous le faisiez avec les vecteurs. Les commandes suivantes sont pleinement équivalentes à l'affectation ci-dessus :
 
 
 ```
-ma_list <- list(element1, element2 ...)
-names(ma_list) <- c("nom1", "nom2" ...)
+ma_list <- list(element1, element2...)
+names(ma_list) <- c("nom1", "nom2"...)
 ```
 
 *** =instructions
@@ -362,13 +362,13 @@ success_msg("Bien ! La sélection d'éléments de listes est plutôt facile n'es
 ---
 ## Rajouter des éléments à une liste
 
-Fier de votre première liste, vous la partagez avec les membres de votre ciné club. Cependant, un des membres , un gars nommé M. McDowell, a fait remarquer que vous avez oublié d'ajouter l'année de sortie. Compte tenu de vos ambitions de devenir président du club l'an prochain, vous décidez d'ajouter cette information à la liste. 
+Fier de votre première liste, vous la partagez avec les membres de votre ciné club. Cependant, un des membres, un gars nommé M. McDowell, a fait remarquer que vous avez oublié d'ajouter l'année de sortie. Compte tenu de vos ambitions de devenir président du club l'an prochain, vous décidez d'ajouter cette information à la liste. 
 
 Afin de facilement ajouter des éléments aux listes, vous utilisez la fonction combine [`c()`] (http://www.rdocumentation.org/packages/base/functions/c) : 
 
 
 ```
-c(list1 , une_variable)
+c(list1, une_variable)
 ``` 
 
 Cela allonge simplement la liste d'origine, `list1`, avec l'élément `une_variable`. Cet élément est ajouté à la fin de la liste.
@@ -386,9 +386,9 @@ c(list1, nouveau_nom = une_variable)
 *** =hint
 Regardez ce début de code... Peut-être que cela peut vous aider à démarrer :
 ```
-shining_list_full <- c(shining_list, ...)
+shining_list_full <- c(shining_list,...)
 ```
-Il faut toujours ajouter du code à la place des ...
+Il faut toujours ajouter du code à la place des...
 
 *** =pre_exercise_code
 ```{r, eval = FALSE}
