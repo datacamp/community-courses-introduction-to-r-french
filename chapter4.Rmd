@@ -16,10 +16,7 @@ Il est important que R sache s'il traite une variable continue ou une variable c
 
 La variable 'Sexe' en est un bon exemple d'une variable qualitative. Un individu humain peut être 'Masculin' ou 'Féminin', faisant abstraction des intersexués. 'Masculin' et 'Féminin' sont, de manière simplifiée, les deux valeurs de la variable qualitative 'Genre' et chaque  valeur de cette variable ne peut contenir que 'Masculin' et 'Féminin'.
 
-
 Pour créer des `factor` dans R, utilisez la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor). La première chose que vous devez faire est de créer un vecteur qui contient toutes les observations qui appartiennent à un nombre limité de catégories. Par exemple, `genre_vector` contient le sexe de 5 personnes différentes : 
-
-
 
 ```
 genre_vector <- c("Masculin","Feminin","Feminin","Masculin","Masculin")
@@ -34,7 +31,6 @@ factor_genre_vector <- factor(genre_vector)
 ``` 
 
 *** =instructions
-
 Assigner, à `factor_genre_vector`, le vecteur de caractères `genre_vector` converti en un **factor**. Regardez la console et notez que R va afficher les niveaux de facteur en dessous des valeurs. Ils sont précédé de la mention **levels**.
 
 *** =hint
