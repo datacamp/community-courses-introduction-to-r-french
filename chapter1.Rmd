@@ -16,12 +16,9 @@ Lorsque vous allez envoyer des instructions à R, celui-ci va vous répondre dan
 Pour envoyer des instructions de l'éditeur vers la console il vous suffit de placer votre curseur dans l'éditeur au niveau de la ligne que vous voulez envoyer (ou de séléctionner ce que vous voulez envoyer) et de presser les touches "ctrl + ENTREE"
 
 *** =instructions
-
-- En appuyant sur "Get Hint" (le bouton orange) l'interface vous proposera un indice pour résoudre le problème. Ensuite si vraiment vous ne voyez pas comment résoudre le souci, vous pouvez demander la solution en cliquant "Get Solution" (le bouton rouge) 
-- Cliquez sur "Submit Answer" (le bouton vert) et observez la console, plusieurs lignes vont apparaître. Ces instructions sont générées automatiquement par la commande `demo("graphics")` 
-Plusieurs graphiques ont été générés, vous pouvez naviguer de l'un à l'autre via les boutons "previous plot" et "next plot". Cette fenêtre se fermera à la prochaine étape.
+- En appuyant sur "Get Hint" (le bouton orange) l'interface vous proposera un indice pour résoudre le problème. Ensuite si vraiment vous ne voyez pas comment résoudre le souci, vous pouvez demander la solution en cliquant "Get Solution" (le bouton rouge).
+- Cliquez sur "Submit Answer" (le bouton vert) et observez la console, plusieurs lignes vont apparaître. Ces instructions sont générées automatiquement par la commande `demo("graphics")`. Plusieurs graphiques ont été générés, vous pouvez naviguer de l'un à l'autre via les boutons "previous plot" et "next plot". Cette fenêtre se fermera à la prochaine étape.
 - La toute dernière ligne doit afficher `7` il s'agit du résultat de l'instruction `3+4` que vous venez d'exécuter. De la manière la plus basique, R peut être utilisé en tant que calculatrice, mais permet aussi, vous l'avez vu, de générer des graphiques... et bien plus encore.
-
 
 *** =hint
 Cliquez simplement sur le bouton 'Submit Answer'.
