@@ -2,10 +2,7 @@
 title_meta  : Chapitre 1
 title       : Introduction
 description : Dans ce chapitre vous allez faire vos premiers pas avec R. Vous allez apprendre à utiliser la console comme calculatrice et à fabriquer vos premières variables. Vous allez aussi découvrir les principaux types d'objets que vous allez être amené à utiliser dans R. Tout va bien se passer, c'est parti!
-framework   : datacamp
-mode        : selfcontained
 ---
-
 
 ## L'interface de DataCamp
 

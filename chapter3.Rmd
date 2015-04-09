@@ -2,8 +2,7 @@
 title_meta  : Chapitre 3
 title       : Matrices
 description : Dans ce chapitre, vous apprendrez comment utiliser des matrices dans R. À la fin du chapitre, vous serez en mesure de créer des matrices et de comprendre comment vous pouvez faire des calculs simples avec eux. Vous analyserez les chiffres du Box-Office de Star Wars pour illustrer l'utilisation des matrices dans R. Que la force soit avec vous ! 
-framework   : datacamp
-mode        : selfcontained
+
 
 ---
 ## Qu'est-ce qu'une matrice?

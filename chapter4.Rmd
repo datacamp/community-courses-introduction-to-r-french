@@ -2,8 +2,6 @@
 title_meta  : Chapitre 4
 title       : Facteurs
 description : Très souvent, les données sont qualitatives. Par exemple, les individus sont soit des hommes, soit des femmes. Dans R, les données qualitatives sont stockées dans des facteurs. Compte-tenu de l'importance de ces facteurs dans l'analyse des données, vous allez commencer dès maintenant à apprendre à créer, extraire et comparer ces facteurs !
-framework   : datacamp
-mode        : selfcontained
 
 ---
 ## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser?

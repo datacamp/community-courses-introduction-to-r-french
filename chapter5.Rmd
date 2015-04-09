@@ -2,8 +2,6 @@
 title_meta  : Chapitre 5
 title       : Les jeux de données
 description : La plupart des données avec lesquelles vous travaillerez seront stockées sous forme de data frame. À la fin de ce chapitre, vous serez en mesure de créer un data frame, de sélectionner des parties intéressantes d'un data frame et de trier un data frame selon certaines variables.
-framework   : datacamp
-mode        : selfcontained
 
 ---
 ## Qu'est ce qu'un data frame?

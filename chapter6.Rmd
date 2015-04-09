@@ -2,8 +2,6 @@
 title_meta  : Chapitre 6
 title       : Les listes
 description : Les listes, par opposition aux vecteurs, peuvent contenir des éléments de différents types, à l'instar de votre liste de tâches à la maison ou au travail. Ce chapitre va vous apprendre comment créer, nommer et extraire des élément de ces listes !
-framework   : datacamp
-mode        : selfcontained
 
 ---
 ## Listes, pourquoi faire ?

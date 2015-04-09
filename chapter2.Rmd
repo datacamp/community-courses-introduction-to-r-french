@@ -2,8 +2,7 @@
 title_meta  : Chapitre 2
 title       : Les Vecteurs
 description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vector . Une fois ce chapitre terminé, vous serez capable de créer des vector, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
-framework   : datacamp
-mode        : selfcontained
+
 ---
 
 ## Créer un vecteur
@@ -898,7 +897,7 @@ test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, inco
 test_object("moyenne_gain_debutsemaine", 
             undefined_msg = "Faites attention à bien bien définir la variable <code>moyenne_gain_debutsemaine</code>.",
             incorrect_msg = "Il semblerait que <code>moyenne_gain_débutsemaine</code> ne contienne pas la moyenne de la bonne sélection de <code>poker_vector</code>.")
-success_msg(TRUE, "Bon boulot! Vous savez extraire des éléments d' un vecteur par leurs noms, mais il est aussi possible de faire des sélections en utilisant des comparaisons. Le prochain exercice va vous montrer comment!")
+success_msg("Bon boulot! Vous savez extraire des éléments d' un vecteur par leurs noms, mais il est aussi possible de faire des sélections en utilisant des comparaisons. Le prochain exercice va vous montrer comment!")
 ```
 
 ---
