@@ -5,7 +5,7 @@ description : Dans ce chapitre, vous apprendrez comment utiliser des matrices da
 
 
 ---
-## Qu'est-ce qu'une matrice?
+## Qu'est-ce qu'une matrice ?
 
 En R, une `matrix` est une collection d'éléments du même type de données (`numeric`, `character`, ou `logical`) disposée en un nombre fixe de lignes et de colonnes. Puisque vous travaillez uniquement avec des lignes et des colonnes, une matrice a deux dimensions.
 Vous pouvez construire une matrice avec la fonction [`matrix()`](http://www.rdocumentation.org/packages/base/functions/matrix). Regardez l'exemple suivant: 
@@ -109,7 +109,7 @@ test_object("retour_du_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
             undefined_msg = "Faites attention à bien avoir défini la variable <code>star_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code>?")
+            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ?")
 success_msg("La force semble être avec vous! On passe à l'exercice suivant.")
 ```
 
@@ -189,13 +189,13 @@ test_object("retour_du_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
             undefined_msg = "Faites attention à bien définir la variable <code>star_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  à <code>star_wars_matrix</code>?")
+            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  à <code>star_wars_matrix</code> ?")
 test_function("colnames", "x", 
               incorrect_msg = "Veillez bien à passer les bons arguments à la fonction <code>colnames()</code>")
 test_function("rownames", "x", 
               incorrect_msg = "Veillez bien à passer les bons arguments à la fonction <code>rownames()</code>")
 test_object("star_wars_matrix", eq_condition = "equal",
-            incorrect_msg = "Avez-vous correctement défini les noms des lignes et colonnes de  <code>star_wars_matrix</code> correctement? Vérifiez votre code.")
+            incorrect_msg = "Avez-vous correctement défini les noms des lignes et colonnes de  <code>star_wars_matrix</code> correctement ? Vérifiez votre code.")
 success_msg("Bien! Vous êtes sur le chemin pour devenir un jedi de R! On passe à l'exercice suivant.")
 ```
 
@@ -256,8 +256,8 @@ test_object("noms_films", undefined_msg = msg, incorrect_msg = msg)
 test_object("titre_colonnes", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_function("rowSums", "x", 
-              not_called_msg = "Avez-vous utilisez la fonction <code>rowSums()</code?",
-              incorrect_msg = "Avez-vous utilisez la fonction<code>rowSums()</code> sur le bon vecteur?")
+              not_called_msg = "Avez-vous utilisez la fonction <code>rowSums()</code ?",
+              incorrect_msg = "Avez-vous utilisez la fonction<code>rowSums()</code> sur le bon vecteur ?")
 test_object("mondial_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>mondial_vector</code>.",
             incorrect_msg = "le vecteur <code>mondial_vector</code> n'est pas correct")
@@ -332,14 +332,14 @@ test_object("noms_films", undefined_msg = msg, incorrect_msg = msg)
 test_object("titre_colonnes", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_function("rowSums", "x", 
-              not_called_msg = "Avez-vous utilisé la fonction <code>rowSums()</code?",
-              incorrect_msg = "Avez-vous utilisé <code>rowSums()</code> sur le bon vecteur?")
+              not_called_msg = "Avez-vous utilisé la fonction <code>rowSums()</code> ?",
+              incorrect_msg = "Avez-vous utilisé <code>rowSums()</code> sur le bon vecteur ?")
 test_object("mondial_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>mondial_vector</code>.",
-            incorrect_msg = "Avez-vous correctement défini <code>mondial_vector</code>?")
+            incorrect_msg = "Avez-vous correctement défini <code>mondial_vector</code> ?")
 test_object("complete_wars_matrix",
             undefined_msg = "Faites attention à bien définir la variable <code>complete_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous utilisé <code>cbind()</code>  avec les bons arguments?")
+            incorrect_msg = "Avez-vous utilisé <code>cbind()</code>  avec les bons arguments ?")
 success_msg("Beau boulot! Après avoir rajouté des colonnes à une matrice, la prochaine étape logique est d'ajouter des lignes. Nous allons voir comment dans l'exercice suivant.");
 ```
 
@@ -409,7 +409,7 @@ test_object("star_wars_matrix", eq_condition = "equal", undefined_msg = msg, inc
 test_object("star_wars_matrix2", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("complete_wars_matrix", 
             undefined_msg = "Faites attention à bien définir la variable <code>complete_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous utilisé <code>rbind()</code> function avec les bons arguments?")
+            incorrect_msg = "Avez-vous utilisé <code>rbind()</code> function avec les bons arguments ?")
 success_msg("Magnifique! Continuez avec le prochain exercice pour voir comment vous pouvez combiner les résultats de la fonction <code>rbind()</code> avec la fonction <code>colSums()</code> !")
 ```
 
@@ -466,10 +466,10 @@ msg = "Ne modifiez pas les variables qui ont été mise en place pour vous dans 
 test_object("star_wars_matrix", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix2", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("complete_wars_matrix", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_function("colSums", "x", incorrect_msg = "Avez-vous utilisé <code>colSums()</code> sur la matrice complete_wars_matrix?")
+test_function("colSums", "x", incorrect_msg = "Avez-vous utilisé <code>colSums()</code> sur la matrice <code>complete_wars_matrix</code> ?")
 test_object("total_revenue_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>total_revenue_vector</code>.",
-            incorrect_msg = "Avez-vous bien défini le résultat de  <code>colSums()</code> à <code>total_revenue_factor?</code>");
+            incorrect_msg = "Avez-vous bien défini le résultat de  <code>colSums()</code> à <code>total_revenue_factor ?</code>");
 success_msg("Top! Dirigez-vous vers le prochain exercice pour apprendre l'extraction de sous-ensembles de matrice.")
 ```
 
@@ -551,10 +551,10 @@ test_object("titre_colonnes", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_object("non_us_total",
             undefined_msg = "Faites attention à bien définir la variable <code>non_us_total</code>.",
-            incorrect_msg = "Avez-vous assigné à <code>non_us_total</code> la moyenne de la bonne colonne?")
+            incorrect_msg = "Avez-vous assigné à <code>non_us_total</code> la moyenne de la bonne colonne ?")
 test_object("non_us_partiel",
             undefined_msg = "Faites attention à bien avoir défini la variable <code>non_us_partiel</code>.",
-            incorrect_msg = "Avez-vous assigné à <code>non_us_partiel</code> la moyenne de la bonne colonne?");
+            incorrect_msg = "Avez-vous assigné à <code>non_us_partiel</code> la moyenne de la bonne colonne ?");
 success_msg("Très bien! On passe à l'exercice suivant.")
 ```
 
@@ -623,7 +623,7 @@ test_object("visiteurs",
             incorrect_msg = "Il semblerait que <code>visiteurs</code> ne contient pas la bonne valeur. Souvenez-vous que les opérations sur les matrices sont effectuées termes à termes.")
 test_output_contains("visiteurs", 
                      incorrect_msg = "N'oubliez pas d'afficher la variable <code>visiteurs</code> dans la console.")
-success_msg("Bien! Que vous disent ces résultats? 92 millions de personnes sont allées en salle pour voir Un nouvel espoir ! On passe à l'exercice suivant.");
+success_msg("Bien! Que vous disent ces résultats ? 92 millions de personnes sont allées en salle pour voir Un nouvel espoir ! On passe à l'exercice suivant.");
 ```
 
 ---

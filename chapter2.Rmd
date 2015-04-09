@@ -947,7 +947,7 @@ jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
 
-# Quels jours de la semaine avez vous gagné de l'argent au poker?
+# Quels jours de la semaine avez vous gagné de l'argent au poker ?
 selection_vector <- 
 ```
 
@@ -964,7 +964,7 @@ jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
 
-# Quels jours de la semaine avez vous gagné de l'argent au poker?
+# Quels jours de la semaine avez vous gagné de l'argent au poker ?
 selection_vector <- poker_vector > 0
 ```
 
@@ -1018,7 +1018,7 @@ jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
 
-# Quels jours de la semaine avez-vous gagné de l'argent au poker?
+# Quels jours de la semaine avez-vous gagné de l'argent au poker ?
 selection_vector <- poker_vector > 0
 
 # Sélectionnez les jours gagnants de poker_vector
@@ -1038,7 +1038,7 @@ jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
 
-# Quels jours de la semaine avez-vous gagné de l'argent au poker?
+# Quels jours de la semaine avez-vous gagné de l'argent au poker ?
 selection_vector <- poker_vector > 0
 
 # Sélectionnez les jours gagnants de poker_vector

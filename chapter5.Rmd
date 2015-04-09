@@ -4,7 +4,7 @@ title       : Les jeux de données
 description : La plupart des données avec lesquelles vous travaillerez seront stockées sous forme de data frame. À la fin de ce chapitre, vous serez en mesure de créer un data frame, de sélectionner des parties intéressantes d'un data frame et de trier un data frame selon certaines variables.
 
 ---
-## Qu'est ce qu'un data frame?
+## Qu'est ce qu'un data frame ?
 
 
 Vous vous souvenez du chapitre sur les matrices  ? Tous les éléments que vous mettiez dans une matrice devaient être du même type ? À l'époque, l'ensemble de vos données sur Star Wars ne contenait que des éléments numériques.
@@ -12,7 +12,7 @@ Vous vous souvenez du chapitre sur les matrices  ? Tous les éléments que vous 
 Lors d'une enquête vous avez souvent des questions telles que :
 - 'Êtes vous marié ?' qui attendent des réponses du type 'oui/non' (= réponses de type `logical`)
 - 'Quel âge avez-vous ?' (= réponses de type `numeric`)
-- 'Quelle est votre opinion sur ce produit?' ou autres questions 'ouvertes' (= réponses de type `character`)
+- 'Quelle est votre opinion sur ce produit ?' ou autres questions 'ouvertes' (= réponses de type `character`)
 - ...
 
 Les réponses des enquêtés aux questions formulées ci-dessus forment un ensemble de données de différents types. Et généralement vous-même vous travailler avec des ensembles de données qui contiennent des types de données différents au lieu d'un seul.
@@ -316,7 +316,7 @@ msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame!"
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("proches_planetes_df",
             undefined_msg = "Faites attention à bien définir la variable <code>proches_planetes_df</code>.",
-            incorrect_msg = "Avez-vous bien sélectionné les 3 premières lignes de <code>planetes_df</code>?")
+            incorrect_msg = "Avez-vous bien sélectionné les 3 premières lignes de <code>planetes_df</code> ?")
 test_object("lointaines_planetes_df",
             undefined_msg = "Faites attention à bien définir la variable <code>lointaines_planetes_df</code>.",
             incorrect_msg = "Avez-vous bien sélectionné les 3 dernières lignes de <code>planetes_df</code>.")
@@ -437,7 +437,7 @@ success_msg("Bien! On passe à l'exercice suivant et découvrez une nouvelle fa�
 
 Vous vous souvenez probablement que certaines planètes dans notre système solaire ont des anneaux et d'autres pas. Mais vous ne pouvez pas vous rappeler de leurs noms, sans parler de leur vitesse de rotation, etc.
 
- R pourrait-il vous aider? (Attention spoiler: bien sûr, que c'est possible!)
+ R pourrait-il vous aider ? (Attention spoiler: bien sûr, que c'est possible!)
 
  Si vous tapez `anneaux_vector` dans la console, vous obtenez:
 
@@ -498,7 +498,7 @@ success_msg("Magnifique! Cette solution est assez fastidieuse. Le prochain exerc
 ## Seulement les planètes avec anneaux (Version courte)
 
 
-Alors... qu'est-ce que vous avez appris dans les exercices précédents? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov! la NASA est probablement déjà en train de flirter avec votre CV;-).
+Alors... qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov! la NASA est probablement déjà en train de flirter avec votre CV;-).
 
 Maintenant, passons au niveau supérieur et utilisons la fonction [`subset()`] (http://www.rdocumentation.org/packages/base/functions/subset). Vous devriez voir la fonction [`subset()`](http://www.rdocumentation.org/packages/base/functions/subset) comme un raccourci pour faire exactement la même chose que ce que vous avez fait dans les exercices précédents.
 

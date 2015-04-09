@@ -140,7 +140,7 @@ msg = "N'enlevez pas les autres exemples de calculs !"
 test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
 test_output_contains("(5 + 5)/2", incorrect_msg = msg)
-test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous êtes certain de bien avoir suivi les instructions?")
+test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous êtes certain de bien avoir suivi les instructions ?")
 test_output_contains("28 %% 6", incorrect_msg = "Il y a un soucis avec le modulo. Relisez bien les instructions.")
 success_msg("Bien joué. On continue...")
 ```
@@ -194,7 +194,7 @@ x
 ```{r eval=FALSE}
 test_object("x", undefined_msg = "Faites attention à bien créer une variable ayant pour nom <code>x</code>.",
             incorrect_msg = "la valeur que vous avez donné à  <code>x</code> ne semble pas correcte.") 
-success_msg("Bon boulot! Avez-vous remarqué que R n'imprime pas la valeur d'une variable dans la console lorsque vous la créez ? <code>x <- 42</code> n'a pas généré de sortie, car R suppose que vous aurez besoin cette variable à l'avenir. Sinon vous n'auriez pas stocké cette valeur dans une variable, n'est-ce pas ? Vous pouvez passer à l'exercice suivant !")
+success_msg("Bon boulot ! Avez-vous remarqué que R n'imprime pas la valeur d'une variable dans la console lorsque vous la créez ? <code>x <- 42</code> n'a pas généré de sortie, car R suppose que vous aurez besoin cette variable à l'avenir. Sinon vous n'auriez pas stocké cette valeur dans une variable, n'est-ce pas ? Vous pouvez passer à l'exercice suivant !")
 ```
 
 ---
@@ -242,7 +242,7 @@ test_object("mes_pommes",
             incorrect_msg = "Faites attention à bien avoir défini la bonne valeur à <code>mes_pommes</code>.")
 test_output_contains("mes_pommes", 
                      incorrect_msg = "Avez-vous dit explicitement à R d'afficher la variable <code>mes_pommes</code> dans la console ?")
-success_msg("Bien! Passons à l'exercice suivant!")
+success_msg("Bien ! Passons à l'exercice suivant !")
 ```
 
 ---
@@ -297,16 +297,16 @@ mes_fruits <- mes_pommes + mes_oranges
 ```{r eval=FALSE}
 test_object("mes_pommes", 
             undefined_msg = "Faites attention à bien définir la variable <code>mes_pommes</code>.",
-            incorrect_msg = "Ne modifiez pas l'assignation de la variable <code>mes_pommes</code>!")
+            incorrect_msg = "Ne modifiez pas l'assignation de la variable <code>mes_pommes</code> !")
 test_object("mes_oranges", 
-            undefined_msg = "Avez-vous défini la variable <code>mes_oranges</code>?",
-            incorrect_msg = "Avez-vous assigné la bonne valeur à la variable <code>mes_oranges</code>?")
+            undefined_msg = "Avez-vous défini la variable <code>mes_oranges</code> ?",
+            incorrect_msg = "Avez-vous assigné la bonne valeur à la variable <code>mes_oranges</code> ?")
 test_output_contains("mes_pommes + mes_oranges",
                      incorrect_msg = "La sortie ne contient pas la somme des variables <code>mes_pommes</code> et <code>mes_oranges</code>. Essayez à nouveau")
 test_object("mes_fruits",
             undefined_msg = "Faites attention à bien définir la variable <code>mes_fruits</code>.",
             incorrect_msg = "Faites attention à bien avoir défini la bonne valeur à <code>mes_fruits</code>.")
-success_msg("Très bien! Le grand avantage de faire des calculs avec les variables est que vous pouvez les réutiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur à 12 au lieu de 5 et que vous exécutez de nouveau le script, <code>mes_fruits</code> sera automatiquement mis à jour. On passe à l'exercice suivant.")
+success_msg("Très bien ! Le grand avantage de faire des calculs avec les variables est que vous pouvez les réutiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur à 12 au lieu de 5 et que vous exécutez de nouveau le script, <code>mes_fruits</code> sera automatiquement mis à jour. On passe à l'exercice suivant.")
 ```
 
 ---
@@ -366,13 +366,13 @@ mes_fruits
 test_error()
 test_object("mes_oranges",
             undefined_msg = "Faites attention à bien définir la variable <code>mes_oranges</code>.",
-            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_oranges</code>. Nombre et chaînes de caractères ne sont pas équivalent!")
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_oranges</code>. Nombre et chaînes de caractères ne sont pas équivalent !")
 test_output_contains("mes_pommes + mes_oranges", 
                      incorrect_msg = "La sortie dans la console ne contient pas le résultat de l'addition de <code>mes_pommes</code> et <code>mes_oranges</code>.")
 test_object("mes_fruits", 
             undefined_msg = "Faites attention à bien définir la variable <code>mes_fruits</code>.",
             incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_fruits</code>.")
-success_msg("Génial! on peut passer à l'exercice suivant.")
+success_msg("Génial ! on peut passer à l'exercice suivant.")
 ```
 
 ---
@@ -407,7 +407,7 @@ Remplacez les valeurs dans l'éditeur avec les valeurs qui sont fournies dans l'
 
 *** =sample_code
 ```{r eval=FALSE}
-# Quelle est la réponse à La grande question sur la vie, l'univers et le reste?
+# Quelle est la réponse à La grande question sur la vie, l'univers et le reste ?
 mon_numeric <- 42.5
 
 # Les guillemets indiquent que la variable est de type chaîne de caractères
@@ -419,7 +419,7 @@ mon_logical <- TRUE
 
 *** =solution
 ```{r eval=FALSE}
-# Quelle est la réponse à La grande question sur la vie, l'univers et le reste?
+# Quelle est la réponse à La grande question sur la vie, l'univers et le reste ?
 mon_numeric <- 42
 
 # Les guillemets indiquent que la variable est de type character
@@ -446,7 +446,7 @@ success_msg("Bon boulot! On passe à l'exercice suivant.")
 
 ## Quel est le type de cet objet ?
 
-Vous souvenez-vous que lorsque vous avez ajouté des `5 + "six"`? Vous avez eu une erreur due à une incompatibilité de types de données. Vous pouvez éviter ces situations embarrassantes en vérifiant le type de données d'une variable au préalable. Vous pouvez le faire comme suit :
+Vous souvenez-vous que lorsque vous avez ajouté des `5 + "six"` ? Vous avez eu une erreur due à une incompatibilité de types de données. Vous pouvez éviter ces situations embarrassantes en vérifiant le type de données d'une variable au préalable. Vous pouvez le faire comme suit :
 
 ```
 class(le_nom_de_la_variable)

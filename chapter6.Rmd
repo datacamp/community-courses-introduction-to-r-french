@@ -356,7 +356,7 @@ test_object("last_acteur",
 test_object("second_avis",
             undefined_msg = "Faites attention à bien définir la variable <code>second_avis</code>.",
             incorrect_msg = "Il semblerait que <code>second_avis</code> ne contienne pas les bonnes informations.")
-success_msg("Bien! La sélection d'éléments de listes est plutôt facile n'est-ce pas? On passe à l'exercice suivant.")
+success_msg("Bien! La sélection d'éléments de listes est plutôt facile n'est-ce pas ? On passe à l'exercice suivant.")
 ```
 
 ---
