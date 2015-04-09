@@ -4,15 +4,15 @@ title       : Les jeux de données
 description : La plupart des données avec lesquelles vous travaillerez seront stockées sous forme de data frame. À la fin de ce chapitre, vous serez en mesure de créer un data frame, de sélectionner des parties intéressantes d'un data frame et de trier un data frame selon certaines variables.
 
 ---
-## Qu'est ce qu'un data frame ?
+## Qu'est ce qu'un data frame ? 
 
 
 Vous vous souvenez du chapitre sur les matrices  ? Tous les éléments que vous mettiez dans une matrice devaient être du même type ? À l'époque, l'ensemble de vos données sur Star Wars ne contenait que des éléments numériques.
 
 Lors d'une enquête vous avez souvent des questions telles que :
-- 'Êtes vous marié ?' qui attendent des réponses du type 'oui/non' (= réponses de type `logical`)
-- 'Quel âge avez-vous ?' (= réponses de type `numeric`)
-- 'Quelle est votre opinion sur ce produit ?' ou autres questions 'ouvertes' (= réponses de type `character`)
+- 'Êtes-vous marié ? ' qui attendent des réponses du type 'oui/non' (= réponses de type `logical`)
+- 'Quel âge avez-vous ? ' (= réponses de type `numeric`)
+- 'Quelle est votre opinion sur ce produit ? ' ou autres questions 'ouvertes' (= réponses de type `character`)
 - ...
 
 Les réponses des enquêtés aux questions formulées ci-dessus forment un ensemble de données de différents types. Et généralement vous-même vous travailler avec des ensembles de données qui contiennent des types de données différents au lieu d'un seul.
@@ -43,17 +43,17 @@ mtcars # jeu de données intégré à R, stocké sous forme de data frame
 *** =sct
 ```{r eval=FALSE}
 test_output_contains("mtcars", incorrect_msg = "Ne changez rien au code, vérifiez de bien avoir affiché <code>mtcars</code> dans la console.");
-success_msg("Bien! On passe à l'exercice suivant.")
+success_msg("Bien ! On passe à l'exercice suivant.")
 ```
 
 ---
 ## Regardons votre jeu de données
 
-Wow, il y a beaucoup de voitures !
+Wow, il y a beaucoup de voitures ! 
 
 Travailler avec un grand ensemble de données n'est pas rare dans l'analyse de données. Lorsque vous travaillez avec un (très) gros jeu de données sous forme de data frame, votre première tâche est d'avoir une bonne compréhension de sa structure et de ses éléments principaux. Par conséquent, il est souvent utile de ne montrer qu'une petite partie de l'ensemble des données.
 
-Alors comment procéder avec R ?
+Alors comment procéder avec R ? 
 Eh bien, la fonction [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) vous permet de ne montrer que les premières observations d'un jeu de données (ou n'importe quel objet R que vous passer à celle-ci). La fonction [`tail()`] (http://www.rdocumentation.org/packages/utils/functions/head) affiche les dernières observations de votre jeu de données.
 
 Les deux [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) et [`tail()`] (http://www.rdocumentation.org/packages/utils/functions/head) affichent une ligne au dessus des valeurs. On l'appelle le header. Il contient les noms des différentes variables de votre jeu de données.
@@ -88,7 +88,7 @@ test_function("head", "x", incorrect_msg = "Avez-vous passé le bon paramètre �
 
 test_output_contains("head(mtcars)",
                      incorrect_msg = "Faites attention à bien utiliser la fonction <code>head()</code> sur <code>mtcars</code>.")
-success_msg("Magnifique! Alors, qu'avons-nous dans ce jeu de données ? Par exemple, <code>hp</code> représente par exemple la puissance de la voiture ; la Datsun a la plus faible puissance: 6 chevaux sont affichées. Pour une présentation complète de la signification des variables, tapez <code>?mtcars</code> dans la console et regardez la page d'aide. On passe à l'exercice suivant!");
+success_msg("Magnifique ! Alors, qu'avons-nous dans ce jeu de données ? Par exemple, <code>hp</code> représente par exemple la puissance de la voiture ; la Datsun a la plus faible puissance: 6 chevaux sont affichées. Pour une présentation complète de la signification des variables, tapez <code> ? mtcars</code> dans la console et regardez la page d'aide. On passe à l'exercice suivant ! ");
 ```
 
 ---
@@ -96,11 +96,11 @@ success_msg("Magnifique! Alors, qu'avons-nous dans ce jeu de données ? Par exem
 
 Une autre méthode est souvent utilisée pour obtenir un aperçu rapide de vos données, il s'agit de la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str). La fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str) vous montre la structure de votre jeu de données. Pour un data frame, il vous dit :
 
--Le nombre total d'observations (par exemple 32 types de voiture)
--Le nombre total de variables (par exemple 11 caractéristiques de voiture)
--Une liste complète des noms de variables (mpg, cyl...)
--Le type de données de chaque variable (par exemple num)
--Les premières observations
+- Le nombre total d'observations (par exemple 32 types de voiture)
+- Le nombre total de variables (par exemple 11 caractéristiques de voiture)
+- Une liste complète des noms de variables (mpg, cyl...)
+- Le type de données de chaque variable (par exemple num)
+- Les premières observations
 
 Utiliser la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str) sera souvent la première chose que vous allez faire lorsque vous recevez un nouveau jeu de données. C'est une bonne façon pour obtenir une vue d'ensemble de vos données avant de plonger dans l'analyse à proprement parler.
 
@@ -109,7 +109,7 @@ Utiliser la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/fun
 Étudier la structure de [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars). Assurez-vous que vous voyez les mêmes numéros, les variables et types de données comme indiqué ci-dessus.
 
 *** =hint
-Utilisez la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str) avec [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars) comme paramètre !
+Utilisez la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str) avec [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars) comme paramètre ! 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -118,12 +118,12 @@ Utilisez la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/fun
 
 *** =sample_code
 ```{r eval=FALSE}
-# Regardez la structure du jeu de données mtcars pour commencer !
+# Regardez la structure du jeu de données mtcars pour commencer ! 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Regardez la structure du jeu de données mtcars pour commencer !
+# Regardez la structure du jeu de données mtcars pour commencer ! 
 str(mtcars)
 ```
 
@@ -142,10 +142,10 @@ Utiliser un jeu de données intégré à R n'est pas ce qu'il y a de plus intér
 
 Comme premier objectif, vous voulez construire un data frame qui décrit les principales caractéristiques des huit planètes dans notre système solaire. Selon votre bon ami Buzz, les principales caractéristiques d'une planète sont :
 
--Le type de planète (tellurique ou gazeuse).
--Le diamètre de la planète par rapport au diamètre de la terre.
--La rotation de la planète autour du soleil par rapport à celle de la terre.
--Si la planète a des anneaux ou non (TRUE ou FALSE).
+- Le type de planète (tellurique ou gazeuse).
+- Le diamètre de la planète par rapport au diamètre de la terre.
+- La rotation de la planète autour du soleil par rapport à celle de la terre.
+- Si la planète a des anneaux ou non (TRUE ou FALSE).
 
 Après quelques recherches de qualité sur [Wikipedia](http://en.wikipedia.org/wiki/Planet), vous vous sentez suffisamment en confiance pour créer les vecteurs nécessaires: `planètes`, `type`, `diametre`, `rotation` et `anneaux` (cf l'éditeur, notez qu'un élément d'un vecteur est lié à l'élément d'un autre vecteur en fonction de sa position).
 
@@ -160,7 +160,7 @@ Utilisez la fonction [`data.frame()`] (http://www.rdocumentation.org/packages/ba
 *** =hint
 
 
-La fonction data.frame(col1, col2, col3,...)` prend comme arguments les vecteurs qui deviendront les colonnes du jeu de données. Les colonnes sont dans ce cas (dans cet ordre): `planetes`, `type`, `diametre`, `rotation` et `anneaux`.
+La fonction `data.frame(col1, col2, col3,...)` prend comme arguments les vecteurs qui deviendront les colonnes du jeu de données. Les colonnes sont dans ce cas (dans cet ordre): `planetes`, `type`, `diametre`, `rotation` et `anneaux`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -201,7 +201,7 @@ test_correct({
               undefined_msg = "Faites attention à bien définir la variable <code>planetes_df</code>.",
               incorrect_msg = "Faites attention à bien donner les arguments dans le bon ordre pour la création du data frame <code>planetes_df</code>. Le bon ordre est planetes,type,diametre,rotation et anneaux.") 
 }, {
-  msg = "Ne changez rien à la définition des vecteurs. Rajoutez simplement le code qui permet de créer <code>planetes_df</code>!"
+  msg = "Ne changez rien à la définition des vecteurs. Rajoutez simplement le code qui permet de créer <code>planetes_df</code> ! "
   test_object("planetes", undefined_msg = msg, incorrect_msg = msg)
   test_object("type", undefined_msg = msg, incorrect_msg = msg)
   test_object("diametre", undefined_msg = msg, incorrect_msg = msg)
@@ -209,7 +209,7 @@ test_correct({
   test_object("anneaux", undefined_msg = msg, incorrect_msg = msg)
 })
 
-success_msg("Bien joué! On passe à l'exercice suivant. La prochaine étape, comme vous le savez maintenant, est d'inspecter le jeu de données que vous venez de créer. Dirigez-vous vers le prochain exercice.");
+success_msg("Bien joué ! On passe à l'exercice suivant. La prochaine étape, comme vous le savez maintenant, est d'inspecter le jeu de données que vous venez de créer. Dirigez-vous vers le prochain exercice.");
 ```
 
 ---
@@ -249,18 +249,18 @@ str(planetes_df)
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code>"
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_function("str", "object", incorrect_msg = "Faites attention à bien utiliser la fonction <code>str()</code> sur <code>planetes_df</code>.")
-success_msg("Génial! Maintenant que vous avez une compréhension claire de <code>planetes_df</code>, il est temps de voir comment vous pouvez en sélectionner des éléments. Vous verrez ça dans les exercices suivant !")
+success_msg("Génial ! Maintenant que vous avez une compréhension claire de <code>planetes_df</code>, il est temps de voir comment vous pouvez en sélectionner des éléments. Vous verrez ça dans les exercices suivant ! ")
 ```
 
 ---
-## Extraction d' éléments d'un data frame
+## Extraction d'éléments d'un data frame
 
 Tous comme les vecteurs et matrices, vous sélectionnez des éléments d'un jeu de données à l'aide de crochets `[ ]`. À l'aide d'une virgule, vous pouvez indiquer ce qu'il faut respectivement sélectionner dans les lignes et les colonnes. Par exemple :
 
 - `mon_data_frame[1,2]` sélectionne dans la première ligne, le deuxième élément de `mon_data_frame`.
 - `mon_data_frame[1:3,2:4]` sélectionne simultanément les lignes 1,2,3 et colonnes 2,3,4 `mon_data_frame` .
 
-Parfois, vous voulez sélectionner tous les éléments d'une ligne ou une colonne. Pour ce faire, vous pouvez utiliser le code suivant. `mon_data_frame[1, ]` sélectionne tous les éléments de la première ligne. Appliquons maintenant cette technique à `planetes_df` !
+Parfois, vous voulez sélectionner tous les éléments d'une ligne ou une colonne. Pour ce faire, vous pouvez utiliser le code suivant. `mon_data_frame[1, ]` sélectionne tous les éléments de la première ligne. Appliquons maintenant cette technique à `planetes_df` ! 
 
 *** =instructions
 - Créez le jeu de données `proches_planetes_df` qui contient toutes les données sur les trois premières planètes du sytème solaire.
@@ -312,15 +312,15 @@ lointaines_planetes_df
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame!"
+msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("proches_planetes_df",
             undefined_msg = "Faites attention à bien définir la variable <code>proches_planetes_df</code>.",
-            incorrect_msg = "Avez-vous bien sélectionné les 3 premières lignes de <code>planetes_df</code> ?")
+            incorrect_msg = "Avez-vous bien sélectionné les 3 premières lignes de <code>planetes_df</code> ? ")
 test_object("lointaines_planetes_df",
             undefined_msg = "Faites attention à bien définir la variable <code>lointaines_planetes_df</code>.",
             incorrect_msg = "Avez-vous bien sélectionné les 3 dernières lignes de <code>planetes_df</code>.")
-success_msg("Bien! En plus de la sélection des éléments de votre base de données par leurs indices, vous pouvez également utiliser les noms de colonne. Pour apprendre comment, dirigez-vous vers le prochain exercice.")
+success_msg("Bien ! En plus de la sélection des éléments de votre base de données par leurs indices, vous pouvez également utiliser les noms de colonne. Pour apprendre comment, dirigez-vous vers le prochain exercice.")
 ```
 
 ---
@@ -328,7 +328,7 @@ success_msg("Bien! En plus de la sélection des éléments de votre base de donn
 
 Au lieu d'utiliser les valeurs numériques pour sélectionner des éléments d'un jeu de données, vous pouvez également utiliser les noms de variables pour sélectionner les colonnes d'un jeu de données.
 
-Peut-être que vous voulez sélectionner seulement les 3 premiers éléments de la variable 'type'. Une façon de faire est: `planetes_df [1:3, 1]`. Un inconvénient possible de cette approche est que vous devez savoir (ou chercher) la position de la variable 'type',ce qui devient difficile si vous avez un grand nombre de variables. Il est souvent plus facile de simplement utiliser les noms de variables, par exemple `planetes_df[1:3,"type"]`.
+Peut-être que vous voulez sélectionner seulement les 3 premiers éléments de la variable `type`. Une façon de faire est: `planetes_df [1:3, 1]`. Un inconvénient possible de cette approche est que vous devez savoir (ou chercher) la position de la variable `type`, ce qui devient difficile si vous avez un grand nombre de variables. Il est souvent plus facile de simplement utiliser les noms de variables, par exemple `planetes_df[1:3,"type"]`.
 
 
 *** =instructions
@@ -366,12 +366,12 @@ lointaines_planetes_diametre <- planetes_df[3:8,"diametre"]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame!"
+msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("lointaines_planetes_diametre",
             undefined_msg = "Faites attention à bien définir la variable <code>lointaines_planetes_diametre</code>.",
             incorrect_msg = "Faites attention à bien choisir les 6 dernières lignes et la colonne <code>diametre</code>.")
-success_msg("C'est beau! On passe à l'exercice suivant!")
+success_msg("C'est beau ! On passe à l'exercice suivant ! ")
 ```
 
 ---
@@ -423,12 +423,12 @@ anneaux_vector <- planetes_df$anneaux
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame!"
+msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("anneaux_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>anneaux_vector</code>.",
             incorrect_msg = "Il semblerait que <code>anneaux_vector</code> ne contienne pas tous les éléments de <code>ring</code> du jeu de données <code>planetes_df</code>.")
-success_msg("Bien! On passe à l'exercice suivant et découvrez une nouvelle façon de faire des extractions!")
+success_msg("Bien ! On passe à l'exercice suivant et découvrez une nouvelle façon de faire des extractions ! ")
 ```
 
 ---
@@ -437,7 +437,7 @@ success_msg("Bien! On passe à l'exercice suivant et découvrez une nouvelle fa�
 
 Vous vous souvenez probablement que certaines planètes dans notre système solaire ont des anneaux et d'autres pas. Mais vous ne pouvez pas vous rappeler de leurs noms, sans parler de leur vitesse de rotation, etc.
 
- R pourrait-il vous aider ? (Attention spoiler: bien sûr, que c'est possible!)
+ R pourrait-il vous aider ? (Attention spoiler: bien sûr, que c'est possible ! )
 
  Si vous tapez `anneaux_vector` dans la console, vous obtenez:
 
@@ -453,7 +453,7 @@ Cela signifie que les quatre premières observations (ou planètes) n'ont pas d'
 Affecter à `planetes_avec_anneaux_df` toutes les données de `planetes_df` pour les planètes avec anneaux, c'est-à-dire, où `anneaux_vector` est TRUE`.
 
 *** =hint
-Sélectionnez les éléments de planetes_df` en utilisant les crochets. Le vector `anneaux_vector` contient des valeurs de type `logical` (des VRAI/FAUX) et R sélectionne uniquement les lignes/colonnes dont la valeur est `TRUE`. Dans ce cas, vous souhaitez sélectionner des lignes en fonction de `anneaux_vector` et conserver toutes les colonnes.
+Sélectionnez les éléments de `planetes_df` en utilisant les crochets. Le vector `anneaux_vector` contient des valeurs de type `logical` (des VRAI/FAUX) et R sélectionne uniquement les lignes/colonnes dont la valeur est `TRUE`. Dans ce cas, vous souhaitez sélectionner des lignes en fonction de `anneaux_vector` et conserver toutes les colonnes.
 
 
 *** =pre_exercise_code
@@ -485,20 +485,20 @@ planetes_avec_anneaux_df <- planetes_df[anneaux_vector,]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne supprimez ou n'éditez pas <code>planetes_df</code> ou <code>anneaux_vector</code>!"
+msg = "Ne supprimez ou n'éditez pas <code>planetes_df</code> ou <code>anneaux_vector</code> ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("anneaux_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetes_avec_anneaux_df",
             undefined_msg = "Faites attention à bien définir la variable <code>planetes_avec_anneaux_df</code>.",
             incorrect_msg = "Il semblerait que <code>planetes_avec_anneaux_df</code> ne contienne pas toutes les informations sur les planetes avec anneaux");
-success_msg("Magnifique! Cette solution est assez fastidieuse. Le prochain exercice va vous apprendre comment le faire de façon plus concise.")
+success_msg("Magnifique ! Cette solution est assez fastidieuse. Le prochain exercice va vous apprendre comment le faire de façon plus concise.")
 ```
 
 ---
 ## Seulement les planètes avec anneaux (Version courte)
 
 
-Alors... qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov! la NASA est probablement déjà en train de flirter avec votre CV;-).
+Alors... qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov ! la NASA est probablement déjà en train de flirter avec votre CV;-).
 
 Maintenant, passons au niveau supérieur et utilisons la fonction [`subset()`] (http://www.rdocumentation.org/packages/base/functions/subset). Vous devriez voir la fonction [`subset()`](http://www.rdocumentation.org/packages/base/functions/subset) comme un raccourci pour faire exactement la même chose que ce que vous avez fait dans les exercices précédents.
 
@@ -514,7 +514,7 @@ Par exemple:
 subset(planetes_df, subset = planetes_df$anneaux == TRUE)
 ```
 
-R va renvoyer exactement le même résultat qu'à l'exercice précédent, mais cette fois sans nécessiter la création de `anneaux_vector`!
+R va renvoyer exactement le même résultat qu'à l'exercice précédent, mais cette fois sans nécessiter la création de `anneaux_vector` ! 
 
 *** =instructions
 Créez un data frame `petite_planetes_df` avec les planètes qui ont un diamètre plus petit que celui de la Terre (donc inférieur à 1, puisque le diamètre est ici une mesure relative par rapport à celui de la Terre).
@@ -537,7 +537,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 # 'planetes_df' de l'exercice précédent est pré-chargé
 
 # planetes qui sont plus petites que la Terre
-petite_planetes_df  <- # Placez votre code ici!
+petite_planetes_df  <- # Placez votre code ici ! 
 ```
 
 *** =solution
@@ -550,22 +550,22 @@ petite_planetes_df  <- subset(planetes_df, subset = diametre < 1)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame!"
+msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("petite_planetes_df",
             undefined_msg = "Faites attention à bien définir la variable <code>petite_planetes_df</code>.",
             incorrect_msg = "Il semblerait que <code>petite_planetes_df</code> ne contienne pas la bonne extraction de <code>planètes_df</code>.");
-success_msg("Bien! Non seulement la fonction <code>subset()</code> est plus concise, mais aussi elle est plus lisible pour quelqu'un qui lirait votre code. On passe à l'exercice suivant.");
+success_msg("Bien ! Non seulement la fonction <code>subset()</code> est plus concise, mais aussi elle est plus lisible pour quelqu'un qui lirait votre code. On passe à l'exercice suivant.");
 ```
 
 ---
 ## Classement
 
-Faire et créer des classements est l' une des activités préférées des humains. Ces classements peuvent être utiles (meilleures universités dans le monde), divertissants (les stars les plus influentes) ou inutiles (les meilleurs sosies de James Bond). À vous de voir dans quel but vous voulez utiliser vos compétences en R;-).
+Faire et créer des classements est l'une des activités préférées des humains. Ces classements peuvent être utiles (meilleures universités dans le monde), divertissants (les stars les plus influentes) ou inutiles (les meilleurs sosies de James Bond). À vous de voir dans quel but vous voulez utiliser vos compétences en R;-).
 
 Dans vos analyses de données vous allez trier vos données selon certaines variables de vos jeux de données. En R, cela se fait avec l'aide de la fonction [`order()`] (http://www.rdocumentation.org/packages/base/functions/order).
 
-[`order()`] (http://www.rdocumentation.org/packages/base/functions/order) est une fonction qui, lorsqu'il est appliqué sur une variable, vous donne la position de chaque élément classé dans l'ordre. Penchons-nous sur le vecteur `a`: `a <- c(100,9,101)`.
+[`order()`] (http://www.rdocumentation.org/packages/base/functions/order) est une fonction qui, lorsqu'elle est appliquée sur une variable, vous donne la position de chaque élément classé dans l'ordre. Penchons-nous sur le vecteur `a`: `a <- c(100,9,101)`.
 
 
 ```
@@ -593,12 +593,12 @@ Testez simplement la fonction [`order()`](http://www.rdocumentation.org/packages
 
 *** =sample_code
 ```{r eval=FALSE}
-# Jouez simplement avec la fonction order dans la console pour voir comment cela fonctionne!
+# Jouez simplement avec la fonction order dans la console pour voir comment cela fonctionne ! 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Jouez simplement avec la fonction order dans la console pour voir comment cela fonctionne!
+# Jouez simplement avec la fonction order dans la console pour voir comment cela fonctionne ! 
 # quelques exemples:
 order(1:10)
 order(2:11)
@@ -607,7 +607,7 @@ order(c(5,4,6,7))
 
 *** =sct
 ```{r eval=FALSE}
-success_msg("Bien! Maintenant, nous allons utiliser le <code>order()</code> pour trier votre jeu de données!")
+success_msg("Bien ! Maintenant, nous allons utiliser le <code>order()</code> pour trier votre jeu de données ! ")
 ```
 
 ---
@@ -618,14 +618,14 @@ Bon, maintenant que vous comprenez la fonction [`order()`](http://www.rdocumenta
  
 
 *** =instructions
-- Attribuer à la variable `positions` l'ordre désiré pour le nouveau jeu de données que vous allez créer à l'étape suivante. Vous pouvez utiliser le [`order()`](http://www.rdocumentation.org/packages/base/functions/order), avec l'argument supplémentaire `decreasing = TRUE`.
+- Attribuez à la variable `positions` l'ordre désiré pour le nouveau jeu de données que vous allez créer à l'étape suivante. Vous pouvez utiliser le [`order()`](http://www.rdocumentation.org/packages/base/functions/order), avec l'argument supplémentaire `decreasing = TRUE`.
 - Maintenant créez la base de données `grande_en_premier_df`, qui contient les mêmes informations que` planetes_df`, mais avec les planètes dans l'ordre décroissant de taille.
 
 *** =hint
 ```
 order(planetes_df$diametre, decreasing = TRUE)
 ```
-Vous donnera l'ordre du diamètre du plus grand au plus petit. Vous devez utiliser cet ordre en tant qu'indice de position pour trier comme vous le voulez `planetes_df`!
+Vous donnera l'ordre du diamètre du plus grand au plus petit. Vous devez utiliser cet ordre en tant qu'indice de position pour trier comme vous le voulez `planetes_df` ! 
 
 
 *** =pre_exercise_code
@@ -642,7 +642,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 ```{r eval=FALSE}
 # 'planetes_df' de l'exercice précédent est pré-chargé
 
-# Quel est le bon ordre de planetes_df$diametre qui permettrait de trier la variable ?
+# Quel est le bon ordre de planetes_df$diametre qui permettrait de trier la variable ? 
 positions <- 
 
 # Créez un nouveau jeu de données trié:
@@ -653,7 +653,7 @@ grande_en_premier_df <-
 ```{r eval=FALSE}
 # 'planetes_df' de l'exercice précédent est pré-chargé
 
-# Quel est le bon ordre de planetes_df$diametre qui permettrait de trier la variable ?
+# Quel est le bon ordre de planetes_df$diametre qui permettrait de trier la variable ? 
 positions <- order(planetes_df$diametre, decreasing = TRUE)
 
 # Créez un nouveau jeu de données trié:
@@ -662,7 +662,7 @@ grande_en_premier_df <- planetes_df[positions, ]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame!"
+msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("positions",
             undefined_msg = "Faites attention à bien définir la variable <code>positions</code>.",
@@ -670,5 +670,5 @@ test_object("positions",
 test_object("grande_en_premier_df",
             undefined_msg = "Faites attention à bien définir la variable <code>grande_en_premier_df</code>.",
             incorrect_msg = "Il semblerait que <code>grande_en_premier_df</code> ne correspondent pas à <code>planetes_df</code> trié dans le bon ordre.")
-success_msg("Magnifique! Pensez à regarder grande_en_premier_df pour voir à quoi il ressemble. Cet exercice conclut le chapitre sur les jeux de données. N'oubliez pas que les data frame sont extrêmement importants en R, vous aurez besoin d'eux tout le temps. Une autre structure de données très souvent utilisée est la liste. Ce sera l'objet du prochain chapitre!")
+success_msg("Magnifique ! Pensez à regarder grande_en_premier_df pour voir à quoi il ressemble. Cet exercice conclut le chapitre sur les jeux de données. N'oubliez pas que les data frame sont extrêmement importants en R, vous aurez besoin d'eux tout le temps. Une autre structure de données très souvent utilisée est la liste. Ce sera l'objet du prochain chapitre ! ")
 ```

@@ -1,18 +1,20 @@
 --- 
 title_meta  : Chapitre 4
 title       : Facteurs
-description : Très souvent, les données sont qualitatives. Par exemple, les individus sont soit des hommes, soit des femmes. Dans R, les données qualitatives sont stockées dans des facteurs. Compte-tenu de l'importance de ces facteurs dans l'analyse des données, vous allez commencer dès maintenant à apprendre à créer, extraire et comparer ces facteurs !
+description : Très souvent, les données sont qualitatives. Par exemple, les individus sont soit des hommes, soit des femmes. Dans R, les données qualitatives sont stockées dans des facteurs. Compte-tenu de l'importance de ces facteurs dans l'analyse des données, vous allez commencer dès maintenant à apprendre à créer, extraire et comparer ces facteurs ! 
+framework   : datacamp
+mode        : selfcontained
 
 ---
-## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ?
+## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ? 
 
 Dans ce chapitre, vous plongez dans le monde magnifique des **facteurs**. 
 
-Le terme de `factor` se réfère à un type de données statistiques utilisé pour stocker les variables nominales (on dit aussi qualitatives ou catégorielle). La différence entre une variable catégorielle et une variable continue, c'est qu'une variable catégorielle ne peut contenir qu'un **nombre limité de catégories**. Une variable continue, quant à elle, peut correspondre à un nombre infini de valeurs. 
+Le terme de `factor` se réfère à un type de données statistiques utilisé pour stocker les variables nominales (on dit aussi qualitatives ou catégorielles). La différence entre une variable catégorielle et une variable continue, c'est qu'une variable catégorielle ne peut contenir qu'un **nombre limité de catégories**. Une variable continue, quant à elle, peut correspondre à un nombre infini de valeurs. 
 
 Il est important que R sache s'il traite une variable continue ou une variable catégorielle, car les modèles statistiques, que vous allez développer dans l'avenir traitent les deux types différemment. (Vous verrez plus tard pourquoi c'est le cas.)
 
-La variable 'Sexe' en est un bon exemple d'une variable qualitative. Un individu humain peut être 'Masculin' ou 'Féminin', faisant abstraction des intersexués. Voici donc 'Masculin' et 'Féminin' sont, de manière simplifiée, les deux valeurs de la variable qualitative 'Genre' et chaque  valeur de cette variable ne peut contenir que 'Masculin' et 'Féminin'.
+La variable 'Sexe' en est un bon exemple d'une variable qualitative. Un individu humain peut être 'Masculin' ou 'Féminin', faisant abstraction des intersexués. 'Masculin' et 'Féminin' sont, de manière simplifiée, les deux valeurs de la variable qualitative 'Genre' et chaque  valeur de cette variable ne peut contenir que 'Masculin' et 'Féminin'.
 
 
 Pour créer des `factor` dans R, utilisez la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor). La première chose que vous devez faire est de créer un vecteur qui contient toutes les observations qui appartiennent à un nombre limité de catégories. Par exemple, `genre_vector` contient le sexe de 5 personnes différentes : 
@@ -20,10 +22,10 @@ Pour créer des `factor` dans R, utilisez la fonction [`factor()`] (http://www.r
 
 
 ```
-genre_vector <- c("Masculin","Féminin","Féminin","Masculin","Masculin")
+genre_vector <- c("Masculin","Feminin","Feminin","Masculin","Masculin")
 ```
 
-Il est clair ici qu'il y a 2 catégories, ou dans R des **'factor levels'**, il s' agit de "Masculin" et "Féminin".
+Il est clair ici qu'il y a 2 catégories, ou dans R des **'factor levels'**, il s' agit de "Masculin" et "Feminin".
 
 La fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor) va encoder le vecteur comme un factor : 
 
@@ -32,6 +34,7 @@ factor_genre_vector <- factor(genre_vector)
 ``` 
 
 *** =instructions
+
 Assigner, à `factor_genre_vector`, le vecteur de caractères `genre_vector` converti en un **factor** . Regardez la console et notez que R va afficher les niveaux de facteur en dessous des valeurs. Ils sont précédé de la mention **levels**.
 
 *** =hint
@@ -44,7 +47,7 @@ Il suffit d'utiliser la fonction [`factor()`] (http://www.rdocumentation.org/pac
 
 *** =sample_code
 ```{r eval=FALSE}
-genre_vector <- c("Masculin", "Féminin", "Féminin", "Masculin", "Masculin")
+genre_vector <- c("Masculin", "Feminin", "Feminin", "Masculin", "Masculin")
 
 # Fabriquez factor_genre_vector en utilisant 'factor()'
 factor_genre_vector <-
@@ -52,7 +55,7 @@ factor_genre_vector <-
 
 *** =solution
 ```{r eval=FALSE}
-genre_vector <- c("Masculin", "Féminin", "Féminin", "Masculin", "Masculin")
+genre_vector <- c("Masculin", "Feminin", "Feminin", "Masculin", "Masculin")
 
 # Fabriquez factor_genre_vector en utilisant 'factor()'
 factor_genre_vector <- factor(genre_vector)
@@ -62,22 +65,23 @@ factor_genre_vector <- factor(genre_vector)
 ```{r eval=FALSE}
 test_object("factor_genre_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>factor_genre_vector</code>.",
-            incorrect_msg = "Avez-vous bien passé <code>genre_vector</code> en tant que paramètre de la fonction factor, pour stocker le résultat dans <code>factor_genre_vector</code> ?")
-success_msg("Bien! Si vous voulez en savoir plus sur la fonction <code>factor()</code>, n'hésitez pas à taper <code>?factor</code> dans la console. Cela ouvrira une page d'aide. On passe à l'exercice suivant.");
+            incorrect_msg = "Avez-vous bien passé <code>genre_vector</code> en tant que paramètre de la fonction factor, pour stocker le résultat dans <code>factor_genre_vector</code> ? ")
+success_msg("Bien ! Si vous voulez en savoir plus sur la fonction <code>factor()</code>, n'hésitez pas à taper <code> ? factor</code> dans la console. Cela ouvrira une page d'aide. On passe à l'exercice suivant.");
 ```
 
 ---
-## Qu'est ce qu'un facteur et pourquoi devrais-je l'utiliser ? (2)
+## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ? (2)
 
 Il existe deux types de variables nominales : les variables non ordonnées et les variables ordonnées. 
 
-Une variable non ordonnée est une variable catégorielle sans ordre implicite. Cela signifie qu'il est impossible de dire qu' une valeur est supérieure à l\'autre'. Par exemple, pensez à la variable catégorielle `animals_vector` avec les catégories `"Eléphant"`, `"Girafe"`, `"Singe"` et `"Cheval"`. Ici, il est impossible de dire qui est au-dessus ou au-dessous de l'autre.  
+Une variable non ordonnée est une variable catégorielle sans ordre implicite. Cela signifie qu'il est impossible de dire qu' une valeur est supérieure à l\'autre'. Par exemple, pensez à la variable catégorielle `animals_vector` avec les catégories `"Elephant"`, `"Girafe"`, `"Singe"` et `"Cheval"`. Ici, il est impossible de dire qui est au-dessus ou au-dessous de l'autre.  
 
 En revanche, les variables ordinales ont un ordre naturel. Considérons par exemple la variable catégorielle `temperature_vector` avec les catégories: `"Faible"`, `"Moyen"` et `"Fort"`. Ici, il est évident que `"Moyen"` se situe au-dessus de `"Faible"`, et  `"Fort"` se situe au-dessus de `"Moyen"`.
 
 
 
 *** =instructions
+
 Cliquez sur 'Submit Answer' pour observer comment R construit et affiche les variables nominales ou ordinales. Ne vous inquiétez pas si vous ne comprenez pas tout le code pour le moment.
 
 *** =hint
@@ -92,7 +96,7 @@ Il suffit de cliquez sur le bouton 'Submit Answer' et de regardez la console. Ob
 
 *** =sample_code
 ```{r eval=FALSE}
-animals_vector <- c("Eléphant", "Girafe", "Singe", "Cheval")
+animals_vector <- c("Elephant", "Girafe", "Singe", "Cheval")
 temperature_vector <- c("Fort", "Faible", "Fort","Faible", "Moyen")
 
 factor_animaux_vector <- factor(animals_vector)
@@ -103,7 +107,7 @@ factor_temperature_vector
 
 *** =solution
 ```{r eval=FALSE}
-animals_vector <- c("Eléphant", "Girafe", "Singe", "Cheval")
+animals_vector <- c("Elephant", "Girafe", "Singe", "Cheval")
 temperature_vector <- c("Fort", "Faible", "Fort","Faible", "Moyen")
 
 factor_animaux_vector <- factor(animals_vector)
@@ -114,7 +118,7 @@ factor_temperature_vector
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien au code indiqué en exemple. Cliquez sur le bouton submit et regardez la solution!"
+msg = "Ne changez rien au code indiqué en exemple. Cliquez sur le bouton submit et regardez la solution ! "
 test_object("animals_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("temperature_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_animaux_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -144,17 +148,18 @@ Un bon exemple est le fichier brut qui vous est fourni après une enquête terra
 enquete_vector <- c("M","F","F","M","M")
 ```
 
-Ensuite, lorsque vous voulez commencer votre analyse de données, votre principale préoccupation est de garder un bon aperçu de toutes les variables et de leur sens. À ce moment-là, vous voudrez sûrement changer les niveaux de facteur en indiquant `"Masculin"` et `"Féminin"` au lieu de `"M"` et `"F"` pour vous rendre la vie plus facile. 
+Ensuite, lorsque vous voulez commencer votre analyse de données, votre principale préoccupation est de garder un bon aperçu de toutes les variables et de leur sens. À ce moment-là, vous voudrez sûrement changer les niveaux de facteur en indiquant `"Masculin"` et `"Feminin"` au lieu de `"M"` et `"F"` pour vous rendre la vie plus facile. 
 
 
 
 *** =instructions
-- Convertissez le vecteur de caractères `enquete_vector` dans un vecteur de facteurs. Assignez-le à `factor_enquete_vector`.
-- Changez les niveaux de facteurs de `factor_enquete_vector` à `"Masculin"` et `"Féminin"`.
+
+-Convertissez le vecteur de caractères `enquete_vector` dans un vecteur de facteurs. Assignez-le à « factor_enquete_vector ».
+-Changez les niveaux de facteurs de `factor_enquete_vector` à `"Masculin"` et `"Feminin"`.
 
 
 *** =hint
-L'ordre dans lequel vous devez taper les niveaux de facteur est important. Conseil : Regardez l'ordre dans lequel les niveaux sont affichés.
+L'ordre dans lequel vous devez taper les niveaux de facteur est important. Conseil : regardez l'ordre dans lequel les niveaux sont affichés.
 *** =pre_exercise_code
 ```{r eval=FALSE}
 # no pec
@@ -181,22 +186,22 @@ enquete_vector <- c("M", "F", "F", "M", "M")
 factor_enquete_vector <- factor(enquete_vector)
 
 # Spécifiez les niveaux de  'factor_enquete_vector'
-levels(factor_enquete_vector) <- c("Féminin", "Masculin")
+levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 
 factor_enquete_vector
 ```
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez pas la définition de <code>enquete_vector</code>!"
+msg = "Ne modifiez pas la définition de <code>enquete_vector</code> ! "
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_function("factor","x",
-              incorrect_msg = "Avez vous bien utilisé la fonction <code>factor()</code> pour créer <code>factor_enquete_vector</code> ?")
+              incorrect_msg = "Avez vous bien utilisé la fonction <code>factor()</code> pour créer <code>factor_enquete_vector</code> ? ")
 test_object("factor_enquete_vector", eq_condition = "equal",
             undefined_msg = "Faites attention à bien définir la variable <code>factor_enquete_vector</code>.",
-            incorrect_msg = paste("Avez-vous bien indiqué les bons niveaux de facteurs à <code>factor_enquete_vector</code> ?",
-                                  "Souvenez-vous que R est sensible à la différence entre les majuscules et les minuscules. Faites aussi attention à respecter l'ordre des niveaux!"))
-success_msg("Magnifique! On passe à l'exercice suivant.")
+            incorrect_msg = paste("Avez-vous bien indiqué les bons niveaux de facteurs à <code>factor_enquete_vector</code> ? ",
+                                  "Souvenez-vous que R est sensible à la différence entre les majuscules et les minuscules. Faites aussi attention à respecter l'ordre des niveaux ! "))
+success_msg("Magnifique ! On passe à l'exercice suivant.")
 ```
 
 ---
@@ -209,13 +214,18 @@ Après avoir terminé ce cours, une de vos fonctions préférées dans R sera [`
 summary(une_variable)
 ``` 
 
-Pour en revenir à notre enquête, vous souhaitez savoir combien de réponses `"Masculin"` et combien de réponses `"Féminin"` vous avez dans votre étude. La fonction [`summary()`] (http://www.rdocumentation.org/packages/base/functions/summary) vous donne la réponse à cette question.
+Pour en revenir à notre enquête, vous souhaitez savoir combien de réponses `"Masculin"` et combien de réponses `"Feminin"` vous avez dans votre étude. La fonction [`summary()`] (http://www.rdocumentation.org/packages/base/functions/summary) vous donne la réponse à cette question.
+
+
 
 *** =instructions
-Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. Interpréter les résultats de ces deux vecteurs. Sont-ils équivalents dans ce cas ?
+
+Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. Interpréter les résultats de ces deux vecteurs. Sont-ils équivalents dans ce cas ? 
+
+
 
 *** =hint
-Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. C'est aussi simple que cela !
+Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. C'est aussi simple que cela ! 
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -226,7 +236,7 @@ Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/su
 ```{r eval=FALSE}
 enquete_vector <- c("M", "F", "F", "M", "M")
 factor_enquete_vector <- factor(enquete_vector)
-levels(factor_enquete_vector) <- c("Féminin", "Masculin")
+levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 factor_enquete_vector
 
 # Placez votre code ici pour 'enquete_vector'
@@ -240,7 +250,7 @@ factor_enquete_vector
 ```{r eval=FALSE}
 enquete_vector <- c("M", "F", "F", "M", "M")
 factor_enquete_vector <- factor(enquete_vector)
-levels(factor_enquete_vector) <- c("Féminin", "Masculin")
+levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 factor_enquete_vector
 
 # Placez votre code ici pour 'enquete_vector'
@@ -256,9 +266,9 @@ msg = "Ne changez rien aux 4 premières lignes qui définissent <code>enquete_ve
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_enquete_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_function("summary", "x", 
-              incorrect_msg = c("Avez-vous utilisé la fonction summary sur <code>enquete_vector</code> ?",
-                                "Avez-vous utilisé la fonction summary sur <code>factor_enquete_vector</code> ?"))
-success_msg("Bien! Regardez la sortie dans la console. Le fait que vous ayez identifié <code>\"Masculin\"</code> et <code>\"Féminin\"</code> comme niveaux de facteur dans <code>factor_enquete_vector</code> permet à R d'afficher le nombre d'éléments pour chaque catégorie.
+              incorrect_msg = c("Avez-vous utilisé la fonction summary sur <code>enquete_vector</code> ? ",
+                                "Avez-vous utilisé la fonction summary sur <code>factor_enquete_vector</code> ? "))
+success_msg("Bien ! Regardez la sortie dans la console. Le fait que vous ayez identifié <code>\"Masculin\"</code> et <code>\"Féminin\"</code> comme niveaux de facteur dans <code>factor_enquete_vector</code> permet à R d'afficher le nombre d'éléments pour chaque catégorie.
 ")
 ```
 
@@ -267,15 +277,13 @@ success_msg("Bien! Regardez la sortie dans la console. Le fait que vous ayez ide
 
 _"Tous les animaux sont égaux, mais certains animaux sont plus égaux que d'autres." -- George Orwell_
 
-Dans `factor_enquete_vector`, nous avons un facteur à deux niveaux : Masculin et Féminin. Mais comment R compare t'il ces valeurs l'une par rapport à l'autre ? En d'autres termes, pour R qu'est-ce qui est le plus grand, Masculin ou Féminin ?
+Dans `factor_enquete_vector`, nous avons un facteur à deux niveaux : Masculin et Féminin. Mais comment R compare t'il ces valeurs l'une par rapport à l'autre ? En d'autres termes, pour R qu'est-ce qui est le plus grand, Masculin ou Féminin ? 
 
 
 *** =instructions
 Lire le code dans l'éditeur, puis cliquez sur 'Submit Answer' pour voir si les hommes valent plus que les femmes.
-
 *** =hint
 Il suffit de cliquez sur 'Submit Answer' et jetez un oeil sur la sortie qui est affichée dans la console.
-
 *** =pre_exercise_code
 ```{r eval=FALSE}
 # no pec
@@ -285,13 +293,13 @@ Il suffit de cliquez sur 'Submit Answer' et jetez un oeil sur la sortie qui est 
 ```{r eval=FALSE}
 enquete_vector <- c("M", "F", "F", "M", "M")
 factor_enquete_vector <- factor(enquete_vector)
-levels(factor_enquete_vector) <- c("Féminin", "Masculin")
+levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 
 # Masculin
 factor_enquete_vector[1] 
 # Féminin
 factor_enquete_vector[2] 
-# Guerre des sexes : Masculin est-il plus grand que Féminin ?
+# Guerre des sexes : Masculin est-il plus grand que Féminin ? 
 factor_enquete_vector[1] > factor_enquete_vector[2] 
 ```
 
@@ -299,13 +307,13 @@ factor_enquete_vector[1] > factor_enquete_vector[2]
 ```{r eval=FALSE}
 enquete_vector <- c("M", "F", "F", "M", "M")
 factor_enquete_vector <- factor(enquete_vector)
-levels(factor_enquete_vector) <- c("Féminin", "Masculin")
+levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 
 # Masculin
 factor_enquete_vector[1] 
 # Féminin
 factor_enquete_vector[2] 
-# Guerre des sexe : Masculin est il plus grand que Féminin ?
+# Guerre des sexe : Masculin est il plus grand que Féminin ? 
 factor_enquete_vector[1] > factor_enquete_vector[2] 
 ```
 
@@ -314,14 +322,14 @@ factor_enquete_vector[1] > factor_enquete_vector[2]
 msg = "Ne changez rien aux 4 premières lignes qui définissent <code>enquete_vector</code> et <code>factor_enquete_vector</code>."
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_enquete_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_output_contains("factor_enquete_vector[1] > factor_enquete_vector[2]", incorrect_msg = "Ne changez rien à la dernière commande, nous voulons que cette bataille aie lieu une fois pour toutes!")
+test_output_contains("factor_enquete_vector[1] > factor_enquete_vector[2]", incorrect_msg = "Ne changez rien à la dernière commande, nous voulons que cette bataille aie lieu une fois pour toutes ! ")
 success_msg("Ouf, il semble que R soit neutre. Ou peut-être veut-il juste rester en dehors de ces discussions ;-).")
 ```
 
 ---
 ## Les facteurs ordonnés
 
-`"Masculin"` et `"Féminin"` étant des niveaux non ordonnés (ou nominaux) de facteurs, R retourne un message d'avertissement vous indiquant que le l'opérateur de comparaison n'est pas explicite. Comme vu auparavant, R attache une valeur égale aux niveaux de tels facteurs. 
+`"Masculin"` et `"Feminin"` étant des niveaux non ordonnés (ou nominaux) de facteurs, R retourne un message d'avertissement vous indiquant que le l'opérateur de comparaison n'est pas explicite. Comme vu auparavant, R attache une valeur égale aux niveaux de tels facteurs. 
 
 Mais ce n'est pas toujours le cas ! Parfois il faudra aussi travailler avec des facteurs ordonnés, qui ont un ordre naturel dans les niveaux. Si c'est le cas, nous devons veiller à ce que R le comprenne ... 
 
@@ -329,12 +337,16 @@ Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vo
 
 
 *** =instructions
+
 Dans un premier temps, fabriquez `vitesse_vector`, sachant que : 
+
 - Le Statisticien 1 est Rapide, 
 - Le Statisticien 2 est Lent, 
 - Le Statisticien 3 est Lent,
 - Le Statisticien 4 est Rapide et
 - Le Statisticien 5 est Ultra-Rapide.
+
+
 
 Pas besoin pour l'instant de spécifier que ce sont des facteurs
 
@@ -363,8 +375,8 @@ vitesse_vector <- c("Rapide", "Lent", "Lent", "Rapide", "Ultra-Rapide")
 ```{r eval=FALSE}
 test_object("vitesse_vector", 
             undefined_msg = "Faites attention à bien définir la variable <code>vitesse_vector</code>.",
-            incorrect_msg = "Faites attention à bien assigner le bon vecteur à vitesse_vector. Souvenez-vous que R est sensible à la différence entre les majuscules et les minuscules!")
-success_msg("Bien joué! On passe à l'exercice suivant.")
+            incorrect_msg = "Faites attention à bien assigner le bon vecteur à vitesse_vector. Souvenez-vous que R est sensible à la différence entre les majuscules et les minuscules ! ")
+success_msg("Bien joué ! On passe à l'exercice suivant.")
 ```
 
 ---
@@ -382,11 +394,20 @@ factor(un_vector, ordered = TRUE, levels = c("Level_1", "Level_2" ...))
 
 En définissant l'argument `ordered` à `TRUE` dans la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor), vous indiquez que le factor est ordonné. Avec l'argument `levels` vous donnez les valeurs du factor dans l'ordre correct, par exemple `levels = c("Faible", "Moyen", "Fort")`.
 
+
+
 *** =instructions
+
 L'exemple de code ci-dessus permet de définir une variable `factor_vitesse_vector` en tenant compte du fait qu'il y a un ordre spécifique pour les niveaux de facteur. Ne changez rien aux autres lignes de code, cela imprimera le facteur dans la console et générera un résumé de celui-ci.
 
+
+
 *** =hint
+
 Utilisez la fonction [`factor()`](http://www.rdocumentation.org/packages/base/functions/factor) pour fabriquer `factor_vitesse_vector` à partir de `speed_character_vector`. l'argument order doit être à `TRUE` puisqu'il y a un ordre. Les niveaux de facteurs sont alors: `c("Lent", "Rapide", "Ultra-Rapide")`.
+
+
+
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -432,7 +453,7 @@ test_correct({
 },{
   test_function("factor", c("x", "levels", "ordered"))
 })
-success_msg("Bien! Regardez dans la console. On voit maintenant qu'il y a une notion d'ordre entre les niveaux de facteurs, on voit cela grâce au signe <code><</code>. On passe à l'exercice suivant.");
+success_msg("Bien ! Regardez dans la console. On voit maintenant qu'il y a une notion d'ordre entre les niveaux de facteurs, on voit cela grâce au signe <code><</code>. On passe à l'exercice suivant.");
 ```
 
 ---
@@ -446,6 +467,7 @@ Le fait que `factor_vitesse_vector` est maintenant ordonné permet de comparer l
 
 
 *** =instructions
+
 Vérifiez si le statisticien numéro 2 est plus rapide que statisticien numéro 5 et assignez le résultat à `la_comparaison`. N'oubliez pas l'opérateur `>` permet de vérifier si un élément est plus grand que l'autre.
 
 *** =hint
@@ -469,7 +491,7 @@ factor_vitesse_vector <- factor(vitesse_vector, ordered = TRUE, levels = c("Lent
 # Votre code
 la_comparaison <- 
 
-# Est-ce que le statisticien 2 est plus rapide que le 5 ?
+# Est-ce que le statisticien 2 est plus rapide que le 5 ? 
 la_comparaison
 ```
 
@@ -481,17 +503,17 @@ factor_vitesse_vector <- factor(vitesse_vector, ordered = TRUE, levels = c("Lent
 # Votre code
 la_comparaison <- factor_vitesse_vector[2] > factor_vitesse_vector[5] 
 
-# Est-ce que le statisticien 2 est plus rapide que le 5 ?
+# Est-ce que le statisticien 2 est plus rapide que le 5 ? 
 la_comparaison
 ```
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux instructions qui définissent <code>vitesse_vector</code> et <code>factor_vitesse_vector</code>!"
+msg = "Ne changez rien aux instructions qui définissent <code>vitesse_vector</code> et <code>factor_vitesse_vector</code> ! "
 test_object("vitesse_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_vitesse_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("la_comparaison",
             undefined_msg = "Faites attention à bien définir la variable <code>la_comparaison</code>.",
             incorrect_msg = "Il semblerait que <code>la_comparaison</code> ne soit pas correctement effectuée. Vérifiez les indices.");
-success_msg("Génial! Que nous apprend ce résultat ? le statisticien 2 se plaint au sujet du numéro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voilà qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous êtes prêts à plonger dans le monde magnifique des data.frame, une structuration des données très importantes en R !")
+success_msg("Génial ! Que nous apprend ce résultat ? le statisticien 2 se plaint au sujet du numéro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voilà qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous êtes prêts à plonger dans le monde magnifique des data.frame, une structuration des données très importantes en R ! ")
 ```
