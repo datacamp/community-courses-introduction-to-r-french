@@ -274,7 +274,7 @@ msg = "Ne modifiez ou ne supprimez pas les variables pré-chargées"
 test_object("avis", undefined_msg = msg, incorrect_msg = msg)
 test_object("acteurs", undefined_msg = msg, incorrect_msg = msg)
 test_object("shining_list",
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>shining_list</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>shining_list</code>.",
             incorrect_msg = "Il semblerait que <code>shining_list</code> ne contienne pas les bons éléments.")
 test_object("shining_list", eq_condition = "equal",
             incorrect_msg = "Il semblerait que <code>shining_list</code> ne contienne pas les bons noms pour ses éléments");
@@ -286,7 +286,7 @@ success_msg("Magnifique ! Vous savez maintenant comment construire et nommer les
 
 Votre liste sera souvent composée de nombreux éléments. Par conséquent, n'extraire qu'un seul élément ou plusieurs éléments de cette liste n'est pas toujours simple. 
 
-Une façon de sélectionner un élément  est d'utiliser l'indice de position de ce composant. Par exemple, pour extraire le premier éléments de `shining_list`, vous tapez :
+Une façon de sélectionner un élément est d'utiliser l'indice de position de ce composant. Par exemple, pour extraire le premier éléments de `shining_list`, vous tapez :
 
 
 ```
@@ -348,7 +348,7 @@ second_avis <- shining_list$avis[2,]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "N'éditez ou de supprimez pas <code>shining_list</code>, qui est disponible dans votre espace de travail ! "
+msg = "N'éditez ou ne supprimez pas <code>shining_list</code>, qui est disponible dans votre espace de travail ! "
 test_object("shining_list", undefined_msg = msg, incorrect_msg = msg)
 test_object("last_acteur", 
             undefined_msg = "Faites attention à bien définir la variable <code>last_acteur</code>.",

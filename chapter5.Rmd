@@ -4,7 +4,7 @@ title       : Les jeux de données
 description : La plupart des données avec lesquelles vous travaillerez seront stockées sous forme de data frame. À la fin de ce chapitre, vous serez en mesure de créer un data frame, de sélectionner des parties intéressantes d'un data frame et de trier un data frame selon certaines variables.
 
 ---
-## Qu'est ce qu'un data frame ? 
+## Qu'est-ce qu'un data frame ? 
 
 
 Vous vous souvenez du chapitre sur les matrices ? Tous les éléments que vous mettiez dans une matrice devaient être du même type ? À l'époque, l'ensemble de vos données sur Star Wars ne contenait que des éléments numériques.
@@ -15,7 +15,7 @@ Lors d'une enquête vous avez souvent des questions telles que :
 - 'Quelle est votre opinion sur ce produit ? ' ou autres questions 'ouvertes' (= réponses de type `character`)
 -...
 
-Les réponses des enquêtés aux questions formulées ci-dessus forment un ensemble de données de différents types. Et généralement vous-même vous travailler avec des ensembles de données qui contiennent des types de données différents au lieu d'un seul.
+Les réponses des enquêtés aux questions formulées ci-dessus forment un ensemble de données de différents types. Et généralement vous-même vous travaillez avec des ensembles de données qui contiennent des types de données différents au lieu d'un seul.
 
 Un data frame est structuré avec les individus en lignes et les différentes variables en colonne. Il s'agit d'un concept familier pour ceux qui viennent de différents logiciels de statistiques telles que SAS ou SPSS.
 
@@ -54,7 +54,7 @@ Wow, il y a beaucoup de voitures !
 Travailler avec un grand ensemble de données n'est pas rare dans l'analyse de données. Lorsque vous travaillez avec un (très) gros jeu de données sous forme de data frame, votre première tâche est d'avoir une bonne compréhension de sa structure et de ses éléments principaux. Par conséquent, il est souvent utile de ne montrer qu'une petite partie de l'ensemble des données.
 
 Alors comment procéder avec R ? 
-Eh bien, la fonction [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) vous permet de ne montrer que les premières observations d'un jeu de données (ou n'importe quel objet R que vous passer à celle-ci). La fonction [`tail()`] (http://www.rdocumentation.org/packages/utils/functions/head) affiche les dernières observations de votre jeu de données.
+Eh bien, la fonction [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) vous permet de ne montrer que les premières observations d'un jeu de données (ou n'importe quel objet R que vous passez à celle-ci). La fonction [`tail()`] (http://www.rdocumentation.org/packages/utils/functions/head) affiche les dernières observations de votre jeu de données.
 
 Les deux [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) et [`tail()`] (http://www.rdocumentation.org/packages/utils/functions/head) affichent une ligne au dessus des valeurs. On l'appelle le header. Il contient les noms des différentes variables de votre jeu de données.
 
@@ -62,7 +62,7 @@ Les deux [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head
 Créez un aperçu du jeu de données [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars) en affichant ses premières observations et l'en-tête correspondante. 
 
 *** =hint
-Utilisez la fonction [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) et demandez la tête de [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars).
+Utilisez la fonction [`head()`] (http://www.rdocumentation.org/packages/utils/functions/head) et demandez l'en-tête de [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars).
 
 
 *** =pre_exercise_code
@@ -199,7 +199,7 @@ planetes_df  <- data.frame(planetes,type,diametre,rotation,anneaux)
 test_correct({
   test_object("planetes_df",
               undefined_msg = "Faites attention à bien définir la variable <code>planetes_df</code>.",
-              incorrect_msg = "Faites attention à bien donner les arguments dans le bon ordre pour la création du data frame <code>planetes_df</code>. Le bon ordre est planetes,type,diametre,rotation et anneaux.") 
+              incorrect_msg = "Faites attention à bien donner les arguments dans le bon ordre pour la création du data frame <code>planetes_df</code>. Le bon ordre est planetes, type, diametre, rotation et anneaux.") 
 }, {
   msg = "Ne changez rien à la définition des vecteurs. Rajoutez simplement le code qui permet de créer <code>planetes_df</code> ! "
   test_object("planetes", undefined_msg = msg, incorrect_msg = msg)
@@ -328,7 +328,7 @@ success_msg("Bien ! En plus de la sélection des éléments de votre base de don
 
 Au lieu d'utiliser les valeurs numériques pour sélectionner des éléments d'un jeu de données, vous pouvez également utiliser les noms de variables pour sélectionner les colonnes d'un jeu de données.
 
-Peut-être que vous voulez sélectionner seulement les 3 premiers éléments de la variable `type`. Une façon de faire est: `planetes_df [1:3, 1]`. Un inconvénient possible de cette approche est que vous devez savoir (ou chercher) la position de la variable `type`, ce qui devient difficile si vous avez un grand nombre de variables. Il est souvent plus facile de simplement utiliser les noms de variables, par exemple `planetes_df[1:3,"type"]`.
+Peut-être que vous voulez sélectionner seulement les 3 premiers éléments de la variable `type`. Une façon de faire est: `planetes_df [1:3, 1]`. Un inconvénient possible de cette approche est que vous devez connaître (ou chercher) la position de la variable `type`, ce qui devient difficile si vous avez un grand nombre de variables. Il est souvent plus facile de simplement utiliser les noms de variables, par exemple `planetes_df[1:3,"type"]`.
 
 
 *** =instructions
@@ -379,7 +379,7 @@ success_msg("C'est beau ! On passe à l'exercice suivant ! ")
 
 Souvent, vous voudrez choisir une colonne entière, i.e une variable spécifique d'un jeu de données. Si vous souhaitez sélectionner tous les éléments de la variable `anneaux`, les deux instructions `planetes_df[ ,5]` et `planetes_df[ ,"anneaux"]` font le job.
 
-Cependant, il y a un raccourci. Utilisez le  symbole `$` pour dire à R qu'il n'a qu'à garder tous les éléments de la variable derrière le symbole:
+Cependant, il y a un raccourci. Utilisez le  symbole `$` pour dire à R qu'il n'a qu'à garder tous les éléments de la variable derrière le symbole :
 
 
 ```
@@ -498,7 +498,7 @@ success_msg("Magnifique ! Cette solution est assez fastidieuse. Le prochain exer
 ## Seulement les planètes avec anneaux (Version courte)
 
 
-Alors... qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov ! la NASA est probablement déjà en train de flirter avec votre CV;-).
+Alors... Qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov ! la NASA est probablement déjà en train de flirter avec votre CV;-).
 
 Maintenant, passons au niveau supérieur et utilisons la fonction [`subset()`] (http://www.rdocumentation.org/packages/base/functions/subset). Vous devriez voir la fonction [`subset()`](http://www.rdocumentation.org/packages/base/functions/subset) comme un raccourci pour faire exactement la même chose que ce que vous avez fait dans les exercices précédents.
 
@@ -578,7 +578,7 @@ renvoie le  vector {2, 1, 3} car 100 est le deuxième plus grand élément du ve
 a[order(a)]
 ```
 
-Va vous donner le vecteur ordonné {9, 100, 101}, car il prend d'abord le deuxième élément de `a`, puis le premier et enfin le dernier. Compris ? Si vous n'êtes pas sûr, utiliser la console pour jouer avec [`order()`] (http://www.rdocumentation.org/packages/base/functions/order).`
+va vous donner le vecteur ordonné {9, 100, 101}, car il prend d'abord le deuxième élément de `a`, puis le premier et enfin le dernier. Compris ? Si vous n'êtes pas sûr, utiliser la console pour jouer avec [`order()`] (http://www.rdocumentation.org/packages/base/functions/order).`
 
 *** =instructions
 Faites des essais avec la fonction [`order()`](http://www.rdocumentation.org/packages/base/functions/order) dans la console. Cliquez sur 'Submit Answer' lorsque vous êtes prêts à continuer.

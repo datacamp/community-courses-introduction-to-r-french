@@ -82,7 +82,7 @@ Cliquez sur 'Submit Answer' pour observer comment R construit et affiche les var
 
 *** =hint
 
-Il suffit de cliquez sur le bouton 'Submit Answer' et de regardez la console. Observez comment R indique l'ordre des niveaux de facteur pour les variables qualitatives ordonnées.
+Il suffit de cliquez sur le bouton 'Submit Answer' et de regarder la console. Observez comment R indique l'ordre des niveaux de facteurs pour les variables qualitatives ordonnées.
 
 
 *** =pre_exercise_code
@@ -192,7 +192,7 @@ factor_enquete_vector
 msg = "Ne modifiez pas la définition de <code>enquete_vector</code> ! "
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_function("factor","x",
-              incorrect_msg = "Avez vous bien utilisé la fonction <code>factor()</code> pour créer <code>factor_enquete_vector</code> ? ")
+              incorrect_msg = "Avez-vous bien utilisé la fonction <code>factor()</code> pour créer <code>factor_enquete_vector</code> ? ")
 test_object("factor_enquete_vector", eq_condition = "equal",
             undefined_msg = "Faites attention à bien définir la variable <code>factor_enquete_vector</code>.",
             incorrect_msg = paste("Avez-vous bien indiqué les bons niveaux de facteurs à <code>factor_enquete_vector</code> ? ",
@@ -329,7 +329,7 @@ success_msg("Ouf, il semble que R soit neutre. Ou peut-être veut-il juste reste
 
 Mais ce n'est pas toujours le cas ! Parfois il faudra aussi travailler avec des facteurs ordonnés, qui ont un ordre naturel dans les niveaux. Si c'est le cas, nous devons veiller à ce que R le comprenne... 
 
-Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vous souhaitez évaluer leur performance. Pour ce faire, vous allez évaluer leur vitesse. Chaque statisticiens sera indiqué comme `"Lent"`, `"Rapide"` ou `"Ultra-Rapide"`. Vous stockerez les résultats dans 'vitesse_vector'.
+Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vous souhaitez évaluer leurs performances. Pour ce faire, vous allez évaluer leur vitesse. Chaque statisticiens sera indiqué comme `"Lent"`, `"Rapide"` ou `"Ultra-Rapide"`. Vous stockerez les résultats dans 'vitesse_vector'.
 
 
 *** =instructions
@@ -511,5 +511,5 @@ test_object("factor_vitesse_vector", eq_condition = "equal", undefined_msg = msg
 test_object("la_comparaison",
             undefined_msg = "Faites attention à bien définir la variable <code>la_comparaison</code>.",
             incorrect_msg = "Il semblerait que <code>la_comparaison</code> ne soit pas correctement effectuée. Vérifiez les indices.");
-success_msg("Génial ! Que nous apprend ce résultat ? le statisticien 2 se plaint au sujet du numéro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voilà qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous êtes prêts à plonger dans le monde magnifique des data.frame, une structuration des données très importantes en R ! ")
+success_msg("Génial ! Que nous apprend ce résultat ? le statisticien 2 se plaint au sujet du numéro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voilà qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous êtes prêts à plonger dans le monde magnifique des data.frame, une structuration des données très importante en R ! ")
 ```

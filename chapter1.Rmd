@@ -17,9 +17,9 @@ Pour envoyer des instructions de l'éditeur vers la console il vous suffit de pl
 
 *** =instructions
 
-- En appuyant sur "Get Hint" (le bouton orange) l'interface vous proposera un indice pour résoudre le problème. Ensuite si vraiment vous ne voyez pas comment résoudre le soucis, vous pouvez demander la solution en cliquant "Get Solution" (le bouton rouge) 
+- En appuyant sur "Get Hint" (le bouton orange) l'interface vous proposera un indice pour résoudre le problème. Ensuite si vraiment vous ne voyez pas comment résoudre le souci, vous pouvez demander la solution en cliquant "Get Solution" (le bouton rouge) 
 - Cliquez sur "Submit Answer" (le bouton vert) et observez la console, plusieurs lignes vont apparaître. Ces instructions sont générées automatiquement par la commande `demo("graphics")` 
-Plusieurs graphiques ont été générés, vous pouvez naviguer de l'un à l'autre via les boutons "previous plot" et "next plot".
+Plusieurs graphiques ont été générés, vous pouvez naviguer de l'un à l'autre via les boutons "previous plot" et "next plot". Cette fenêtre se fermera à la prochaine étape.
 - La toute dernière ligne doit afficher `7` il s'agit du résultat de l'instruction `3+4` que vous venez d'exécuter. De la manière la plus basique, R peut être utilisé en tant que calculatrice, mais permet aussi, vous l'avez vu, de générer des graphiques... et bien plus encore.
 
 
@@ -78,15 +78,15 @@ Comme vu précédemment, R peut être utilisé très basiquement comme une simpl
 - Exponentiel: `^`
 - Modulo: `%%`
 
-Les deux derniers peuvent nécessiter un peu d'explication:
+Les deux derniers peuvent nécessiter un peu d'explications :
 - L'opérateur `^` élève le nombre de gauche à la puissance qui correspond au nombre de droite: par exemple `3^2` donne 9.
 - L'opérateur modulo retourne le reste de la division euclidienne du nombre de gauche par le nombre de droite, ainsi `5 %% 3` vaut 2.
 
 *** =instructions
 - Tapez `2^5` dans l'éditeur pour calculer 2 puissance 5.
 - Tapez `28 %% 6` pour calculer 28 modulo 6.
-- Cliquez sur 'Submit Answer" et regardez la sortie de R dans la console.
-- Remarquez l'usage du symbole `#` pour le rajout de commentaire dans le code R.
+- Cliquez sur `Submit Answer` et regardez la sortie de R dans la console.
+- Remarquez l'usage du symbole `#` pour le rajout de commentaires dans le code R.
 
 *** =hint
 Un autre exemple pour l'opérateur modulo: `9 %% 5` vaut `4`.
@@ -145,7 +145,7 @@ test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
 test_output_contains("(5 + 5)/2", incorrect_msg = msg)
 test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous êtes certain de bien avoir suivi les instructions ? ")
-test_output_contains("28 %% 6", incorrect_msg = "Il y a un soucis avec le modulo. Relisez bien les instructions.")
+test_output_contains("28 %% 6", incorrect_msg = "Il y a un souci avec le modulo. Relisez bien les instructions.")
 success_msg("Bien joué. On continue...")
 ```
 
@@ -210,7 +210,7 @@ Supposons que vous ayez un panier de fruits avec cinq pommes. En tant que statis
 *** =instructions
 - Tapez le code suivant dans l'éditeur: `mes_pommes <- 5`. Cela affectera la valeur 5 à `mes_pommes`.
 - Tapez: `mes_pommes` sous le deuxième commentaire. Cet exemple affiche la valeur de `mes_pommes`.
-- Cliquez sur `Soumettre la réponse` et regardez la console : vous voyez que le numéro 5 est imprimé. R associe maintenant la variable `mes_pommes` à la valeur 5.
+- Cliquez sur `Submit Answer` et regardez la console : vous voyez que le numéro 5 est imprimé. R associe maintenant la variable `mes_pommes` à la valeur 5.
 
 
 *** =hint
@@ -243,7 +243,7 @@ mes_pommes
 ```{r eval=FALSE}
 test_object("mes_pommes", 
             undefined_msg = "Faites attention à bien définir la variable <code>mes_pommes</code>.",
-            incorrect_msg = "Faites attention à bien avoir défini la bonne valeur à <code>mes_pommes</code>.")
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_pommes</code>.")
 test_output_contains("mes_pommes", 
                      incorrect_msg = "Avez-vous dit explicitement à R d'afficher la variable <code>mes_pommes</code> dans la console ? ")
 success_msg("Bien ! Passons à l'exercice suivant ! ")
@@ -253,7 +253,7 @@ success_msg("Bien ! Passons à l'exercice suivant ! ")
 
 ## Assignation de variable (3)
 
-Chaque panier de fruit digne de ce nom a besoin d'oranges, donc vous décidez d'ajouter six oranges. En tant que statisticien, votre réflexe est de créer immédiatement la variable `mes_oranges` en lui affectant la valeur 6. Ensuite, vous voulez calculer combien de fruits, vous avez au total. Puisque vous avez donné des noms à ces valeurs, vous pouvez maintenant coder ceci d'une manière claire : 
+Chaque panier de fruit digne de ce nom a besoin d'oranges, donc vous décidez d'ajouter six oranges. En tant que statisticien, votre réflexe est de créer immédiatement la variable `mes_oranges` en lui affectant la valeur 6. Ensuite, vous voulez calculer combien de fruits vous avez au total. Puisque vous avez donné des noms à ces valeurs, vous pouvez maintenant coder ceci d'une manière claire : 
 
 ```
 mes_pommes + mes_oranges
@@ -386,7 +386,7 @@ success_msg("Génial ! on peut passer à l'exercice suivant.")
 R travaille avec de nombreux types de données. Voici les types les plus élémentaires pour débuter :
 
 - Les valeurs décimales comme `4.5` que l'on appelle **numeric**.
-- Les nombres entiers comme `4` que l'on appelle **integer**. les integer sont aussi des numeric.
+- Les nombres entiers comme `4` que l'on appelle **integer**. Les integer sont aussi des numeric.
 - Les valeurs booléennes (`TRUE` ou `FALSE`) sont appelées **logical** (`TRUE` signifie `VRAI` et `FALSE` signifie `FAUX`) mais R ne comprend pas le français, il faudra donc utiliser (`TRUE` et `FALSE`).`TRUE` peut être abrégé en `T` et `FALSE` en `F`.
 - Les chaînes de caractères (c'est-à-dire du texte) que l'on nomme **character**.
 

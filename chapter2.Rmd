@@ -1,7 +1,7 @@
 --- 
 title_meta  : Chapitre 2
 title       : les vecteurs
-description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vector. Une fois ce chapitre terminé, vous serez capable de créer des vector, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
+description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vecteurs. Une fois ce chapitre terminé, vous serez capable de créer des vecteurs, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
 
 ---
 
@@ -17,7 +17,7 @@ Grâce à R et à vos nouvelles connaissances en analyse de données, vous allez
 - Vous vous souvenez bien de ce que vous avez appris dans le chapitre précédent ? Assignez la valeur `"On y va ! "` à la variable `Vegas`
 
 *** =hint
-Tapez simplement les instructions suivante dans l'éditeur :
+Tapez simplement les instructions suivantes dans l'éditeur :
 
 ```
 Vegas <- "On y va ! "
@@ -45,7 +45,7 @@ Vegas <- "On y va ! "
 ```{r eval=FALSE}
 test_object("Vegas", 
             undefined_msg = "Faites attention à bien définir la variable <code>Vegas</code>.",
-            incorrect_msg = "Faites attention à bien avoir défini la bonne valeur à <code>Vegas</code>. Pensez à la distinction majuscule/minuscule ! ")
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>Vegas</code>. Pensez à la distinction majuscule/minuscule ! ")
 success_msg("Bien ! On passe à la suite.")
 ```
 
@@ -55,10 +55,10 @@ success_msg("Bien ! On passe à la suite.")
 
 Concentrons-nous un peu ! 
 
-Dans votre quête de richesse, vous allez énormément utiliser les `vector`. les vecteurs sont des tableaux à une dimension qui peuvent contenir des valeurs de type `numeric` (des nombres), `character` (des chaînes de caractères) ou `logical` (des valeurs VRAI/FAUX). En d'autre termes, les `vector` sont des objets simples qui permettent de stocker des données. Par exemple vous pouvez stocker vos gains/pertes au casino.
+Dans votre quête de richesse, vous allez énormément utiliser les `vector`. Les vecteurs sont des tableaux à une dimension qui peuvent contenir des valeurs de type `numeric` (des nombres), `character` (des chaînes de caractères) ou `logical` (des valeurs VRAI/FAUX). En d'autres termes, les `vector` sont des objets simples qui permettent de stocker des données. Par exemple vous pouvez stocker vos gains/pertes au casino.
 
 
-Dans R, pour créer un vecteur il faut utiliser la fonction  [`c()`](http://www.rdocumentation.org/packages/base/functions/c). Entre les parenthèses de la fonction [`c()`](http://www.rdocumentation.org/packages/base/functions/c) vous allez indiquer les éléments du vecteur en les séparant les uns des autres par des virgules 
+Dans R, pour créer un vecteur il faut utiliser la fonction  [`c()`](http://www.rdocumentation.org/packages/base/functions/c). Entre les parenthèses de la fonction [`c()`](http://www.rdocumentation.org/packages/base/functions/c) vous allez indiquer les éléments du vecteur en les séparant les uns des autres par des virgules. 
 
 ```
 numeric_vector <- c(1, 2, 3)
@@ -69,7 +69,7 @@ boolean_vector <- c(TRUE, FALSE)
 Une fois que vous avez fabriqué ces vecteurs, vous pouvez faire des calculs avec.
 
 *** =instructions
-Complétez le code de telle manière que `boolean_vector` soit composé des 3 éléments suivant : `TRUE`, `FALSE` et `TRUE` (dans cet ordre).
+Complétez le code de telle manière que `boolean_vector` soit composé des 3 éléments suivants : `TRUE`, `FALSE` et `TRUE` (dans cet ordre).
 
 *** =hint 
 Assignez `c(TRUE,FALSE,TRUE)` à la variable `boolean_vector` avec l'opérateur `<-`. Vous pouvez aussi utiliser les notations abrégées `T` et `F` respectivement pour `TRUE` et `FALSE`.
@@ -186,7 +186,7 @@ un_vector
 ```
 
 *** =instructions
-Vous allez nommer les éléments des vecteurs `poker_vector` et `roulette_vector` en leur donnant comme nom les jours de la semaine.
+Vous allez nommer les éléments des vecteurs `poker_vector` et `roulette_vector` en leur donnant comme noms les jours de la semaine.
 Si vous avez oublié, les jours de la semaine sont :  Lundi, Mardi, Mercredi, Jeudi et Vendredi.
 
 *** =hint
@@ -229,10 +229,10 @@ names(roulette_vector) <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 ```{r eval=FALSE}
 test_object("poker_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de  <code>poker_vector</code> ; elles sont déjà écrites pour vous.")
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("roulette_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>roulette_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de  <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("poker_vector",
             eq_condition = "equal",
             incorrect_msg = "Êtes-vous certain d'avoir donné les bons noms aux éléments du vector <code>poker_vector</code>.")
@@ -321,7 +321,7 @@ success_msg("Très bien ! Petit conseil : essayez le plus possible d'éviter de 
 
 ## Calcul des gains totaux
 
-Maintenant que vous avez le beau `vector` contenant vos gains au poker et à la roulette, vous allez pouvoir commencer à faire quelques calculs.
+Maintenant que vous avez un beau `vector` contenant vos gains au poker et à la roulette, vous allez pouvoir commencer à faire quelques calculs.
 
 Vous voulez obtenir les informations suivantes:
 - Combien avez-vous gagné ou perdu par jour ? 
@@ -342,7 +342,7 @@ c(5, 7, 9)
 Voyons ça par nous-même ! 
 
 *** =instructions
-- Faites la somme des variables  `A_vector` et `B_vector` et stocker cela dans `total_vector`.
+- Faites la somme des variables  `A_vector` et `B_vector` et stockez cela dans `total_vector`.
 - Jetez un oeil au résultat en affichant `total_vector` dans la console.
 
 *** =hint
@@ -370,7 +370,7 @@ total_vector
 A_vector <- c(1, 2, 3)
 B_vector <- c(4, 5, 6)
 
-#  Faîtes la somme de  'A_vector' et 'B_vector'
+#  Faites la somme de  'A_vector' et 'B_vector'
 total_vector <- A_vector + B_vector
 
 # Affichez 'total_vector' dans la console
@@ -381,7 +381,7 @@ total_vector
 ```{r eval=FALSE}
 test_object("A_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>A_vector</code>.",
-            incorrect_msg = "Faîtes attention à bien assigner le bon vecteur à <code>A_vector</code>.")
+            incorrect_msg = "Faites attention à bien assigner le bon vecteur à <code>A_vector</code>.")
 test_object("B_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>B_vector</code>.",
             incorrect_msg = "Faites attention à bien assigner le bon vecteur à <code>B_vector</code>.")
@@ -449,7 +449,7 @@ total_jour <- poker_vector + roulette_vector
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -474,10 +474,10 @@ total_poker <- sum(poker_vector)
 
 *** =instructions
 - Calculez le montant total que vous avez gagné ( ou perdu ) à la roulette et assignez ce résultat à la variable `total_roulette`.
-- Maintenant que vous avez le total des gains à la roulette et au poker, vous pouvez facilement calculer `total_semaine` ( qui est la somme des gains/pertes sur toute la semaine) 
+- Maintenant que vous avez le total des gains à la roulette et au poker, vous pouvez facilement calculer `total_semaine` ( qui est la somme des gains/pertes sur toute la semaine ) 
 
 *** =hint
-utilisez la fonction `sum` pour avoir le total de `roulette_vector`. `total_semaine` est alors la somme de `total_roulette` et `total_poker`.
+Utilisez la fonction `sum` pour avoir le total de `roulette_vector`. `total_semaine` est alors la somme de `total_roulette` et `total_poker`.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -528,28 +528,28 @@ total_semaine <- total_roulette + total_poker
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_poker", 
             undefined_msg = "Faites attention à bien définir la variable <code>total_poker</code>.",
-            incorrect_msg = "Faites attention à bien assigner  à <code>total_poker</code> la somme de <code>poker_vector</code>.")
+            incorrect_msg = "Faites attention à bien assigner à <code>total_poker</code> la somme de <code>poker_vector</code>.")
 test_object("total_roulette",
             undefined_msg = "Faites attention à bien définir la variable <code>total_roulette</code>.",
             incorrect_msg = "Faites attention à bien assigner à <code>total_roulette</code> la somme de <code>roulette_vector</code>.")
 test_object("total_semaine",
             undefined_msg = "Faites attention à bien définir la variable <code>total_semaine</code>.",
-            incorrect_msg = "Faites attention à bien assigner  à <code>total_semaine</code> la somme des 2 autres vecteurs de totaux.")
+            incorrect_msg = "Faites attention à bien assigner à <code>total_semaine</code> la somme des 2 autres vecteurs de totaux.")
 ```
 
 ---
 
 ## Comparaisons des gains totaux
 
-Oups, il semblerait que vous êtes en train de perdre de l'argent. Il est grand temps de repenser et d'adapter votre stratégie. Il va falloir faire des analyses un peu plus poussées.
+Oups, il semblerait que vous soyez en train de perdre de l'argent. Il est grand temps de repenser et d'adapter votre stratégie. Il va falloir faire des analyses un peu plus poussées.
 
-Après un rapide brainstorm dans le jacuzzi de votre hôtel, vous vous rendez compte qu'il est possible que vos capacités à la roulette ne soient pas aussi développées que vos capacités de joueur de poker
+Après un rapide brainstorm dans le jacuzzi de votre hôtel, vous vous rendez compte qu'il est possible que vos capacités à la roulette ne soient pas aussi développées que vos capacités de joueur de poker.
 Donc peut-être que votre gain total au poker est plus grand (ou `>`) au gain total à la roulette.
 
 *** =instructions
@@ -611,19 +611,19 @@ reponse <- total_poker > total_roulette
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_poker", 
             undefined_msg = "Faites attention à bien définir la variable <code>total_poker</code>.",
-            incorrect_msg = "Faites attention à bien assigner  à <code>total_poker</code> la somme de  <code>poker_vector</code>.")
+            incorrect_msg = "Faites attention à bien assigner à <code>total_poker</code> la somme de  <code>poker_vector</code>.")
 test_object("total_roulette",
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>total_roulette</code>.",
-            incorrect_msg = "Faites attention à bien assigner  à <code>total_roulette</code> la somme de  <code>roulette_vector</code>.")
+            undefined_msg = "Faites attention à bien définir la variable <code>total_roulette</code>.",
+            incorrect_msg = "Faites attention à bien assigner à <code>total_roulette</code> la somme de  <code>roulette_vector</code>.")
 test_object("reponse",
             undefined_msg = "Faites attention à bien définir la variable <code>réponse</code>.",
-            incorrect_msg = "il semblerait que la variable réponse ne contiennent pas la bonne réponse. Relisez la consigne attentivement.")
+            incorrect_msg = "Il semblerait que la variable réponse ne contienne pas la bonne réponse. Relisez la consigne attentivement.")
 success_msg("Bon boulot ! On passe à l'exercice suivant.")
 ```
 
@@ -688,13 +688,13 @@ poker_Mercredi <- poker_vector[3]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_Mercredi", 
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>poker_Mercredi</code>.",
-            incorrect_msg = "Il semblerait que <code>poker_Mercredi</code> ne contienne pas la bonne valeur issue de  <code>poker_vector</code>.")
+            undefined_msg = "Faites attention à bien définir la variable <code>poker_Mercredi</code>.",
+            incorrect_msg = "Il semblerait que <code>poker_Mercredi</code> ne contienne pas la bonne valeur issue de <code>poker_vector</code>.")
 success_msg("Bien ! Il est aussi possible de sélectionner plusieurs éléments en une fois. On va regarder comment dans le prochain exercice ! ")
 ```
 
@@ -703,7 +703,7 @@ success_msg("Bien ! Il est aussi possible de sélectionner plusieurs éléments 
 
 Que diriez-vous d'analyser vos résultats du milieu de semaine ? 
 
-Pour sélectionner plusieurs éléments d'un vecteur, vous pouvez rajouter des crochets au bout de celui-ci. Et vous pouvez indiquer entre ces crochets les éléments que vous voulez sélectionner. Par exemple, imaginons que vous voulez sélectionner le premier et le cinquième jour de la semaine : vous utiliserez le vecteur `c(1,5)` entre les crochets. Vous pouvez voir dans l'exemple suivant la sélection du premier et du cinquième élément de `poker_vector`:
+Pour sélectionner plusieurs éléments d'un vecteur, vous pouvez rajouter des crochets au bout de celui-ci. Et vous pouvez indiquer entre ces crochets les éléments que vous souhaitez sélectionner. Par exemple, imaginons que vous voulez sélectionner le premier et le cinquième jour de la semaine : vous utiliserez le vecteur `c(1,5)` entre les crochets. Vous pouvez voir dans l'exemple suivant la sélection du premier et du cinquième élément de `poker_vector`:
 ```
 poker_vector[c(1,5)]
 ```
@@ -755,7 +755,7 @@ poker_milieu_semaine <- poker_vector[c(2, 3, 4)]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -818,7 +818,7 @@ roulette_selection_vector <- roulette_vector[2:5]
 *** =sct
 
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -832,7 +832,7 @@ success_msg("Génial ! L'opérateur <code>:</code> est très pratique et se renc
 
 ## Sélection dans un vecteur (4)
 
-L'autre façon de résoudre l'exercice précédent est d'utiliser les noms des éléments des vecteurs (Lundi, Mardi,...) au lieu de leur indices de position. Par exemple,
+L'autre façon de résoudre l'exercice précédent est d'utiliser les noms des éléments des vecteurs (Lundi, Mardi,...) au lieu de leurs indices de position. Par exemple,
 ```
 poker_vector["Lundi"]
 ```
@@ -890,12 +890,12 @@ moyenne_gain_debutsemaine <- mean(poker_vector[c("Lundi", "Mardi", "Mercredi")])
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("moyenne_gain_debutsemaine", 
-            undefined_msg = "Faites attention à bien bien définir la variable <code>moyenne_gain_debutsemaine</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>moyenne_gain_debutsemaine</code>.",
             incorrect_msg = "Il semblerait que <code>moyenne_gain_débutsemaine</code> ne contienne pas la moyenne de la bonne sélection de <code>poker_vector</code>.")
 success_msg("Bon boulot ! Vous savez extraire des éléments d' un vecteur par leurs noms, mais il est aussi possible de faire des sélections en utilisant des comparaisons. Le prochain exercice va vous montrer comment ! ")
 ```
@@ -970,13 +970,13 @@ selection_vector <- poker_vector > 0
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("selection_vector", 
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>selection_vector</code>.",
-            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contient pas le bon résultat. Souvenez-vous que R utilise des comparaisons termes à termes.")
+            undefined_msg = "Faites attention à bien définir la variable <code>selection_vector</code>.",
+            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon résultat. Souvenez-vous que R utilise des comparaisons termes à termes.")
 success_msg("Bien ! Plutôt que de faire recycler à R cinq fois la valeur <code>0</code> pour ensuite faire les comparaisons, vous pouvez bien sûr comparer <code>poker_vector</code>avec un vecteur de taille 5 que vous avez vous-même défini. Dans ce cas de figure, R effectuera tout simplement de la comparaison termes à termes sans recycler quoi que ce soit.")
 
 ```
@@ -1047,7 +1047,7 @@ poker_jours_gagnants <- poker_vector[selection_vector]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de  <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
@@ -1110,7 +1110,7 @@ jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
 
-# Quels jours de la semaine as tu gagné de l'argent à la roulette ? 
+# Quels jours de la semaine avez-vous gagné de l'argent à la roulette ? 
 selection_vector <- roulette_vector > 0
 
 # Sélectionnez les jours gagnants de roulette_vector
@@ -1127,7 +1127,7 @@ test_object("selection_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>selection_vector</code>.",
             incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon résultat. N'oubliez pas que R utilise des opérations termes à termes sur les vecteurs.")
 test_object("roulette_jours_gagnants",
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>roulette_jours_gagnants</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>roulette_jours_gagnants</code>.",
             incorrect_msg = "Il semblerait que <code>roulette_jours_gagnants</code> ne contienne pas le bon résultat. Utilisez bien <code>roulette_vector</code>.")
-success_msg("Bien ! Cet exercice conclut le chapitre sur les vecteurs. Le prochain chapitre vous présentera la version bidimensionnelle des vecteurs :les matrices.")
+success_msg("Bien ! Cet exercice conclut le chapitre sur les vecteurs. Le prochain chapitre vous présentera la version bidimensionnelle des vecteurs : les matrices.")
 ```

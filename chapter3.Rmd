@@ -1,7 +1,7 @@
 --- 
 title_meta  : Chapitre 3
 title       : Matrices
-description : Dans ce chapitre, vous apprendrez comment utiliser des matrices dans R. À la fin du chapitre, vous serez en mesure de créer des matrices et de comprendre comment vous pouvez faire des calculs simples avec eux. Vous analyserez les chiffres du Box-Office de Star Wars pour illustrer l'utilisation des matrices dans R. Que la force soit avec vous ! 
+description : Dans ce chapitre, vous apprendrez comment utiliser des matrices dans R. À la fin du chapitre, vous serez en mesure de créer des matrices et de comprendre comment vous pouvez faire des calculs simples avec elles. Vous analyserez les chiffres du box-office de Star Wars pour illustrer l'utilisation des matrices dans R. Que la force soit avec vous ! 
 
 
 ---
@@ -55,10 +55,10 @@ success_msg("Bien ! On passe à l'exercice suivant.")
 
 Il est maintenant temps de vous salir les mains. Dans les exercices suivants, vous analyserez les chiffres de la billetterie de la franchise Star Wars. Que la force soit avec vous ! 
 
-Dans l'éditeur, les trois vecteurs sont définis. Chacun d'eux représente les chiffres de la billetterie des trois premiers films Star Wars, on va préférer ne pas aborder le cas des autres.... Le premier élément de chaque vecteur indique les recettes du Box-Office américain, le deuxième élément se rapporte à la billetterie non-américaine (source : Wikipedia).
+Dans l'éditeur, les trois vecteurs sont définis. Chacun d'eux représente les chiffres de la billetterie des trois premiers films Star Wars, on va préférer ne pas aborder le cas des autres.... Le premier élément de chaque vecteur indique les recettes du box-office américain, le deuxième élément se rapporte à la billetterie non-américaine (source : Wikipedia).
 
 *** =instructions
-Construisez une matrice avec une ligne pour chaque film (donc 3 lignes). La première colonne est pour les recettes du Box-Office américain et la deuxième colonne pour les recettes de billetterie non-américaine. Nommez la matrice `star_wars_matrix`.
+Construisez une matrice avec une ligne pour chaque film (donc 3 lignes). La première colonne est pour les recettes du box-office américain et la deuxième colonne pour les recettes de billetterie non-américaine. Nommez la matrice `star_wars_matrix`.
 
 
 *** =hint
@@ -66,7 +66,7 @@ Souvenez vous que l'on construit une matrice contenant les nombres entiers de 1 
 ```
 matrix(1:9, byrow = TRUE, nrow = 3)
 ```
-Dans le cas présent, vous ne voulez pas les nombres entiers de 1 à 9, mais les éléments des 3 premiers films star wars. Le vecteur de valeurs est donc :
+Dans le cas présent, vous ne voulez pas les nombres entiers de 1 à 9, mais les éléments des 3 premiers films Star Wars. Le vecteur de valeurs est donc :
 ```
 c(nouvel_espoir,empire_contre_attaque,retour_du_jedi)
 ```
@@ -91,7 +91,7 @@ star_wars_matrix <-
 *** =solution
 ```{r eval=FALSE}
 # Le box-office Star Wars: en millions de $ ! 
-# Le premier élément: Américain, le second élément: non-Américain 
+# Le premier élément: américain, le second élément: non-américain 
 nouvel_espoir <- c(460.998, 314.4)
 empire_contre_attaque <- c(290.475, 247.900)
 retour_du_jedi <- c(309.306, 165.8)
@@ -108,7 +108,7 @@ test_object("empire_contre_attaque", undefined_msg = msg, incorrect_msg = msg)
 test_object("retour_du_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>star_wars_matrix</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>star_wars_matrix</code>.",
             incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ? ")
 success_msg("La force semble être avec vous ! On passe à l'exercice suivant.")
 ```
@@ -127,7 +127,7 @@ colnames(ma_matrix) <- nom_colonnes_vector
 ```
 
 *** =instructions
-- Donnez aux colonnes de `star_wars_matrix` les noms `"Americain"` et `"non-Americain"`.
+- Donnez aux colonnes de `star_wars_matrix` les noms `"Americain"` et `"non-Americain"` (sans accents).
 - Donnez aux lignes de la matrice les noms des 3 films. Au cas ou vous ne soyez pas un fan, les noms sont : "Un nouvel espoir","L'Empire contre-attaque" et "Le Retour du Jedi"
 
 *** =hint
@@ -176,7 +176,7 @@ retour_du_jedi <- c(309.306, 165.8)
 star_wars_matrix <- matrix(c(nouvel_espoir, empire_contre_attaque, retour_du_jedi), nrow = 3, byrow = TRUE)
 
 # Ajoutez votre code ici pour donner un noms aux lignes et aux colonnes de la matrice
-colnames(star_wars_matrix) <- c("Américain", "non-Américain")
+colnames(star_wars_matrix) <- c("américain", "non-américain")
 rownames(star_wars_matrix) <- c("Un nouvel espoir", "L'Empire contre-attaque", "Le Retour du Jedi")
 ```
 
@@ -189,7 +189,7 @@ test_object("retour_du_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
             undefined_msg = "Faites attention à bien définir la variable <code>star_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  à <code>star_wars_matrix</code> ? ")
+            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ? ")
 test_function("colnames", "x", 
               incorrect_msg = "Veillez bien à passer les bons arguments à la fonction <code>colnames()</code>")
 test_function("rownames", "x", 
@@ -265,9 +265,9 @@ success_msg("Bien joué ! On passe à l'exercice suivant.")
 ```
 
 ---
-## Ajout d'une colonne pour le Box-Office dans le monde entier 
+## Ajout d'une colonne pour le box-office dans le monde entier 
 
-Dans l'exercice précédent, vous avez calculé le vecteur qui contenait le Box-Office dans le monde entier pour chacun des trois films Star Wars. Toutefois, ce vecteur n'est pas encore intégré dans la matrice `star_wars_matrix`.
+Dans l'exercice précédent, vous avez calculé le vecteur qui contenait le box-office dans le monde entier pour chacun des trois films Star Wars. Toutefois, ce vecteur n'est pas encore intégré dans la matrice `star_wars_matrix`.
 
 Vous pouvez ajouter une colonne ou plusieurs colonnes à une matrice avec la fonction [`cbind()`] (http://www.rdocumentation.org/packages/base/functions/cbind). Cette fonction fusionne les matrices et vecteurs ensemble par colonne. Par exemple : 
 
@@ -301,7 +301,7 @@ noms_films <- c("Un nouvel espoir","L'Empire contre-attaque","Le Retour du Jedi"
 titre_colonnes <- c("Americain","non-Americain")
 star_wars_matrix <- matrix(box_office_mondial, nrow = 3, byrow = TRUE, dimnames = list(noms_films, titre_colonnes))
 
-# Les chiffres du Box-Office dans le monde entier
+# Les chiffres du box-office dans le monde entier
 mondial_vector <- rowSums(star_wars_matrix)
 
 # Collez la nouvelle variable mondial_vector en tant que colonne dans star_wars_matrix
@@ -317,7 +317,7 @@ noms_films <- c("Un nouvel espoir","L'Empire contre-attaque","Le Retour du Jedi"
 titre_colonnes <- c("Americain","non-Americain")
 star_wars_matrix <- matrix(box_office_mondial, nrow = 3, byrow = TRUE, dimnames = list(noms_films, titre_colonnes))
 
-# Les chiffres du Box-Office dans le monde entier
+# Les chiffres du box-office dans le monde entier
 mondial_vector <- rowSums(star_wars_matrix)
 
 # Collez la nouvelle variable mondial_vector en tant que colonne dans star_wars_matrix
@@ -419,7 +419,7 @@ success_msg("Magnifique ! Continuez avec le prochain exercice pour voir comment 
 Tout comme [`cbind()`](http://www.rdocumentation.org/packages/base/functions/cbind) a [`rbind()`](http://www.rdocumentation.org/packages/base/functions/cbind), [`colSums()`](http://www.rdocumentation.org/packages/base/functions/colSums) a [`rowSums()`](http://www.rdocumentation.org/packages/base/functions/colSums). Votre espace de travail R contient déjà le `complete_wars_matrix` de l'exercice précédent (Tapez `complete_wars_matrix` dans la console si vous ne vous rappelez pas ce qu'elle contient). Calculons maintenant le revenu total de la billetterie pour l'intégralité de la saga.
 
 *** =instructions
-Calculez le total des recettes pour les Américains et la région de non-Américains et assigner les `total_revenue_vector`. Vous pouvez utiliser la fonction [`colSums()`] (http://www.rdocumentation.org/packages/base/functions/colSums).
+Calculez le total des recettes pour les américains et les non-américains et assigner-les à  `total_revenue_vector`. Vous pouvez utiliser la fonction [`colSums()`] (http://www.rdocumentation.org/packages/base/functions/colSums).
 
 *** =hint
 
@@ -491,7 +491,7 @@ Retour à Star Wars avec ces nouvelles connaissances !
 
 *** =instructions
 - Calculer le revenu moyen par film pour les non-américains. Stockez cela dans la variable `non_us_total`. En d'autres termes, prendre la moyenne de tous les éléments de la deuxième colonne.
-- Même question, mais maintenant que pour les deux premiers films de Star Wars. Affectez le résultat à `non_us_partiel`.
+- Même question, mais seulement pour les deux premiers films de Star Wars. Affectez le résultat à `non_us_partiel`.
 
 
 
@@ -553,7 +553,7 @@ test_object("non_us_total",
             undefined_msg = "Faites attention à bien définir la variable <code>non_us_total</code>.",
             incorrect_msg = "Avez-vous assigné à <code>non_us_total</code> la moyenne de la bonne colonne ? ")
 test_object("non_us_partiel",
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>non_us_partiel</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>non_us_partiel</code>.",
             incorrect_msg = "Avez-vous assigné à <code>non_us_partiel</code> la moyenne de la bonne colonne ? ");
 success_msg("Très bien ! On passe à l'exercice suivant.")
 ```
@@ -561,14 +561,14 @@ success_msg("Très bien ! On passe à l'exercice suivant.")
 ---
 ## Un peu de calcul avec les matrices
 
-Tout commence avec que vous avez appris  sur les vecteurs, les opérateurs standard `+`, `-`, `/`, `*`, etc. Ils fonctionnent termes à termes avec les matrices dans R. 
+Tout commence avec ce que vous avez appris sur les vecteurs, les opérateurs standard `+`, `-`, `/`, `*`, etc. Ils fonctionnent termes à termes avec les matrices dans R. 
 
 Par exemple: `2 * ma_matrix` multiplie chaque élément de `ma_matrix` par deux. Encore une fois, R recycle la valeur `2`, et construit une matrice contenant uniquement des 2 avec les mêmes dimensions que `ma_matrix'. Puis, R effectue l'opération termes à termes.
 
-En tant que statisticien nouvellement engagé pour Lucasfilm, c'est votre job de savoir combien de visiteurs sont allés à chaque film pour chaque zone géographique. Vous avez déjà les chiffres de revenus totaux en `star_wars_matrix`. Supposons que le prix d'un billet était de 5 dollars. Les montants de billetterie, divisés par le prix du billet, vous donnent le nombre de visiteurs.
+En tant que statisticien nouvellement engagé pour Lucasfilm, c'est votre job de savoir combien de visiteurs sont allés à chaque film pour chaque zone géographique. Vous avez déjà les chiffres de revenus totaux dans `star_wars_matrix`. Supposons que le prix d'un billet était de 5 dollars. Les montants de billetterie, divisés par le prix du billet, vous donnent le nombre de visiteurs.
 
 *** =instructions
-- Fabriquez la matrice `visiteur` avec le nombre estimé de visiteurs non-Américain et de visiteurs américain pour les trois films.
+- Fabriquez la matrice `visiteur` avec le nombre estimé de visiteurs non-américains et de visiteurs américains pour les trois films.
 - Affichez la variable résultante sur la console.
 
 *** =hint
@@ -619,7 +619,7 @@ test_object("noms_films", undefined_msg = msg, incorrect_msg = msg)
 test_object("titre_colonnes", undefined_msg = msg, incorrect_msg = msg)
 test_object("star_wars_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_object("visiteurs",
-            undefined_msg = "Faites attention à bien avoir défini la variable <code>visiteurs</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>visiteurs</code>.",
             incorrect_msg = "Il semblerait que <code>visiteurs</code> ne contient pas la bonne valeur. Souvenez-vous que les opérations sur les matrices sont effectuées termes à termes.")
 test_output_contains("visiteurs", 
                      incorrect_msg = "N'oubliez pas d'afficher la variable <code>visiteurs</code> dans la console.")
@@ -637,9 +637,9 @@ Après avoir regardé le résultat de l'exercice précédent, le grand patron de
 Ceux qui sont familiers des matrices doivent noter qu'il ne s'agit pas ici de multiplication matricielle standard... pour celle-là vous devez utiliser `%*%` dans R.
 
 *** =instructions
-- Assignez à `visiteurs` la matrice avec votre nombre estimé de visiteurs non-Américain et Américain pour les trois films.
-- Assignez à `moyenne_visiteurs_americains` le nombre moyen de visiteurs Américains pour un film de Star Wars.
-- Assignez à `moyenne_visiteurs_non_americains` le nombre moyen de visiteurs non-Américains pour un film de Star Wars.
+- Assignez à `visiteurs` la matrice avec votre nombre estimé de visiteurs non-américains et américains pour les trois films.
+- Assignez à `moyenne_visiteurs_americains` le nombre moyen de visiteurs américains pour un film de Star Wars.
+- Assignez à `moyenne_visiteurs_non_americains` le nombre moyen de visiteurs non-américains pour un film de Star Wars.
 
 *** =hint
 - Vous pouvez utiliser la fonction `mean()` pour calculer la moyenne.
@@ -663,10 +663,10 @@ ticket_prices_matrix <- matrix(c(5, 5, 6, 6, 7, 7), nrow = 3, byrow = TRUE, dimn
 # Estimez le nombre de visiteurs
 visiteurs <- 
 
-# Nombre moyen de visiteurs Américains
+# Nombre moyen de visiteurs américains
 moyenne_visiteurs_americains <- 
 
-# Nombre moyen de visiteurs non-Américains
+# Nombre moyen de visiteurs non-américains
 moyenne_visiteurs_non_americains <- 
 ```
 
@@ -683,10 +683,10 @@ ticket_prices_matrix <- matrix(c(5, 5, 6, 6, 7, 7), nrow=3, byrow = TRUE, dimnam
 # Estimez le nombre de visiteurs
 visiteurs <- star_wars_matrix / ticket_prices_matrix
 
-# Nombre moyen de visiteurs Américains
+# Nombre moyen de visiteurs américains
 moyenne_visiteurs_americains <- mean(visiteurs[ ,1])
 
-# Nombre moyen de visiteurs non-Américains
+# Nombre moyen de visiteurs non-américains
 moyenne_visiteurs_non_americains <- mean(visiteurs[ ,2])
 ```
 
