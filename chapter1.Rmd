@@ -211,7 +211,7 @@ Supposons que vous ayez un panier de fruits avec cinq pommes. En tant que statis
 
 
 *** =hint
-N'oubliez pas que si vous voulez attribuer un numéro ou un objet à une variable R, vous devez utiliser l'opérateur d'assignation ' <-'. Cela dit, vous pouvez utiliser `=`, mais `<-` est largement préférable et simplifiera votre apprentissage.
+N'oubliez pas que si vous voulez attribuer un numéro ou un objet à une variable R, vous devez utiliser l'opérateur d'assignation `<-`. Cela dit, vous pouvez utiliser `=`, mais `<-` est largement préférable et simplifiera votre apprentissage.
 
 
 *** =pre_exercise_code
