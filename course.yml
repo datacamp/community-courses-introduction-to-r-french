@@ -7,9 +7,9 @@ time_needed: 4 heures
 description: 'Avec plus de 2 millions d''utilisateurs à travers le monde, R est rapidement
   devenu LE langage de programmation à maîtriser en statistique et analyse de données.
   Chaque année, le nombre d''utilisateurs de R (les useRs) augmente de 40%, et bon
-  nombre d''entreprises et organismes l''utilisent pour leurs activités quotidiennes
+  nombre d''entreprises et organismes l''utilisent pour leurs activités quotidiennes.
   <br> Dans cette introduction à R, vous allez pouvoir vous familiariser avec les
-  bases de ce magnifique langage open source: les vecteurs, les matrices, les facteurs,
+  bases de ce magnifique langage open source : les vecteurs, les matrices, les facteurs,
   les listes et les data.frame. Avec ce que vous allez apprendre dans ce cours, vous
   allez être capable de mener à bien, en autnonomie, votre première analyse de données.'
 author_bio: 'Vincent Guyader est statisticien et formateur logiciel R. Il est gérant de la société ThinkR (<a class="white-link" href="http://www.thinkr.fr" target="_blank">www.thinkr.fr</a>) qui propose aux entreprises et laboratoires un accompagnement pour leur besoins statistiques: formation R, migration depuis un autre outils et développement spécifique en R.<br>

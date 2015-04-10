@@ -128,7 +128,7 @@ colnames(ma_matrix) <- nom_colonnes_vector
 
 *** =instructions
 - Donnez aux colonnes de `star_wars_matrix` les noms `"Americain"` et `"non-Americain"` (sans accents).
-- Donnez aux lignes de la matrice les noms des 3 films. Au cas ou vous ne soyez pas un fan, les noms sont : "Un nouvel espoir","L'Empire contre-attaque" et "Le Retour du Jedi"
+- Donnez aux lignes de la matrice les noms des 3 films. Au cas ou vous ne soyez pas un fan, les noms sont : "Un nouvel espoir", "L'Empire contre-attaque" et "Le Retour du Jedi"
 
 *** =hint
 Faites attention, R distingue les majuscules et les minuscules, les vecteurs de noms à utiliser sont :
@@ -176,7 +176,7 @@ retour_du_jedi <- c(309.306, 165.8)
 star_wars_matrix <- matrix(c(nouvel_espoir, empire_contre_attaque, retour_du_jedi), nrow = 3, byrow = TRUE)
 
 # Ajoutez votre code ici pour donner un noms aux lignes et aux colonnes de la matrice
-colnames(star_wars_matrix) <- c("américain", "non-américain")
+colnames(star_wars_matrix) <- c("Americain", "non-Americain")
 rownames(star_wars_matrix) <- c("Un nouvel espoir", "L'Empire contre-attaque", "Le Retour du Jedi")
 ```
 

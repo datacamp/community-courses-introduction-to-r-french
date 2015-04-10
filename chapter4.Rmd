@@ -347,7 +347,7 @@ Dans un premier temps, fabriquez `vitesse_vector`, sachant que :
 Pas besoin pour l'instant de spécifier que ce sont des facteurs
 
 *** =hint
-Fabriquez `vitesse_vector`, il s'agit d'un vecteur contenant les chaînes des caractères :, `"Rapide"`, `"Lent"`...
+Fabriquez `vitesse_vector`, il s'agit d'un vecteur contenant les chaînes des caractères : `"Rapide"`, `"Lent"`...
 
 
 *** =pre_exercise_code
