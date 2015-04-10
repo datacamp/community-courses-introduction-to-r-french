@@ -568,7 +568,7 @@ Par exemple: `2 * ma_matrix` multiplie chaque élément de `ma_matrix` par deux.
 En tant que statisticien nouvellement engagé pour Lucasfilm, c'est votre job de savoir combien de visiteurs sont allés à chaque film pour chaque zone géographique. Vous avez déjà les chiffres de revenus totaux dans `star_wars_matrix`. Supposons que le prix d'un billet était de 5 dollars. Les montants de billetterie, divisés par le prix du billet, vous donnent le nombre de visiteurs.
 
 *** =instructions
-- Fabriquez la matrice `visiteur` avec le nombre estimé de visiteurs non-américains et de visiteurs américains pour les trois films.
+- Fabriquez la matrice `visiteurs` avec le nombre estimé de visiteurs non-américains et de visiteurs américains pour les trois films.
 - Affichez la variable résultante sur la console.
 
 *** =hint

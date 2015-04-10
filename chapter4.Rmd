@@ -70,7 +70,7 @@ success_msg("Bien ! Si vous voulez en savoir plus sur la fonction <code>factor()
 
 Il existe deux types de variables nominales : les variables non ordonnées et les variables ordonnées. 
 
-Une variable non ordonnée est une variable catégorielle sans ordre implicite. Cela signifie qu'il est impossible de dire qu' une valeur est supérieure à l\'autre'. Par exemple, pensez à la variable catégorielle `animals_vector` avec les catégories `"Elephant"`, `"Girafe"`, `"Singe"` et `"Cheval"`. Ici, il est impossible de dire qui est au-dessus ou au-dessous de l'autre.  
+Une variable non ordonnée est une variable catégorielle sans ordre implicite. Cela signifie qu'il est impossible de dire qu' une valeur est supérieure à l'autre. Par exemple, pensez à la variable catégorielle `animals_vector` avec les catégories `"Elephant"`, `"Girafe"`, `"Singe"` et `"Cheval"`. Ici, il est impossible de dire qui est au-dessus ou au-dessous de l'autre.  
 
 En revanche, les variables ordinales ont un ordre naturel. Considérons par exemple la variable catégorielle `temperature_vector` avec les catégories: `"Faible"`, `"Moyen"` et `"Fort"`. Ici, il est évident que `"Moyen"` se situe au-dessus de `"Faible"`, et  `"Fort"` se situe au-dessus de `"Moyen"`.
 
