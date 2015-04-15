@@ -1,7 +1,7 @@
 --- 
 title_meta  : Chapitre 2
 title       : les vecteurs
-description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vecteurs. Une fois ce chapitre terminé, vous serez capable de créer des vecteurs, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
+description : Nous allons faire un voyage à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vecteurs. Une fois ce chapitre terminé, vous serez capable de créer des vecteurs, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
 
 ---
 
