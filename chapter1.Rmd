@@ -307,7 +307,7 @@ test_output_contains("mes_pommes + mes_oranges",
 test_object("mes_fruits",
             undefined_msg = "Faites attention à bien définir la variable <code>mes_fruits</code>.",
             incorrect_msg = "Faites attention à bien avoir défini la bonne valeur à <code>mes_fruits</code>.")
-success_msg("Très bien ! Le grand avantage de faire des calculs avec les variables est que vous pouvez les réutiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur à 12 au lieu de 5 et que vous exécutez de nouveau le script, <code>mes_fruits</code> sera automatiquement mis à jour. On passe à l'exercice suivant.")
+success_msg("Très bien ! Le grand avantage de faire des calculs avec les variables est que vous pouvez les réutiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur à 12 au lieu de 5 et que vous exécutez de nouveau le script (et seulement si vous l'éxecutez à nouveau), la valeur de <code>mes_fruits</code> sera automatiquement mis à jour. On passe à l'exercice suivant.")
 ```
 
 ---
