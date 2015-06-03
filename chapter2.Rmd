@@ -1,7 +1,7 @@
 --- 
 title_meta  : Chapitre 2
 title       : les vecteurs
-description : Nous allons faire un voyages à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vecteurs. Une fois ce chapitre terminé, vous serez capable de créer des vecteurs, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
+description : Nous allons faire un voyage à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vecteurs. Une fois ce chapitre terminé, vous serez capable de créer des vecteurs, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
 
 --- type:NormalExercise xp:100
 ## Créer un vecteur
@@ -13,13 +13,13 @@ Il vaudrait mieux... car ce chapitre va vous emmener au coeur de la cité du mal
 Grâce à R et à vos nouvelles connaissances en analyse de données, vous allez voir comment optimiser vos chances à la table de jeu et faire décoller votre carrière de joueur professionnel. Ce chapitre va vous montrer comment facilement conserver l'historique de vos actions et comment vous pouvez faire de simples analyses sur ces données. 
 
 *** =instructions
-- Vous vous souvenez bien de ce que vous avez appris dans le chapitre précédent ? Assignez la valeur `"On y va ! "` à la variable `Vegas`
+- Vous vous souvenez bien de ce que vous avez appris dans le chapitre précédent ? Assignez la valeur `"On y va !"` à la variable `Vegas`
 
 *** =hint
 Tapez simplement les instructions suivantes dans l'éditeur :
 
 ```
-Vegas <- "On y va ! "
+Vegas <- "On y va !"
 ```
 
 Souvenez-vous, R distingue les majuscules des minuscules
@@ -37,7 +37,7 @@ Souvenez-vous, R distingue les majuscules des minuscules
 *** =solution
 ```{r eval=FALSE}
 # Définissez la variable 'Vegas'
-Vegas <- "On y va ! "
+Vegas <- "On y va !"
 ```
 
 *** =sct
@@ -316,7 +316,7 @@ test_object("roulette_vector",
             incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
 test_object("jours_vector",
             undefined_msg = "Faites attention à bien définir la variable <code>jours_vector</code>.",
-            incorrect_msg = "Faites attention à bien assigner le bon vecteur à  <code>jours_vector</code>.")
+            incorrect_msg = "Faites attention à bien assigner le bon vecteur à  <code>jours_vector</code>. Pensez aux majuscules.")
 test_object("poker_vector",
             eq_condition = "equal",
             incorrect_msg = "Faites attention à bien assigner  <code>jours_vector</code> en tant que noms de  <code>poker_vector</code>.")
@@ -603,6 +603,7 @@ total_roulette <-
 
 # Regardez si vous avez fait mieux au poker qu'à la roulette
 reponse <-
+reponse
 ```
 
 *** =solution
@@ -624,6 +625,7 @@ total_roulette <- sum(roulette_vector)
 
 # Regardez si vous avez fait mieux au poker qu'à la roulette
 reponse <- total_poker > total_roulette
+reponse
 ```
 
 *** =sct

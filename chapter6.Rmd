@@ -48,7 +48,7 @@ success_msg("Prêt ? On passe à l'exercice suivant")
 
 Une `list` R est similaire à votre liste de tâches, du travail ou d'école : les différents éléments figurant sur cette liste sont souvent très différents, et différent par leur longueur, caractéristique, type d'activité...
 
-Une liste dasn R permet de recueillir de nombreux objets sous un même nom (autrement dit, le nom de la liste) d'une manière ordonnée. Ces objets peuvent être des matrices, des vecteurs, des jeux de données, ou même d'autres listes, etc.. Il n'est pas même nécessaire que ces objets soient liés les uns aux autres. Vous pouvez tout mélanger. 
+Une liste dans R permet de recueillir de nombreux objets sous un même nom (autrement dit, le nom de la liste) d'une manière ordonnée. Ces objets peuvent être des matrices, des vecteurs, des jeux de données, ou même d'autres listes, etc.. Il n'est pas même nécessaire que ces objets soient liés les uns aux autres. Vous pouvez tout mélanger. 
 
 Une liste est un type de donnée un peu fourre-tout, qui permet de stocker à peu près tout.
 
