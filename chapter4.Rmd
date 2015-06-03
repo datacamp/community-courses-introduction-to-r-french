@@ -5,7 +5,7 @@ description : Très souvent, les données sont qualitatives. Par exemple, les in
 framework   : datacamp
 mode        : selfcontained
 
----
+--- type:NormalExercise xp:100
 ## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ? 
 
 Dans ce chapitre, vous plongez dans le monde magnifique des **facteurs**. 
@@ -65,7 +65,10 @@ test_object("factor_genre_vector",
 success_msg("Bien ! Si vous voulez en savoir plus sur la fonction <code>factor()</code>, n'hésitez pas à taper <code> ? factor</code> dans la console. Cela ouvrira une page d'aide. On passe à l'exercice suivant.");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ? (2)
 
 Il existe deux types de variables nominales : les variables non ordonnées et les variables ordonnées. 
@@ -124,7 +127,10 @@ test_output_contains("factor_temperature_vector", incorrect_msg = msg)
 success_msg("Vous avez compris ce qui s'est passé dans cet exercice ? Génial ! On passe à l'exercice suivant pour regarder les facteurs et leur niveaux plus en détails.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Niveau de facteurs
 
 Lorsque vous importez un jeu de données, vous remarquerez généralement qu'il contient des facteurs avec des niveaux spécifiques. Parfois vous allez vouloir changer les noms de ces niveaux, pour des raisons de clarté ou autre. R vous permet de le faire avec la fonction [`levels()`] (http://www.rdocumentation.org/packages/base/functions/levels) :
@@ -200,7 +206,10 @@ test_object("factor_enquete_vector", eq_condition = "equal",
 success_msg("Magnifique ! On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Décrire un factor
 
 Après avoir terminé ce cours, une de vos fonctions préférées dans R sera [`summary()`] (http://www.rdocumentation.org/packages/base/functions/summary). Cela vous donnera un aperçu rapide de `une_variable` : 
@@ -268,7 +277,10 @@ success_msg("Bien ! Regardez la sortie dans la console. Le fait que vous ayez id
 ")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Bataille des sexes
 
 _"Tous les animaux sont égaux, mais certains animaux sont plus égaux que d'autres." -- George Orwell_
@@ -322,7 +334,10 @@ test_output_contains("factor_enquete_vector[1] > factor_enquete_vector[2]", inco
 success_msg("Ouf, il semble que R soit neutre. Ou peut-être veut-il juste rester en dehors de ces discussions ;-).")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Les facteurs ordonnés
 
 `"Masculin"` et `"Feminin"` étant des niveaux non ordonnés (ou nominaux) de facteurs, R retourne un message d'avertissement vous indiquant que le l'opérateur de comparaison n'est pas explicite. Comme vu auparavant, R attache une valeur égale aux niveaux de tels facteurs. 
@@ -375,7 +390,10 @@ test_object("vitesse_vector",
 success_msg("Bien joué ! On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Les facteurs ordonnés (2)
 
 `vitesse_vector` doit être converti en un facteur ordinal puisque ses niveaux ont un ordre naturel. Par défaut, la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor) transforme `vitesse_vector` en un factor non ordonné. Pour créer un factor ordonné, vous devez ajouter deux arguments supplémentaires: `ordered` et `levels`. 
@@ -452,7 +470,10 @@ test_correct({
 success_msg("Bien ! Regardez dans la console. On voit maintenant qu'il y a une notion d'ordre entre les niveaux de facteurs, on voit cela grâce au signe <code><</code>. On passe à l'exercice suivant.");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Comparaison de facteurs ordonnés
 
 
@@ -513,3 +534,6 @@ test_object("la_comparaison",
             incorrect_msg = "Il semblerait que <code>la_comparaison</code> ne soit pas correctement effectuée. Vérifiez les indices.");
 success_msg("Génial ! Que nous apprend ce résultat ? le statisticien 2 se plaint au sujet du numéro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voilà qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous êtes prêts à plonger dans le monde magnifique des data.frame, une structuration des données très importante en R ! ")
 ```
+
+*** =skills
+1

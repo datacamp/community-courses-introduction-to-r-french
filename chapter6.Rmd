@@ -3,7 +3,7 @@ title_meta  : Chapitre 6
 title       : Les listes
 description : Les listes, par opposition aux vecteurs, peuvent contenir des éléments de différents types, à l'instar de votre liste de tâches à la maison ou au travail. Ce chapitre va vous apprendre comment créer, nommer et extraire des élément de ces listes ! 
 
----
+--- type:NormalExercise xp:100
 ## Listes, pourquoi faire ? 
 
 Félicitations ! À ce stade du cours vous êtes déjà un (semi-)expert  en :
@@ -40,7 +40,10 @@ Cliquez simplement 'Submit Answer'
 success_msg("Prêt ? On passe à l'exercice suivant")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Listes, pourquoi faire ? (2)
 
 Une `list` R est similaire à votre liste de tâches, du travail ou d'école : les différents éléments figurant sur cette liste sont souvent très différents, et différent par leur longueur, caractéristique, type d'activité...
@@ -75,7 +78,10 @@ Cliquez 'Submit Answer'  pour commencer le premier exercice sur les listes
 success_msg("Cool !  Mettons un peu les mains dans le cambouis ! ")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Crée une liste
 
 Créons notre première liste ! Pour construire une liste, il faut utiliser la fonction [`list()`](http://www.rdocumentation.org/packages/base/functions/list): 
@@ -136,7 +142,10 @@ test_object("ma_list",
 success_msg("Magnifique ! Vos compétences se développent à un rythme stupéfiant ! Dirigez-vous vers le prochain exercice.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Créer une liste nommée
 
 Tout comme sur votre liste de tâches, vous voulez vous souvenir des éléments qu'elle contient, et savoir à quoi ils font référence. C'est pourquoi vous devez donner des noms aux différents éléments : 
@@ -220,7 +229,10 @@ test_output_contains("ma_list", incorrect_msg = "N'oubliez pas d'afficher <code>
 success_msg("Bien ! Non seulement vous savez comment construire des listes, mais vous pouvez également en nommer les éléments. Il s'agit d'une compétence qui s'avérera très utile dans la pratique. On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Créer une liste nommée (2)
 
 En tant que un grand fan de cinéma (n'oubliez pas votre travail chez LucasFilms), vous décidez de commencer à stocker des informations sur les bons films à l'aide de listes. 
@@ -281,7 +293,10 @@ test_object("shining_list", eq_condition = "equal",
 success_msg("Magnifique ! Vous savez maintenant comment construire et nommer les listes. Comme dans les chapitres précédents, nous allons étudier comment sélectionner des éléments de listes. Dirigez-vous vers le prochain exercice.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Sélectionner les éléments d'une liste
 
 Votre liste sera souvent composée de nombreux éléments. Par conséquent, n'extraire qu'un seul élément ou plusieurs éléments de cette liste n'est pas toujours simple. 
@@ -359,7 +374,10 @@ test_object("second_avis",
 success_msg("Bien ! La sélection d'éléments de listes est plutôt facile n'est-ce pas ? On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Rajouter des éléments à une liste
 
 Fier de votre première liste, vous la partagez avec les membres de votre ciné club. Cependant, un des membres, un gars nommé M. McDowell, a fait remarquer que vous avez oublié d'ajouter l'année de sortie. Compte tenu de vos ambitions de devenir président du club l'an prochain, vous décidez d'ajouter cette information à la liste. 
@@ -436,3 +454,6 @@ test_object("shining_list_full", eq_condition = "equal",
 test_function("str", "object", incorrect_msg = "Pensez à regarder la structure de <code>shining_list_full</code>.")
 success_msg("Bien ! Il s'agissait du dernier exercice sur les listes de R ! Vous avez maintenant une base solide dans le langage de programmation R, mais il y a tellement plus à apprendre. Découvrez tous les autres cours en français disponibles sur DataCamp et devenez ainsi un véritable expert ! ")
 ```
+
+*** =skills
+1

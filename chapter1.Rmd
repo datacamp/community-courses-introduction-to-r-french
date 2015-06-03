@@ -2,8 +2,8 @@
 title_meta  : Chapitre 1
 title       : Introduction
 description : Dans ce chapitre vous allez faire vos premiers pas avec R. Vous allez apprendre à utiliser la console comme calculatrice et à fabriquer vos premières variables. Vous allez aussi découvrir les principaux types d'objets que vous allez être amené à utiliser dans R. Tout va bien se passer, c'est parti ! 
----
 
+--- type:NormalExercise xp:100
 ## L'interface de DataCamp
 
 Dans la partie **éditeur** sur votre droite vous allez devoir taper du code R pour résoudre les exercices. 
@@ -61,8 +61,10 @@ demo("graphics")
 success_msg("Super ! Maintenant que vous êtes familiarisés avec l'interface, rentrons un peu plus dans le vif du sujet ! ")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Un peu d'arithmétique
 
 Comme vu précédemment, R peut être utilisé très basiquement comme une simple calculatrice. Examinez les opérateurs arithmétiques suivant :
@@ -146,8 +148,10 @@ test_output_contains("28 %% 6", incorrect_msg = "Il y a un souci avec le modulo.
 success_msg("Bien joué. On continue...")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Assignation de variable
 
 
@@ -198,8 +202,10 @@ test_object("x", undefined_msg = "Faites attention à bien créer une variable a
 success_msg("Bon boulot ! Avez-vous remarqué que R n'imprime pas la valeur d'une variable dans la console lorsque vous la créez ? <code>x <- 42</code> n'a pas généré de sortie, car R suppose que vous aurez besoin cette variable à l'avenir. Sinon vous n'auriez pas stocké cette valeur dans une variable, n'est-ce pas ? Vous pouvez passer à l'exercice suivant ! ")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Assignation de variable (2)
 
 Supposons que vous ayez un panier de fruits avec cinq pommes. En tant que statisticien en formation, vous souhaitez stocker le nombre de pommes dans une variable avec le nom `mes_pommes`. 
@@ -246,8 +252,10 @@ test_output_contains("mes_pommes",
 success_msg("Bien ! Passons à l'exercice suivant ! ")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Assignation de variable (3)
 
 Chaque panier de fruit digne de ce nom a besoin d'oranges, donc vous décidez d'ajouter six oranges. En tant que statisticien, votre réflexe est de créer immédiatement la variable `mes_oranges` en lui affectant la valeur 6. Ensuite, vous voulez calculer combien de fruits vous avez au total. Puisque vous avez donné des noms à ces valeurs, vous pouvez maintenant coder ceci d'une manière claire : 
@@ -310,7 +318,10 @@ test_object("mes_fruits",
 success_msg("Très bien ! Le grand avantage de faire des calculs avec les variables est que vous pouvez les réutiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur à 12 au lieu de 5 et que vous exécutez de nouveau le script, <code>mes_fruits</code> sera automatiquement mis à jour. On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Des pommes et des oranges
 
 On nous dit souvent de ne pas additionner des pommes et des oranges (sur le même principe qu'il ne faut pas mélanger des choux et des carottes). Cependant, c'est exactement ce que nous venons de faire, non ? 
@@ -376,8 +387,10 @@ test_object("mes_fruits",
 success_msg("Génial ! on peut passer à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Les types d'objets de base en R
 
 R travaille avec de nombreux types de données. Voici les types les plus élémentaires pour débuter :
@@ -443,8 +456,10 @@ test_object("mon_logical",
 success_msg("Bon boulot ! On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
 
+--- type:NormalExercise xp:100
 ## Quel est le type de cet objet ? 
 
 Vous souvenez-vous que lorsque vous avez ajouté des `5 + "six"` ? Vous avez eu une erreur due à une incompatibilité de types de données. Vous pouvez éviter ces situations embarrassantes en vérifiant le type de données d'une variable au préalable. Vous pouvez le faire comme suit :
@@ -501,3 +516,6 @@ test_output_contains("class(mon_logical)",
                      incorrect_msg = "La sortie ne contient pas la classe de  <code>mon_logical</code>.")
 success_msg("Félicitations ! C'était le dernier exercice pour ce chapitre. Dirigez-vous vers le prochain chapitre et plongez dans le monde merveilleux des vecteurs ! ")
 ```
+
+*** =skills
+1

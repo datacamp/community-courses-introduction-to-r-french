@@ -3,9 +3,8 @@ title_meta  : Chapitre 5
 title       : Les jeux de données
 description : La plupart des données avec lesquelles vous travaillerez seront stockées sous forme de data frame. À la fin de ce chapitre, vous serez en mesure de créer un data frame, de sélectionner des parties intéressantes d'un data frame et de trier un data frame selon certaines variables.
 
----
+--- type:NormalExercise xp:100
 ## Qu'est-ce qu'un data frame ? 
-
 
 Vous vous souvenez du chapitre sur les matrices ? Tous les éléments que vous mettiez dans une matrice devaient être du même type ? À l'époque, l'ensemble de vos données sur Star Wars ne contenait que des éléments numériques.
 
@@ -46,7 +45,10 @@ test_output_contains("mtcars", incorrect_msg = "Ne changez rien au code, vérifi
 success_msg("Bien ! On passe à l'exercice suivant.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Regardons votre jeu de données
 
 Wow, il y a beaucoup de voitures ! 
@@ -91,7 +93,10 @@ test_output_contains("head(mtcars)",
 success_msg("Magnifique ! Alors, qu'avons-nous dans ce jeu de données ? Par exemple, <code>hp</code> représente par exemple la puissance de la voiture ; la Datsun a la plus faible puissance: 6 chevaux sont affichées. Pour une présentation complète de la signification des variables, tapez <code> ? mtcars</code> dans la console et regardez la page d'aide. On passe à l'exercice suivant ! ");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Jetons un oeil à la structure
 
 Une autre méthode est souvent utilisée pour obtenir un aperçu rapide de vos données, il s'agit de la fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str). La fonction [`str()`] (http://www.rdocumentation.org/packages/utils/functions/str) vous montre la structure de votre jeu de données. Pour un data frame, il vous dit :
@@ -134,9 +139,11 @@ test_output_contains("str(mtcars)", incorrect_msg = "Faites attention à bien ut
 success_msg("Très beau travail ! Avez-vous trouvé toutes les informations qui figurent dans la session précédente de l'exercice ? On passe à l'exercice suivant.")
 ```
 
----
-## Créer un data frame
+*** =skills
+1
 
+--- type:NormalExercise xp:100
+## Créer un data frame
 
 Utiliser un jeu de données intégré à R n'est pas ce qu'il y a de plus intéressant, nous allons construire notre propre jeu de données. 
 
@@ -212,7 +219,10 @@ test_correct({
 success_msg("Bien joué ! On passe à l'exercice suivant. La prochaine étape, comme vous le savez maintenant, est d'inspecter le jeu de données que vous venez de créer. Dirigez-vous vers le prochain exercice.");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Créer un data frame (2)
 
 Assurez-vous que vous avez 8 observations et 5 variables. Le jeu données `planetes_df` a été rendu accessible dans l'espace de travail, donc vous pouvez l'utiliser directement.
@@ -252,7 +262,10 @@ test_function("str", "object", incorrect_msg = "Faites attention à bien utilise
 success_msg("Génial ! Maintenant que vous avez une compréhension claire de <code>planetes_df</code>, il est temps de voir comment vous pouvez en sélectionner des éléments. Vous verrez ça dans les exercices suivant ! ")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Extraction d'éléments d'un data frame
 
 Tous comme les vecteurs et matrices, vous sélectionnez des éléments d'un jeu de données à l'aide de crochets `[ ]`. À l'aide d'une virgule, vous pouvez indiquer ce qu'il faut respectivement sélectionner dans les lignes et les colonnes. Par exemple :
@@ -323,7 +336,10 @@ test_object("lointaines_planetes_df",
 success_msg("Bien ! En plus de la sélection des éléments de votre base de données par leurs indices, vous pouvez également utiliser les noms de colonne. Pour apprendre comment, dirigez-vous vers le prochain exercice.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Extraction d'éléments d'un data frame (2)
 
 Au lieu d'utiliser les valeurs numériques pour sélectionner des éléments d'un jeu de données, vous pouvez également utiliser les noms de variables pour sélectionner les colonnes d'un jeu de données.
@@ -374,7 +390,10 @@ test_object("lointaines_planetes_diametre",
 success_msg("C'est beau ! On passe à l'exercice suivant ! ")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Seulement les planètes avec anneaux
 
 Souvent, vous voudrez choisir une colonne entière, i.e une variable spécifique d'un jeu de données. Si vous souhaitez sélectionner tous les éléments de la variable `anneaux`, les deux instructions `planetes_df[ ,5]` et `planetes_df[ ,"anneaux"]` font le job.
@@ -431,7 +450,10 @@ test_object("anneaux_vector",
 success_msg("Bien ! On passe à l'exercice suivant et découvrez une nouvelle façon de faire des extractions ! ")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Seulement les planètes avec anneaux (2)
 
 
@@ -494,7 +516,10 @@ test_object("planetes_avec_anneaux_df",
 success_msg("Magnifique ! Cette solution est assez fastidieuse. Le prochain exercice va vous apprendre comment le faire de façon plus concise.")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Seulement les planètes avec anneaux (Version courte)
 
 
@@ -558,7 +583,10 @@ test_object("petite_planetes_df",
 success_msg("Bien ! Non seulement la fonction <code>subset()</code> est plus concise, mais aussi elle est plus lisible pour quelqu'un qui lirait votre code. On passe à l'exercice suivant.");
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Classement
 
 Faire et créer des classements est l'une des activités préférées des humains. Ces classements peuvent être utiles (meilleures universités dans le monde), divertissants (les stars les plus influentes) ou inutiles (les meilleurs sosies de James Bond). À vous de voir dans quel but vous voulez utiliser vos compétences en R;-).
@@ -610,7 +638,10 @@ order(c(5,4,6,7))
 success_msg("Bien ! Maintenant, nous allons utiliser le <code>order()</code> pour trier votre jeu de données ! ")
 ```
 
----
+*** =skills
+1
+
+--- type:NormalExercise xp:100
 ## Classer un jeu de données
 
 Bon, maintenant que vous comprenez la fonction [`order()`](http://www.rdocumentation.org/packages/base/functions/order), on va faire quelque chose d'utile avec elle. Vous voulez réorganiser votre jeu de données de telle sorte qu'il commence avec la plus grande planète et se termine par la plus petite. Un tri sur la colonne `diametre` donc.
@@ -672,3 +703,6 @@ test_object("grande_en_premier_df",
             incorrect_msg = "Il semblerait que <code>grande_en_premier_df</code> ne correspondent pas à <code>planetes_df</code> trié dans le bon ordre.")
 success_msg("Magnifique ! Pensez à regarder grande_en_premier_df pour voir à quoi il ressemble. Cet exercice conclut le chapitre sur les jeux de données. N'oubliez pas que les data frame sont extrêmement importants en R, vous aurez besoin d'eux tout le temps. Une autre structure de données très souvent utilisée est la liste. Ce sera l'objet du prochain chapitre ! ")
 ```
+
+*** =skills
+1
