@@ -221,13 +221,8 @@ summary(une_variable)
 
 Pour en revenir à notre enquête, vous souhaitez savoir combien de réponses `"Masculin"` et combien de réponses `"Feminin"` vous avez dans votre étude. La fonction [`summary()`] (http://www.rdocumentation.org/packages/base/functions/summary) vous donne la réponse à cette question.
 
-
-
 *** =instructions
-
 Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. Interpréter les résultats de ces deux vecteurs. Sont-ils équivalents dans ce cas ? 
-
-
 
 *** =hint
 Utilisez  [`summary()`](http://www.rdocumentation.org/packages/base/functions/summary) sur les vecteurs `enquete_vector` et `factor_enquete_vector`. C'est aussi simple que cela ! 
@@ -270,7 +265,7 @@ summary(factor_enquete_vector)
 msg = "Ne changez rien aux 4 premières lignes qui définissent <code>enquete_vector</code> et <code>factor_enquete_vector</code>."
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_enquete_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_function("summary", "x", 
+test_function("summary", "object", 
               incorrect_msg = c("Avez-vous utilisé la fonction summary sur <code>enquete_vector</code> ? ",
                                 "Avez-vous utilisé la fonction summary sur <code>factor_enquete_vector</code> ? "))
 success_msg("Bien ! Regardez la sortie dans la console. Le fait que vous ayez identifié <code>\"Masculin\"</code> et <code>\"Féminin\"</code> comme niveaux de facteur dans <code>factor_enquete_vector</code> permet à R d'afficher le nombre d'éléments pour chaque catégorie.

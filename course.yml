@@ -15,10 +15,10 @@ description: 'Avec plus de 2 millions d''utilisateurs à travers le monde, R est
 author_bio: 'Vincent Guyader est statisticien et formateur logiciel R. Il est gérant de la société ThinkR (<a class="white-link" href="http://www.thinkr.fr" target="_blank">www.thinkr.fr</a>) qui propose aux entreprises et laboratoires un accompagnement pour leur besoins statistiques: formation R, migration depuis un autre outils et développement spécifique en R.<br><br>
 Vincent Guyader is a french statistician and R trainer. His company ThinkR (<a class="white-link" href="http://www.thinkr.fr" target="_blank">www.thinkr.fr</a>) offers support to companies that want to adopt R: training, migration from other software suites and IT development.'
 chapters:
-- chapter1.Rmd: 1571
-- chapter2.Rmd: 1572
-- chapter3.Rmd: 1573
-- chapter4.Rmd: 1574
-- chapter5.Rmd: 1575
-- chapter6.Rmd: 1576
+  chapter1.Rmd: 1571
+  chapter2.Rmd: 1572
+  chapter3.Rmd: 1573
+  chapter4.Rmd: 1574
+  chapter5.Rmd: 1575
+  chapter6.Rmd: 1576
 
