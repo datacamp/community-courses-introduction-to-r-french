@@ -161,7 +161,7 @@ roulette_vector <- c(-24, -50, 100, -350, 10)
 ```{r eval=FALSE}
 test_object("poker_vector",
             undefined_msg = "Faites attention à bien d&#233;finir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Soyez certain d'avoir donné les bonnes valeurs à  <code>poker_vector</code>.")
+            incorrect_msg = "Soyez certain d'avoir donn&#233; les bonnes valeurs à  <code>poker_vector</code>.")
 test_object("roulette_vector",
             undefined_msg = "Faites attention à bien d&#233;finir la variable <code>roulette_vector</code>.",
             incorrect_msg = "Soyez certain d'avoir donn&#233; les bonnes valeurs à  <code>roulette_vector</code>.")
@@ -323,7 +323,7 @@ test_object("poker_vector",
 test_object("roulette_vector",
             eq_condition = "equal",
             incorrect_msg = "Faites attention à bien assigner  <code>jours_vector</code> en tant que noms de <code>roulette_vector</code>.")
-success_msg("Très bien ! Petit conseil : essayez le plus possible d'&#233;viter de taper plusieurs fois les mêmes choses. On passe à l'exercice suivant et regardons comment faire des calculs avec les vecteurs ! ")
+success_msg("Très bien ! Petit conseil : essayez le plus possible d'&#233;viter de taper plusieurs fois les m&#234;mes choses. On passe à l'exercice suivant et regardons comment faire des calculs avec les vecteurs ! ")
 ```
 
 *** =skills
@@ -1007,7 +1007,7 @@ test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, inco
 test_object("selection_vector", 
             undefined_msg = "Faites attention à bien d&#233;finir la variable <code>selection_vector</code>.",
             incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon r&#233;sultat. Souvenez-vous que R utilise des comparaisons termes à termes.")
-success_msg("Bien ! Plutôt que de faire recycler à R cinq fois la valeur <code>0</code> pour ensuite faire les comparaisons, vous pouvez bien sûr comparer <code>poker_vector</code>avec un vecteur de taille 5 que vous avez vous-même d&#233;fini. Dans ce cas de figure, R effectuera tout simplement de la comparaison termes à termes sans recycler quoi que ce soit.")
+success_msg("Bien ! Plutôt que de faire recycler à R cinq fois la valeur <code>0</code> pour ensuite faire les comparaisons, vous pouvez bien sûr comparer <code>poker_vector</code>avec un vecteur de taille 5 que vous avez vous-m&#234;me d&#233;fini. Dans ce cas de figure, R effectuera tout simplement de la comparaison termes à termes sans recycler quoi que ce soit.")
 
 ```
 
