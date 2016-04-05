@@ -58,7 +58,7 @@ demo("graphics")
 
 *** =sct
 ```{r eval=FALSE}
-success_msg("Super ! Maintenant que vous êtes familiarisés avec l'interface, rentrons un peu plus dans le vif du sujet ! ")
+success_msg("Super ! Maintenant que vous &#234;tes familiarisés avec l'interface, rentrons un peu plus dans le vif du sujet ! ")
 ```
 
 *** =skills
@@ -143,7 +143,7 @@ msg = "N'enlevez pas les autres exemples de calculs ! "
 test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
 test_output_contains("(5 + 5)/2", incorrect_msg = msg)
-test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous êtes certain de bien avoir suivi les instructions ? ")
+test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous &#234;tes certain de bien avoir suivi les instructions ? ")
 test_output_contains("28 %% 6", incorrect_msg = "Il y a un souci avec le modulo. Relisez bien les instructions.")
 success_msg("Bien joué. On continue...")
 ```
