@@ -46,7 +46,7 @@ matrix(1:9, byrow = TRUE, nrow = 3)
 ```{r eval=FALSE}
 test_function("matrix", c("data","byrow", "nrow"))
 test_output_contains("matrix(1:9, byrow=TRUE, nrow=3)",
-                     incorrect_msg = "Il semble y avoir un problème avec la définition de la matrice.")
+                     incorrect_msg = "Il semble y avoir un probl&#232;me avec la d&#233;finition de la matrice.")
 success_msg("Bien ! On passe à l'exercice suivant.")
 ```
 
@@ -111,9 +111,9 @@ test_object("empire_contre_attaque", undefined_msg = msg, incorrect_msg = msg)
 test_object("retour_du_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
-            undefined_msg = "Faites attention à bien définir la variable <code>star_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ? ")
-success_msg("La force semble être avec vous ! On passe à l'exercice suivant.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>star_wars_matrix</code>.",
+            incorrect_msg = "Avez-vous bien fabriqu&#233; la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ? ")
+success_msg("La force semble &#234;tre avec vous ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -194,15 +194,15 @@ test_object("empire_contre_attaque", undefined_msg = msg, incorrect_msg = msg)
 test_object("retour_du_jedi", undefined_msg = msg, incorrect_msg = msg)
 test_function("matrix", c("data", "nrow", "byrow"))
 test_object("star_wars_matrix",
-            undefined_msg = "Faites attention à bien définir la variable <code>star_wars_matrix</code>.",
-            incorrect_msg = "Avez-vous bien fabriqué la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ? ")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>star_wars_matrix</code>.",
+            incorrect_msg = "Avez-vous bien fabriqu&#233; la bonne matrice, elle doit contenir les 3 vecteurs relatifs aux 3 films et se nommer  <code>star_wars_matrix</code> ? ")
 test_function("colnames", "x", 
-              incorrect_msg = "Veillez bien à passer les bons arguments à la fonction <code>colnames()</code>")
+              incorrect_msg = "Veillez bien &#224; passer les bons arguments &#224; la fonction <code>colnames()</code>")
 test_function("rownames", "x", 
-              incorrect_msg = "Veillez bien à passer les bons arguments à la fonction <code>rownames()</code>")
+              incorrect_msg = "Veillez bien &#224; passer les bons arguments &#224; la fonction <code>rownames()</code>")
 test_object("star_wars_matrix", eq_condition = "equal",
-            incorrect_msg = "Avez-vous correctement défini les noms des lignes et colonnes de  <code>star_wars_matrix</code> correctement ? Vérifiez votre code.")
-success_msg("Bien ! Vous êtes sur le chemin pour devenir un jedi de R ! On passe à l'exercice suivant.")
+            incorrect_msg = "Avez-vous correctement d&#233;fini les noms des lignes et colonnes de  <code>star_wars_matrix</code> correctement ? V&#233;rifiez votre code.")
+success_msg("Bien ! Vous &#234;tes sur le chemin pour devenir un jedi de R ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
