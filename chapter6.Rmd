@@ -132,14 +132,14 @@ ma_list <- list(mon_vector, ma_matrix, mon_df)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas les définitions des variables <code>mon_vector</code>, <code>ma_matrix</code> ou <code>mon_df</code> ! "
+msg = "Ne modifiez ou ne supprimez pas les d&#233;finitions des variables <code>mon_vector</code>, <code>ma_matrix</code> ou <code>mon_df</code> ! "
 test_object("mon_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("ma_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_object("mon_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("ma_list",
-            undefined_msg = "Faites attention à bien définir la variable <code>ma_list</code>.",
-            incorrect_msg = "Il semblerait que <code>ma_list</code> ne contienne pas les bons éléments.")
-success_msg("Magnifique ! Vos compétences se développent à un rythme stupéfiant ! Dirigez-vous vers le prochain exercice.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>ma_list</code>.",
+            incorrect_msg = "Il semblerait que <code>ma_list</code> ne contienne pas les bons &#233;l&#233;ments.")
+success_msg("Magnifique ! Vos comp&#233;tences se d&#233;veloppent &#224; un rythme stup&#233;fiant ! Dirigez-vous vers le prochain exercice.")
 ```
 
 *** =skills
@@ -216,17 +216,17 @@ ma_list
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas les définitions des variables <code>mon_vector</code>, <code>ma_matrix</code> ou <code>mon_df</code> ! "
+msg = "Ne modifiez ou ne supprimez pas les d&#233;finitions des variables <code>mon_vector</code>, <code>ma_matrix</code> ou <code>mon_df</code> ! "
 test_object("mon_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("ma_matrix", undefined_msg = msg, incorrect_msg = msg)
 test_object("mon_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("ma_list",
-            undefined_msg = "Faites attention à bien définir la variable <code>ma_list</code>.",
-            incorrect_msg = "Il semblerait que <code>ma_list</code> ne contienne pas les bons éléments.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>ma_list</code>.",
+            incorrect_msg = "Il semblerait que <code>ma_list</code> ne contienne pas les bons &#233;l&#233;ments.")
 test_object("ma_list", eq_condition = "equal",
-            incorrect_msg = "Il semblerait que <code>ma_list</code> ne contienne pas les bons noms pour ses éléments");
-test_output_contains("ma_list", incorrect_msg = "N'oubliez pas d'afficher <code>ma_list</code> dans la console ! Rajoutez simplement <code>ma_list</code> dans une nouvelle ligne de l'éditeur.")
-success_msg("Bien ! Non seulement vous savez comment construire des listes, mais vous pouvez également en nommer les éléments. Il s'agit d'une compétence qui s'avérera très utile dans la pratique. On passe à l'exercice suivant.")
+            incorrect_msg = "Il semblerait que <code>ma_list</code> ne contienne pas les bons noms pour ses &#233;l&#233;ments");
+test_output_contains("ma_list", incorrect_msg = "N'oubliez pas d'afficher <code>ma_list</code> dans la console ! Rajoutez simplement <code>ma_list</code> dans une nouvelle ligne de l'&#233;diteur.")
+success_msg("Bien ! Non seulement vous savez comment construire des listes, mais vous pouvez &#233;galement en nommer les &#233;l&#233;ments. Il s'agit d'une comp&#233;tence qui s'av&#233;rera tr&#232;s utile dans la pratique. On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -282,15 +282,15 @@ shining_list <- list(titre = "Shining", acteurs = acteurs, avis = avis)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez ou ne supprimez pas les variables pré-chargées"
+msg = "Ne modifiez ou ne supprimez pas les variables pr&#233;-charg&#233;es"
 test_object("avis", undefined_msg = msg, incorrect_msg = msg)
 test_object("acteurs", undefined_msg = msg, incorrect_msg = msg)
 test_object("shining_list",
-            undefined_msg = "Faites attention à bien définir la variable <code>shining_list</code>.",
-            incorrect_msg = "Il semblerait que <code>shining_list</code> ne contienne pas les bons éléments.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>shining_list</code>.",
+            incorrect_msg = "Il semblerait que <code>shining_list</code> ne contienne pas les bons &#233;l&#233;ments.")
 test_object("shining_list", eq_condition = "equal",
-            incorrect_msg = "Il semblerait que <code>shining_list</code> ne contienne pas les bons noms pour ses éléments");
-success_msg("Magnifique ! Vous savez maintenant comment construire et nommer les listes. Comme dans les chapitres précédents, nous allons étudier comment sélectionner des éléments de listes. Dirigez-vous vers le prochain exercice.")
+            incorrect_msg = "Il semblerait que <code>shining_list</code> ne contienne pas les bons noms pour ses &#233;l&#233;ments");
+success_msg("Magnifique ! Vous savez maintenant comment construire et nommer les listes. Comme dans les chapitres pr&#233;c&#233;dents, nous allons &#233;tudier comment s&#233;lectionner des &#233;l&#233;ments de listes. Dirigez-vous vers le prochain exercice.")
 ```
 
 *** =skills
@@ -363,15 +363,15 @@ second_avis <- shining_list$avis[2,]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "N'éditez ou ne supprimez pas <code>shining_list</code>, qui est disponible dans votre espace de travail ! "
+msg = "N'&#233;ditez ou ne supprimez pas <code>shining_list</code>, qui est disponible dans votre espace de travail ! "
 test_object("shining_list", undefined_msg = msg, incorrect_msg = msg)
 test_object("last_acteur", 
-            undefined_msg = "Faites attention à bien définir la variable <code>last_acteur</code>.",
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>last_acteur</code>.",
             incorrect_msg = "Il semblerait que <code>last_acteur</code> ne corresponde pas au dernier acteur")
 test_object("second_avis",
-            undefined_msg = "Faites attention à bien définir la variable <code>second_avis</code>.",
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>second_avis</code>.",
             incorrect_msg = "Il semblerait que <code>second_avis</code> ne contienne pas les bonnes informations.")
-success_msg("Bien ! La sélection d'éléments de listes est plutôt facile n'est-ce pas ? On passe à l'exercice suivant.")
+success_msg("Bien ! La s&#233;lection d'&#233;l&#233;ments de listes est plut&#244;t facile n'est-ce pas ? On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -444,15 +444,15 @@ str(shining_list_full)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "N'éditez ou de supprimez pas <code>shining_list</code>, qui est disponible dans votre espace de travail ! "
+msg = "N'&#233;ditez ou de supprimez pas <code>shining_list</code>, qui est disponible dans votre espace de travail ! "
 test_object("shining_list", undefined_msg = msg, incorrect_msg = msg)
 test_object("shining_list_full",
-            undefined_msg = "Faites attention à bien définir la variable <code>shining_list_full</code>.",
-            incorrect_msg = "Il semblerait que <code>shining_list_full</code> ne contienne pas les bons éléments. Cette liste doit contenir l'<code>année</code> 1980 ! ")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>shining_list_full</code>.",
+            incorrect_msg = "Il semblerait que <code>shining_list_full</code> ne contienne pas les bons &#233;l&#233;ments. Cette liste doit contenir l'<code>année</code> 1980 ! ")
 test_object("shining_list_full", eq_condition = "equal",
-            incorrect_msg = "Il semblerait que <code>shining_list_full</code> n'a pas les bons noms d'éléments");
-test_function("str", "object", incorrect_msg = "Pensez à regarder la structure de <code>shining_list_full</code>.")
-success_msg("Bien ! Il s'agissait du dernier exercice sur les listes de R ! Vous avez maintenant une base solide dans le langage de programmation R, mais il y a tellement plus à apprendre. Découvrez tous les autres cours en français disponibles sur DataCamp et devenez ainsi un véritable expert ! ")
+            incorrect_msg = "Il semblerait que <code>shining_list_full</code> n'a pas les bons noms d'&#233;l&#233;ments");
+test_function("str", "object", incorrect_msg = "Pensez &#224; regarder la structure de <code>shining_list_full</code>.")
+success_msg("Bien ! Il s'agissait du dernier exercice sur les listes de R ! Vous avez maintenant une base solide dans le langage de programmation R, mais il y a tellement plus &#224; apprendre. D&#233;couvrez tous les autres cours en fran&#231;ais disponibles sur DataCamp et devenez ainsi un v&#233;ritable expert ! ")
 ```
 
 *** =skills
