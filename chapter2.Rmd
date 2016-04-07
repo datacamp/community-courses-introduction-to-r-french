@@ -43,9 +43,9 @@ Vegas <- "On y va !"
 *** =sct
 ```{r eval=FALSE}
 test_object("Vegas", 
-            undefined_msg = "Faites attention à bien définir la variable <code>Vegas</code>.",
-            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>Vegas</code>. Pensez à la distinction majuscule/minuscule ! ")
-success_msg("Bien ! On passe à la suite.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>Vegas</code>.",
+            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>Vegas</code>. Pensez &#224; la distinction majuscule/minuscule ! ")
+success_msg("Bien ! On passe &#224; la suite.")
 ```
 
 *** =skills
@@ -101,9 +101,9 @@ boolean_vector <- c(TRUE, FALSE, TRUE)
 test_object("numeric_vector")
 test_object("character_vector")
 test_object("boolean_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>boolean_vector</code>.",
-            incorrect_msg = "Soyez certain d'avoir donné les bonnes valeurs à  <code>boolean_vector</code>. L'ordre est important ! ")
-success_msg("Parfait ! En rajoutant des espaces après les virgules dans la fonction <code>c()</code> vous rendez votre code plus lisible. On va continuer à manipuler les vecteurs dans l'exercice suivant.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>boolean_vector</code>.",
+            incorrect_msg = "Soyez certain d'avoir donn&#233; les bonnes valeurs &#224;  <code>boolean_vector</code>. L'ordre est important ! ")
+success_msg("Parfait ! En rajoutant des espaces apr&#232;s les virgules dans la fonction <code>c()</code> vous rendez votre code plus lisible. On va continuer &#224; manipuler les vecteurs dans l'exercice suivant.")
 ```
 
 *** =skills
@@ -160,12 +160,12 @@ roulette_vector <- c(-24, -50, 100, -350, 10)
 *** =sct
 ```{r eval=FALSE}
 test_object("poker_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Soyez certain d'avoir donné les bonnes valeurs à  <code>poker_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>poker_vector</code>.",
+            incorrect_msg = "Soyez certain d'avoir donn&#233; les bonnes valeurs &#224;  <code>poker_vector</code>.")
 test_object("roulette_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>roulette_vector</code>.",
-            incorrect_msg = "Soyez certain d'avoir donné les bonnes valeurs à  <code>roulette_vector</code>.")
-success_msg("C'est bien ! Pour vérifier le contenu de vos vecteurs, n'oubliez pas que vous n'avez qu'à taper le nom de ce vecteur dans la console et à presser la touche entrée. On passe à l'exercice suivant ! ")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>roulette_vector</code>.",
+            incorrect_msg = "Soyez certain d'avoir donn&#233; les bonnes valeurs &#224;  <code>roulette_vector</code>.")
+success_msg("C'est bien ! Pour v&#233;rifier le contenu de vos vecteurs, n'oubliez pas que vous n'avez qu'&#224; taper le nom de ce vecteur dans la console et &#224; presser la touche entr&#233;e. On passe &#224; l'exercice suivant ! ")
 ```
 
 *** =skills
@@ -234,18 +234,18 @@ names(roulette_vector) <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 *** =sct
 ```{r eval=FALSE}
 test_object("poker_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code> ; elles sont déjà écrites pour vous.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>poker_vector</code>.",
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code> ; elles sont d&#233;j&#224; &#233;crites pour vous.")
 test_object("roulette_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>roulette_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>roulette_vector</code>.",
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont d&#233;j&#224; &#233;crites pour vous.")
 test_object("poker_vector",
             eq_condition = "equal",
-            incorrect_msg = "Êtes-vous certain d'avoir donné les bons noms aux éléments du vector <code>poker_vector</code>.")
+            incorrect_msg = "&#202;tes-vous certain d'avoir donn&#233; les bons noms aux &#233;l&#233;ments du vector <code>poker_vector</code>.")
 test_object("roulette_vector",
             eq_condition = "equal",
-            incorrect_msg = "Êtes-vous certain d'avoir donné les bons noms aux éléments du vector <code>roulette_vector</code>.")
-success_msg("Bien joué ! On passe à l'exercice suivant.")
+            incorrect_msg = "&#202;tes-vous certain d'avoir donn&#233; les bons noms aux &#233;l&#233;ments du vector <code>roulette_vector</code>.")
+success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -309,21 +309,21 @@ names(roulette_vector) <- jours_vector
 *** =sct
 ```{r eval=FALSE}
 test_object("poker_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>poker_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code> ; elles sont déjà écrites pour vous.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>poker_vector</code>.",
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>poker_vector</code> ; elles sont d&#233;jà &#233;crites pour vous.")
 test_object("roulette_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>roulette_vector</code>.",
-            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont déjà écrites pour vous.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>roulette_vector</code>.",
+            incorrect_msg = "Ne modifiez pas les valeurs de <code>roulette_vector</code> ; elles sont d&#233;j&#224; &#233;crites pour vous.")
 test_object("jours_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>jours_vector</code>.",
-            incorrect_msg = "Faites attention à bien assigner le bon vecteur à  <code>jours_vector</code>. Pensez aux majuscules.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>jours_vector</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner le bon vecteur &#224;  <code>jours_vector</code>. Pensez aux majuscules.")
 test_object("poker_vector",
             eq_condition = "equal",
-            incorrect_msg = "Faites attention à bien assigner  <code>jours_vector</code> en tant que noms de  <code>poker_vector</code>.")
+            incorrect_msg = "Faites attention &#224; bien assigner  <code>jours_vector</code> en tant que noms de  <code>poker_vector</code>.")
 test_object("roulette_vector",
             eq_condition = "equal",
-            incorrect_msg = "Faites attention à bien assigner  <code>jours_vector</code> en tant que noms de <code>roulette_vector</code>.")
-success_msg("Très bien ! Petit conseil : essayez le plus possible d'éviter de taper plusieurs fois les mêmes choses. On passe à l'exercice suivant et regardons comment faire des calculs avec les vecteurs ! ")
+            incorrect_msg = "Faites attention &#224; bien assigner  <code>jours_vector</code> en tant que noms de <code>roulette_vector</code>.")
+success_msg("Tr&#232;s bien ! Petit conseil : essayez le plus possible d'&#233;viter de taper plusieurs fois les m&#234;mes choses. On passe &#224; l'exercice suivant et regardons comment faire des calculs avec les vecteurs ! ")
 ```
 
 *** =skills
@@ -391,15 +391,15 @@ total_vector
 *** =sct
 ```{r eval=FALSE}
 test_object("A_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>A_vector</code>.",
-            incorrect_msg = "Faites attention à bien assigner le bon vecteur à <code>A_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>A_vector</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner le bon vecteur &#224; <code>A_vector</code>.")
 test_object("B_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>B_vector</code>.",
-            incorrect_msg = "Faites attention à bien assigner le bon vecteur à <code>B_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>B_vector</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner le bon vecteur &#224; <code>B_vector</code>.")
 test_object("total_vector",
-            undefined_msg = "Faites attention à bien définir la variable <code>total_vector</code>.",
-            incorrect_msg = "Vérifiez que  <code>total_vector</code> contient bien la somme de <code>A_vector</code> et <code>B_vector</code>.")
-success_msg("Bon boulot ! On passe à l'exercice suivant.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>total_vector</code>.",
+            incorrect_msg = "V&#233;rifiez que  <code>total_vector</code> contient bien la somme de <code>A_vector</code> et <code>B_vector</code>.")
+success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -462,14 +462,14 @@ total_jour <- poker_vector + roulette_vector
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_jour", 
-            incorrect_msg = "Faites attention à bien assigner la somme de <code>poker_vector</code> et <code>roulette_vector</code> à <code>total_jour</code>.")
+            incorrect_msg = "Faites attention &#224; bien assigner la somme de <code>poker_vector</code> et <code>roulette_vector</code> &#224; <code>total_jour</code>.")
 
-success_msg("Bien ! On passe à l'exercice suivant.")
+success_msg("Bien ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -543,19 +543,19 @@ total_semaine <- total_roulette + total_poker
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_poker", 
-            undefined_msg = "Faites attention à bien définir la variable <code>total_poker</code>.",
-            incorrect_msg = "Faites attention à bien assigner à <code>total_poker</code> la somme de <code>poker_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>total_poker</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner &#224; <code>total_poker</code> la somme de <code>poker_vector</code>.")
 test_object("total_roulette",
-            undefined_msg = "Faites attention à bien définir la variable <code>total_roulette</code>.",
-            incorrect_msg = "Faites attention à bien assigner à <code>total_roulette</code> la somme de <code>roulette_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>total_roulette</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner &#224; <code>total_roulette</code> la somme de <code>roulette_vector</code>.")
 test_object("total_semaine",
-            undefined_msg = "Faites attention à bien définir la variable <code>total_semaine</code>.",
-            incorrect_msg = "Faites attention à bien assigner à <code>total_semaine</code> la somme des 2 autres vecteurs de totaux.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>total_semaine</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner &#224; <code>total_semaine</code> la somme des 2 autres vecteurs de totaux.")
 ```
 
 *** =skills
@@ -630,20 +630,20 @@ reponse
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("total_poker", 
-            undefined_msg = "Faites attention à bien définir la variable <code>total_poker</code>.",
-            incorrect_msg = "Faites attention à bien assigner à <code>total_poker</code> la somme de  <code>poker_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>total_poker</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner &#224; <code>total_poker</code> la somme de  <code>poker_vector</code>.")
 test_object("total_roulette",
-            undefined_msg = "Faites attention à bien définir la variable <code>total_roulette</code>.",
-            incorrect_msg = "Faites attention à bien assigner à <code>total_roulette</code> la somme de  <code>roulette_vector</code>.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>total_roulette</code>.",
+            incorrect_msg = "Faites attention &#224; bien assigner &#224; <code>total_roulette</code> la somme de  <code>roulette_vector</code>.")
 test_object("reponse",
-            undefined_msg = "Faites attention à bien définir la variable <code>réponse</code>.",
-            incorrect_msg = "Il semblerait que la variable réponse ne contienne pas la bonne réponse. Relisez la consigne attentivement.")
-success_msg("Bon boulot ! On passe à l'exercice suivant.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>réponse</code>.",
+            incorrect_msg = "Il semblerait que la variable r&#233;ponse ne contienne pas la bonne r&#233;ponse. Relisez la consigne attentivement.")
+success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -709,14 +709,14 @@ poker_Mercredi <- poker_vector[3]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_Mercredi", 
-            undefined_msg = "Faites attention à bien définir la variable <code>poker_Mercredi</code>.",
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>poker_Mercredi</code>.",
             incorrect_msg = "Il semblerait que <code>poker_Mercredi</code> ne contienne pas la bonne valeur issue de <code>poker_vector</code>.")
-success_msg("Bien ! Il est aussi possible de sélectionner plusieurs éléments en une fois. On va regarder comment dans le prochain exercice ! ")
+success_msg("Bien ! Il est aussi possible de s&#233;lectionner plusieurs &#233;l&#233;ments en une fois. On va regarder comment dans le prochain exercice ! ")
 ```
 
 *** =skills
@@ -779,14 +779,14 @@ poker_milieu_semaine <- poker_vector[c(2, 3, 4)]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_milieu_semaine", 
-            undefined_msg = "Faites attention à bien définir la variable <code>poker_milieu_semaine</code>.",
-            incorrect_msg = "Il semblerait que <code>poker_milieu_semaine</code> ne contienne pas le bon élément de <code>poker_vector</code>.")
-success_msg("Bien joué ! On passe à l'exercice suivant pour avancer dans la sélection dans un vecteur... et plus encore ! ");
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>poker_milieu_semaine</code>.",
+            incorrect_msg = "Il semblerait que <code>poker_milieu_semaine</code> ne contienne pas le bon &#233;l&#233;ment de <code>poker_vector</code>.")
+success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant pour avancer dans la s&#233;lection dans un vecteur... et plus encore ! ");
 ```
 
 *** =skills
@@ -844,14 +844,14 @@ roulette_selection_vector <- roulette_vector[2:5]
 *** =sct
 
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_selection_vector", 
-            undefined_msg = "Faites attention à bien définir la variable <code>roulette_selection_vector</code>.",
-            incorrect_msg = "Il semblerait que <code>roulette_selection_vector</code> ne contienne pas la bonne sélection de <code>roulette_vector</code>. Utilisez les bons indices.")
-success_msg("Génial ! L'opérateur <code>:</code> est très pratique et se rencontre très souvent dans le langage R, donc souvenez vous de lui. On passe à l'exercice suivant.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>roulette_selection_vector</code>.",
+            incorrect_msg = "Il semblerait que <code>roulette_selection_vector</code> ne contienne pas la bonne s&#233;lection de <code>roulette_vector</code>. Utilisez les bons indices.")
+success_msg("G&#233;nial ! L'op&#233;rateur <code>:</code> est tr&#232;s pratique et se rencontre tr&#232;s souvent dans le langage R, donc souvenez vous de lui. On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -918,14 +918,14 @@ moyenne_gain_debutsemaine <- mean(poker_vector[c("Lundi", "Mardi", "Mercredi")])
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("moyenne_gain_debutsemaine", 
-            undefined_msg = "Faites attention à bien définir la variable <code>moyenne_gain_debutsemaine</code>.",
-            incorrect_msg = "Il semblerait que <code>moyenne_gain_débutsemaine</code> ne contienne pas la moyenne de la bonne sélection de <code>poker_vector</code>.")
-success_msg("Bon boulot ! Vous savez extraire des éléments d' un vecteur par leurs noms, mais il est aussi possible de faire des sélections en utilisant des comparaisons. Le prochain exercice va vous montrer comment ! ")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>moyenne_gain_debutsemaine</code>.",
+            incorrect_msg = "Il semblerait que <code>moyenne_gain_débutsemaine</code> ne contienne pas la moyenne de la bonne s&#233;lection de <code>poker_vector</code>.")
+success_msg("Bon boulot ! Vous savez extraire des &#233;l&#233;ments d' un vecteur par leurs noms, mais il est aussi possible de faire des s&#233;lections en utilisant des comparaisons. Le prochain exercice va vous montrer comment ! ")
 ```
 
 *** =skills
@@ -1000,14 +1000,14 @@ selection_vector <- poker_vector > 0
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("selection_vector", 
-            undefined_msg = "Faites attention à bien définir la variable <code>selection_vector</code>.",
-            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon résultat. Souvenez-vous que R utilise des comparaisons termes à termes.")
-success_msg("Bien ! Plutôt que de faire recycler à R cinq fois la valeur <code>0</code> pour ensuite faire les comparaisons, vous pouvez bien sûr comparer <code>poker_vector</code>avec un vecteur de taille 5 que vous avez vous-même défini. Dans ce cas de figure, R effectuera tout simplement de la comparaison termes à termes sans recycler quoi que ce soit.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>selection_vector</code>.",
+            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon r&#233;sultat. Souvenez-vous que R utilise des comparaisons termes &#224; termes.")
+success_msg("Bien ! Plut&#244;t que de faire recycler &#224; R cinq fois la valeur <code>0</code> pour ensuite faire les comparaisons, vous pouvez bien s&#251;r comparer <code>poker_vector</code>avec un vecteur de taille 5 que vous avez vous-m&#234;me d&#233;fini. Dans ce cas de figure, R effectuera tout simplement de la comparaison termes &#224; termes sans recycler quoi que ce soit.")
 
 ```
 
@@ -1079,17 +1079,17 @@ poker_jours_gagnants <- poker_vector[selection_vector]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("selection_vector", 
-            undefined_msg = "Faites attention à bien définir la variable <code>selection_vector</code>.",
-            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon résultat. N'oubliez pas que R utilise des opérations termes à termes sur les vecteurs.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>selection_vector</code>.",
+            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon r&#233;sultat. N'oubliez pas que R utilise des op&#233;rations termes &#224; termes sur les vecteurs.")
 test_object("poker_jours_gagnants",
-            undefined_msg =  "Faites attention à bien définir la variable <code>poker_jours_gagnants</code>.",
-            incorrect_msg =  "Il semblerait que <code>poker_jours_gagnants</code> ne contienne pas le bon résultat. N'oubliez pas que R utilise des opérations termes à termes sur les vecteurs.")
-success_msg("Bon boulot ! On passe à l'exercice suivant.")
+            undefined_msg =  "Faites attention &#224; bien d&#233;finir la variable <code>poker_jours_gagnants</code>.",
+            incorrect_msg =  "Il semblerait que <code>poker_jours_gagnants</code> ne contienne pas le bon r&#233;sultat. N'oubliez pas que R utilise des op&#233;rations termes &#224; termes sur les vecteurs.")
+success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
 ```
 
 *** =skills
@@ -1153,17 +1153,17 @@ roulette_jours_gagnants <- roulette_vector[selection_vector]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux définitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
+msg = "Ne changez rien aux d&#233;finitions et aux noms de <code>poker_vector</code> et <code>roulette_vector</code>."
 test_object("jours_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("poker_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("roulette_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("selection_vector", 
-            undefined_msg = "Faites attention à bien définir la variable <code>selection_vector</code>.",
-            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon résultat. N'oubliez pas que R utilise des opérations termes à termes sur les vecteurs.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>selection_vector</code>.",
+            incorrect_msg = "Il semblerait que <code>selection_vector</code> ne contienne pas le bon r&#233;sultat. N'oubliez pas que R utilise des op&#233;rations termes &#224; termes sur les vecteurs.")
 test_object("roulette_jours_gagnants",
-            undefined_msg = "Faites attention à bien définir la variable <code>roulette_jours_gagnants</code>.",
-            incorrect_msg = "Il semblerait que <code>roulette_jours_gagnants</code> ne contienne pas le bon résultat. Utilisez bien <code>roulette_vector</code>.")
-success_msg("Bien ! Cet exercice conclut le chapitre sur les vecteurs. Le prochain chapitre vous présentera la version bidimensionnelle des vecteurs : les matrices.")
+            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>roulette_jours_gagnants</code>.",
+            incorrect_msg = "Il semblerait que <code>roulette_jours_gagnants</code> ne contienne pas le bon r&#233;sultat. Utilisez bien <code>roulette_vector</code>.")
+success_msg("Bien ! Cet exercice conclut le chapitre sur les vecteurs. Le prochain chapitre vous pr&#233;sentera la version bidimensionnelle des vecteurs : les matrices.")
 ```
 
 *** =skills
