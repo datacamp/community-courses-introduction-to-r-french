@@ -107,7 +107,7 @@ Un autre exemple pour l'opérateur modulo: `9 %% 5` vaut `4`.
 3 * 5
 
  # une division
-(5 + 5)/2 
+(5 + 5) / 2 
 
 # une exponentiation 
 
@@ -128,10 +128,10 @@ Un autre exemple pour l'opérateur modulo: `9 %% 5` vaut `4`.
 3 * 5
 
  # une division
-(5 + 5)/2 
+(5 + 5) / 2 
 
 # une exponentiation 
-2^5
+2 ^ 5
 
 # Modulo
 28 %% 6
