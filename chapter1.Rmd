@@ -179,19 +179,19 @@ Regardez comment la valeur 4 a été attribuée à `ma_variable` dans le début 
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assignez la valeur 42 à  'x'
+# Assignez la valeur 42 à  x
 x <- 
 
-# Affichez le contenu de la variable 'x'
+# Affichez le contenu de la variable x
 x
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Assignez la valeur 42 à  'x'
+# Assignez la valeur 42 à  x
 x <- 42
 
-# Affichez le contenu de la variable 'x'
+# Affichez le contenu de la variable x
 x
 ```
 
@@ -226,19 +226,19 @@ N'oubliez pas que si vous voulez attribuer un numéro ou un objet à une variabl
 
 *** =sample_code
 ```{r eval=FALSE}
-# Affectez la valeur 5 à la variable appelée `mes_pommes`
+# Affectez la valeur 5 à la variable appelée mes_pommes
 
 
-# Afficher la valeur de la variable `mes_pommes`
+# Afficher la valeur de la variable mes_pommes
 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Affectez la valeur 5 à la variable appelée `mes_pommes`
+# Affectez la valeur 5 à la variable appelée mes_pommes
 mes_pommes <- 5
 
-# Afficher la valeur de la variable `mes_pommes`
+# Afficher la valeur de la variable mes_pommes
 mes_pommes
 ```
 
@@ -278,27 +278,27 @@ mes_pommes + mes_oranges
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assignez les bonnes valeurs aux variables 'mes_pommes' et 'mes_oranges'
+# Assignez les bonnes valeurs aux variables mes_pommes et mes_oranges
 mes_pommes <- 5
 
 
 # Sommez ces 2 variables ensemble et demandez à R d'afficher le résultat dans la console
 
 
-# Créez la variable 'mes_fruits'
+# Créez la variable mes_fruits
 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Assignez les bonnes valeurs aux variables 'mes_pommes' et 'mes_oranges'
+# Assignez les bonnes valeurs aux variables mes_pommes et mes_oranges
 mes_pommes  <- 5
 mes_oranges <- 6
 
 # Sommez ces 2 variables ensemble et demandez à R d'afficher le résultat dans la console
 mes_pommes + mes_oranges
 
-# Créez la variable 'mes_fruits'
+# Créez la variable mes_fruits
 mes_fruits <- mes_pommes + mes_oranges
 ```
 
@@ -341,13 +341,13 @@ Vous devez affecter la valeur numérique `6` à la variable `mes_oranges` au lie
 
 *** =sample_code
 ```{r eval=FALSE}
-# Assignez une valeur à la variable  'mes_pommes'
+# Assignez une valeur à la variable  mes_pommes
 mes_pommes <- 5 
 
-# Affichez dans la console la valeur de 'mes_pommes'
+# Affichez dans la console la valeur de mes_pommes
 mes_pommes       
 
-# Assignez une valeur à la variable 'mes_oranges' et affichez le résultat
+# Assignez une valeur à la variable mes_oranges et affichez le résultat
 mes_oranges <- "six" 
 mes_oranges 
 
@@ -358,13 +358,13 @@ mes_fruits
 
 *** =solution
 ```{r eval=FALSE}
-# Assignez une valeur à la variable  'mes_pommes'
+# Assignez une valeur à la variable  mes_pommes
 mes_pommes <- 5  
 
-# Affichez dans la console la valeur de 'mes_pommes'
+# Affichez dans la console la valeur de mes_pommes
 mes_pommes  
 
-# Assignez une valeur à la variable 'mes_oranges' et affichez le résultat
+# Assignez une valeur à la variable mes_oranges et affichez le résultat
 mes_oranges <- 6
 mes_oranges 
 

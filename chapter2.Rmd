@@ -31,12 +31,12 @@ Souvenez-vous, R distingue les majuscules des minuscules
 
 *** =sample_code
 ```{r eval=FALSE}
-# Définissez la variable 'Vegas'
+# Définissez la variable Vegas
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Définissez la variable 'Vegas'
+# Définissez la variable Vegas
 Vegas <- "On y va !"
 ```
 
@@ -84,7 +84,7 @@ Assignez `c(TRUE,FALSE,TRUE)` à la variable `boolean_vector` avec l'opérateur 
 ```{r eval=FALSE}
 numeric_vector <- c(1, 10, 49)
 character_vector <- c("a", "b", "c")
-# Complétez le code pour obtenir 'boolean_vector'
+# Complétez le code pour obtenir boolean_vector
 boolean_vector <-
 ```
 
@@ -92,7 +92,7 @@ boolean_vector <-
 ```{r eval=FALSE}
 numeric_vector <- c(1, 10, 49)
 character_vector <- c("a", "b", "c")
-# Complétez le code pour obtenir 'boolean_vector'
+# Complétez le code pour obtenir boolean_vector
 boolean_vector <- c(TRUE, FALSE, TRUE)
 ```
 
@@ -282,10 +282,10 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Créez la variable 'jours_vector'
+# Créez la variable jours_vector
 jours_vector <-
  
-# Nommer les éléments des vecteurs 'roulette_vector' et 'poker_vector' en utilisant 'jours_vector'
+# Nommer les éléments des vecteurs roulette_vector et poker_vector en utilisant jours_vector
 names(poker_vector) <-   
 names(roulette_vector) <-
 ```
@@ -298,10 +298,10 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Créez la variable 'jours_vector'
+# Créez la variable jours_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 
-# Nommer les éléments des vecteurs 'roulette_vector' et 'poker_vector' en utilisant 'jours_vector'
+# Nommer les éléments des vecteurs roulette_vector et poker_vector en utilisant jours_vector
 names(poker_vector) <- jours_vector
 names(roulette_vector) <- jours_vector
 ```
@@ -369,10 +369,10 @@ Utilisez l'opérateur `+` pour additionner `A_vector` et `B_vector` Utilisez `<-
 A_vector <- c(1, 2, 3)
 B_vector <- c(4, 5, 6)
 
-# Faites la somme de  'A_vector' et 'B_vector'
+# Faites la somme de  A_vector et B_vector
 total_vector <- 
   
-# Affichez 'total_vector' dans la console
+# Affichez total_vector dans la console
 total_vector
 ```
 
@@ -381,10 +381,10 @@ total_vector
 A_vector <- c(1, 2, 3)
 B_vector <- c(4, 5, 6)
 
-#  Faites la somme de  'A_vector' et 'B_vector'
+#  Faites la somme de  A_vector et B_vector
 total_vector <- A_vector + B_vector
 
-# Affichez 'total_vector' dans la console
+# Affichez total_vector dans la console
 total_vector
 ```
 
@@ -434,7 +434,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi:
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(poker_vector) <- jours_vector
 names(roulette_vector) <- jours_vector
@@ -451,7 +451,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi:
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(poker_vector) <- jours_vector
 names(roulette_vector) <- jours_vector
@@ -507,7 +507,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -528,7 +528,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -592,7 +592,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -614,7 +614,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -681,7 +681,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -698,7 +698,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -751,7 +751,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -768,7 +768,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -814,7 +814,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -832,7 +832,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -892,7 +892,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -908,7 +908,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -972,7 +972,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -989,7 +989,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -1045,7 +1045,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -1065,7 +1065,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -1119,7 +1119,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector
@@ -1139,7 +1139,7 @@ poker_vector <- c(140, -50, 20, -120, 240)
 # Gains à la roulette de lundi à vendredi
 roulette_vector <- c(-24, -50, 100, -350, 10)
 
-# Donnez un nom aux vecteurs 'poker_vector' et 'roulette_vector'
+# Donnez un nom aux vecteurs poker_vector et roulette_vector
 jours_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(roulette_vector) <- jours_vector
 names(poker_vector) <- jours_vector

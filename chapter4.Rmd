@@ -174,7 +174,7 @@ enquete_vector <- c("M", "F", "F", "M", "M")
 # Convertissez enquete_vector en facteur
 factor_enquete_vector <- 
 
-# Spécifiez les niveaux de  'factor_enquete_vector'
+# Spécifiez les niveaux de  factor_enquete_vector
 levels(factor_enquete_vector) <- 
 
 factor_enquete_vector
@@ -187,7 +187,7 @@ enquete_vector <- c("M", "F", "F", "M", "M")
 # Convertissez enquete_vector en facteurs
 factor_enquete_vector <- factor(enquete_vector)
 
-# Spécifiez les niveaux de  'factor_enquete_vector'
+# Spécifiez les niveaux de  factor_enquete_vector
 levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 
 factor_enquete_vector
@@ -239,10 +239,10 @@ factor_enquete_vector <- factor(enquete_vector)
 levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 factor_enquete_vector
 
-# Placez votre code ici pour 'enquete_vector'
+# Placez votre code ici pour enquete_vector
 
 
-# Placez votre code ici pour'factor_enquete_vector'
+# Placez votre code ici pour factor_enquete_vector
 
 ```
 
@@ -253,10 +253,10 @@ factor_enquete_vector <- factor(enquete_vector)
 levels(factor_enquete_vector) <- c("Feminin", "Masculin")
 factor_enquete_vector
 
-# Placez votre code ici pour 'enquete_vector'
+# Placez votre code ici pour enquete_vector
 summary(enquete_vector)
 
-# Placez votre code ici pour 'factor_enquete_vector'
+# Placez votre code ici pour factor_enquete_vector
 summary(factor_enquete_vector)
 ```
 
@@ -338,7 +338,7 @@ success_msg("Ouf, il semble que R soit neutre. Ou peut-&#234;tre veut-il juste r
 
 Mais ce n'est pas toujours le cas ! Parfois il faudra aussi travailler avec des facteurs ordonnés, qui ont un ordre naturel dans les niveaux. Si c'est le cas, nous devons veiller à ce que R le comprenne... 
 
-Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vous souhaitez évaluer leurs performances. Pour ce faire, vous allez évaluer leur vitesse. Chaque statisticiens sera indiqué comme `"Lent"`, `"Rapide"` ou `"Ultra-Rapide"`. Vous stockerez les résultats dans 'vitesse_vector'.
+Disons que vous dirigez une équipe de recherche de cinq statisticiens et que vous souhaitez évaluer leurs performances. Pour ce faire, vous allez évaluer leur vitesse. Chaque statisticiens sera indiqué comme `"Lent"`, `"Rapide"` ou `"Ultra-Rapide"`. Vous stockerez les résultats dans `vitesse_vector`.
 
 
 *** =instructions
@@ -366,13 +366,13 @@ Fabriquez `vitesse_vector`, il s'agit d'un vecteur contenant les chaînes des ca
 
 *** =sample_code
 ```{r eval=FALSE}
-# Fabriquez 'vitesse_vector'
+# Fabriquez vitesse_vector
 vitesse_vector <-
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Fabriquez 'vitesse_vector'
+# Fabriquez vitesse_vector
 vitesse_vector <- c("Rapide", "Lent", "Lent", "Rapide", "Ultra-Rapide")
 ```
 

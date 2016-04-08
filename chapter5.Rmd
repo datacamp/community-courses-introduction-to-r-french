@@ -245,12 +245,12 @@ planetes_df <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 *** =sample_code
 ```{r eval=FALSE}
-# Regardez la structure de 'planetes_df'
+# Regardez la structure de planetes_df
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# Regardez la structure de 'planetes_df'
+# Regardez la structure de planetes_df
 str(planetes_df)
 ```
 
@@ -295,7 +295,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Toutes les données sur les trois premières planètes
 proches_planetes_df <-
@@ -310,7 +310,7 @@ lointaines_planetes_df
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Toutes les données sur les trois premières planètes
 proches_planetes_df <- planetes_df[1:3, ]
@@ -366,7 +366,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Faites la sélection à la fois sur les lignes et les colonnes
 lointaines_planetes_diametre <-
@@ -374,7 +374,7 @@ lointaines_planetes_diametre <-
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Faites la sélection à la fois sur les lignes et les colonnes
 lointaines_planetes_diametre <- planetes_df[3:8,"diametre"]
@@ -426,7 +426,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Créez anneaux_vector
 anneaux_vector <-
@@ -434,7 +434,7 @@ anneaux_vector <-
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Créez anneaux_vector
 anneaux_vector <- planetes_df$anneaux
@@ -491,7 +491,7 @@ anneaux_vector <- planetes_df$anneaux
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetes_df' et 'anneaux_vector' sont pré-chargés dans votre espace de travail
+# planetes_df et anneaux_vector sont pré-chargés dans votre espace de travail
 
 # Sélectionnez les informations sur les planètes avec anneaux:
 planetes_avec_anneaux_df <-
@@ -499,7 +499,7 @@ planetes_avec_anneaux_df <-
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetes_df' et 'anneaux_vector' sont pré-chargés dans votre espace de travail
+# planetes_df et anneaux_vector sont pré-chargés dans votre espace de travail
 
 # Sélectionnez les informations sur les planètes avec anneaux:
 planetes_avec_anneaux_df <- planetes_df[anneaux_vector,]
@@ -559,7 +559,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # planetes qui sont plus petites que la Terre
 petite_planetes_df  <- # Placez votre code ici ! 
@@ -567,7 +567,7 @@ petite_planetes_df  <- # Placez votre code ici !
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # planetes qui sont plus petites que la Terre
 petite_planetes_df  <- subset(planetes_df, subset = diametre < 1)
@@ -671,7 +671,7 @@ planetes_df   <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Quel est le bon ordre de planetes_df$diametre qui permettrait de trier la variable ? 
 positions <- 
@@ -682,7 +682,7 @@ grande_en_premier_df <-
 
 *** =solution
 ```{r eval=FALSE}
-# 'planetes_df' de l'exercice précédent est pré-chargé
+# planetes_df de l'exercice précédent est pré-chargé
 
 # Quel est le bon ordre de planetes_df$diametre qui permettrait de trier la variable ? 
 positions <- order(planetes_df$diametre, decreasing = TRUE)

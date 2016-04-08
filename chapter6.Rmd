@@ -110,7 +110,7 @@ Utilisez la fonction [`list()`](http://www.rdocumentation.org/packages/base/func
 mon_vector <- 1:10 
 # Matrice avec les entiers de 1 à 9
 ma_matrix <- matrix(1:9, ncol = 3)
-# Les 10 premières lignes du jeu de données 'mtcars'
+# Les 10 premières lignes du jeu de données mtcars
 mon_df <- mtcars[1:10,]
 
 # Construisez une liste avec ces différents éléments:
@@ -123,7 +123,7 @@ ma_list <-
 mon_vector <- 1:10 
 # Matrice avec les entiers de 1 à 9
 ma_matrix <- matrix(1:9, ncol = 3)
-# Les 10 premières lignes du jeu de données 'mtcars'
+# Les 10 premières lignes du jeu de données mtcars
 mon_df <- mtcars[1:10,]
 
 # Construisez une liste avec ces différents éléments:
@@ -188,13 +188,13 @@ Ajouter les deux autres éléments de la même façon.
 mon_vector <- 1:10 
 # Matrice avec les entiers de 1 à 9
 ma_matrix <- matrix(1:9, ncol = 3)
-# Les 10 premières lignes du jeu de données 'mtcars'
+# Les 10 premières lignes du jeu de données mtcars
 mon_df <- mtcars[1:10,]
 
-# Construisez 'ma_list' avec ces éléments :
+# Construisez ma_list avec ces éléments :
 ma_list <- list(mon_vector, ma_matrix, mon_df)
 
-# Affichez 'ma_list' dans la console
+# Affichez ma_list dans la console
 
 ```
 
@@ -204,13 +204,13 @@ ma_list <- list(mon_vector, ma_matrix, mon_df)
 mon_vector <- 1:10 
 # Matrice avec les entiers de 1 à 9
 ma_matrix <- matrix(1:9, ncol = 3)
-# Les 10 premières lignes du jeu de données 'mtcars'
+# Les 10 premières lignes du jeu de données mtcars
 mon_df <- mtcars[1:10,]
 
-# Construisez 'ma_list' avec ces éléments :
+# Construisez ma_list avec ces éléments :
 ma_list <- list(vec = mon_vector, mat = ma_matrix, df = mon_df)
 
-# Affichez 'ma_list' dans la console
+# Affichez ma_list dans la console
 ma_list
 ```
 
@@ -266,17 +266,17 @@ avis     <- data.frame(scores,sources,commentaires)
 
 *** =sample_code
 ```{r eval=FALSE}
-# les vecteurs 'acteurs' et 'avis' sont pré-chargés dans votre espace de travail
+# les vecteurs acteurs et avis sont pré-chargés dans votre espace de travail
 
-# Créez la liste 'shining_list'
+# Créez la liste shining_list
 shining_list <- 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# les vecteurs 'acteurs' et 'avis' sont pré-chargés dans votre espace de travail
+# les vecteurs acteurs et avis sont pré-chargés dans votre espace de travail
 
-# Créez la liste 'shining_list'
+# Créez la liste shining_list
 shining_list <- list(titre = "Shining", acteurs = acteurs, avis = avis)
 ```
 
@@ -341,23 +341,23 @@ shining_list <- list(titre="Shining",acteurs=acteurs, avis=avis)
 
 *** =sample_code
 ```{r eval=FALSE}
-# 'shining_list' est déjà disponible dans votre espace de travail
+# shining_list est déjà disponible dans votre espace de travail
 
-# Créez 'last_acteur'
+# Créez last_acteur
 last_acteur <- 
 
-# Créez 'second_avis'
+# Créez second_avis
 second_avis <- 
 ```
 
 *** =solution
 ```{r eval=FALSE}
-# 'shining_list' est déjà disponible dans votre espace de travail
+# shining_list est déjà disponible dans votre espace de travail
 
-# Créez'last_acteur'
+# Créezlast_acteur
 last_acteur <- shining_list$acteurs[length(shining_list$acteurs)]
 
-# Créez'second_avis'
+# Créezsecond_avis
 second_avis <- shining_list$avis[2,]
 ```
 
@@ -421,7 +421,7 @@ shining_list <- list(titre="Shining",acteurs=acteurs, avis=avis)
 *** =sample_code
 
 ```{r eval=FALSE}
-# 'shining_list', la liste qui contient les titres, acteurs, et avis est pré-chargée dans votre espace de travail
+# shining_list, la liste qui contient les titres, acteurs, et avis est pré-chargée dans votre espace de travail
 
 # Nous avons oublié quelque chose, rajoutez l'année à shining_list
 shining_list_full <- 
@@ -433,7 +433,7 @@ shining_list_full <-
 *** =solution
 
 ```{r eval=FALSE}
-# 'shining_list', la liste qui contient les titres, acteurs, et avis est pré-chargée dans votre espace de travail
+# shining_list, la liste qui contient les titres, acteurs, et avis est pré-chargée dans votre espace de travail
 
 # Nous avons oublié quelque chose, rajoutez l'année à shining_list:
 shining_list_full <- c(shining_list, annee = 1980)
