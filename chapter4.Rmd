@@ -60,9 +60,9 @@ factor_genre_vector <- factor(genre_vector)
 *** =sct
 ```{r eval=FALSE}
 test_object("factor_genre_vector",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>factor_genre_vector</code>.",
-            incorrect_msg = "Avez-vous bien pass&#233; <code>genre_vector</code> en tant que param&#232;tre de la fonction factor, pour stocker le r&#233;sultat dans <code>factor_genre_vector</code> ? ")
-success_msg("Bien ! Si vous voulez en savoir plus sur la fonction <code>factor()</code>, n'h&#233;sitez pas &#224; taper <code> ? factor</code> dans la console. Cela ouvrira une page d'aide. On passe &#224; l'exercice suivant.");
+            undefined_msg = "Faites attention à bien définir la variable <code>factor_genre_vector</code>.",
+            incorrect_msg = "Avez-vous bien passé <code>genre_vector</code> en tant que paramètre de la fonction factor, pour stocker le résultat dans <code>factor_genre_vector</code> ? ")
+success_msg("Bien ! Si vous voulez en savoir plus sur la fonction <code>factor()</code>, n'hésitez pas à taper <code> ? factor</code> dans la console. Cela ouvrira une page d'aide. On passe à l'exercice suivant.");
 ```
 
 *** =skills
@@ -117,14 +117,14 @@ factor_temperature_vector
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien au code indiqu&#233; en exemple. Cliquez sur le bouton submit et regardez la solution ! "
+msg = "Ne changez rien au code indiqué en exemple. Cliquez sur le bouton submit et regardez la solution ! "
 test_object("animals_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("temperature_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_animaux_vector", undefined_msg = msg, incorrect_msg = msg)
 test_output_contains("factor_animaux_vector", incorrect_msg = msg)
 test_object("factor_temperature_vector", undefined_msg = msg, incorrect_msg = msg)
 test_output_contains("factor_temperature_vector", incorrect_msg = msg)
-success_msg("Vous avez compris ce qui s'est pass&#233; dans cet exercice ? G&#233;nial ! On passe &#224; l'exercice suivant pour regarder les facteurs et leur niveaux plus en d&#233;tails.")
+success_msg("Vous avez compris ce qui s'est passé dans cet exercice ? Génial ! On passe à l'exercice suivant pour regarder les facteurs et leur niveaux plus en détails.")
 ```
 
 *** =skills
@@ -195,15 +195,15 @@ factor_enquete_vector
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne modifiez pas la d&#233;finition de <code>enquete_vector</code> ! "
+msg = "Ne modifiez pas la définition de <code>enquete_vector</code> ! "
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_function("factor","x",
-              incorrect_msg = "Avez-vous bien utilis&#233; la fonction <code>factor()</code> pour cr&#233;er <code>factor_enquete_vector</code> ? ")
+              incorrect_msg = "Avez-vous bien utilisé la fonction <code>factor()</code> pour créer <code>factor_enquete_vector</code> ? ")
 test_object("factor_enquete_vector", eq_condition = "equal",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>factor_enquete_vector</code>.",
-            incorrect_msg = paste("Avez-vous bien indiqu&#233; les bons niveaux de facteurs &#224; <code>factor_enquete_vector</code> ? ",
-                                  "Souvenez-vous que R est sensible &#224; la diff&#233;rence entre les majuscules et les minuscules. Faites aussi attention &#224; respecter l'ordre des niveaux ! "))
-success_msg("Magnifique ! On passe &#224; l'exercice suivant.")
+            undefined_msg = "Faites attention à bien définir la variable <code>factor_enquete_vector</code>.",
+            incorrect_msg = paste("Avez-vous bien indiqué les bons niveaux de facteurs à <code>factor_enquete_vector</code> ? ",
+                                  "Souvenez-vous que R est sensible à la différence entre les majuscules et les minuscules. Faites aussi attention à respecter l'ordre des niveaux ! "))
+success_msg("Magnifique ! On passe à l'exercice suivant.")
 ```
 
 *** =skills
@@ -262,13 +262,13 @@ summary(factor_enquete_vector)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux 4 premi&#232;res lignes qui d&#233;finissent <code>enquete_vector</code> et <code>factor_enquete_vector</code>."
+msg = "Ne changez rien aux 4 premières lignes qui définissent <code>enquete_vector</code> et <code>factor_enquete_vector</code>."
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_enquete_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_function("summary", "object", 
-              incorrect_msg = c("Avez-vous utilis&#233; la fonction summary sur <code>enquete_vector</code> ? ",
-                                "Avez-vous utilis&#233; la fonction summary sur <code>factor_enquete_vector</code> ? "))
-success_msg("Bien ! Regardez la sortie dans la console. Le fait que vous ayez identifi&#233; <code>\"Masculin\"</code> et <code>\"Féminin\"</code> comme niveaux de facteur dans <code>factor_enquete_vector</code> permet &#224; R d'afficher le nombre d'&#233;l&#233;ments pour chaque cat&#233;gorie.")
+              incorrect_msg = c("Avez-vous utilisé la fonction summary sur <code>enquete_vector</code> ? ",
+                                "Avez-vous utilisé la fonction summary sur <code>factor_enquete_vector</code> ? "))
+success_msg("Bien ! Regardez la sortie dans la console. Le fait que vous ayez identifié <code>\"Masculin\"</code> et <code>\"Féminin\"</code> comme niveaux de facteur dans <code>factor_enquete_vector</code> permet à R d'afficher le nombre d'éléments pour chaque catégorie.")
 ```
 
 *** =skills
@@ -321,11 +321,11 @@ factor_enquete_vector[1] > factor_enquete_vector[2]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux 4 premi&#232;res lignes qui d&#233;finissent <code>enquete_vector</code> et <code>factor_enquete_vector</code>."
+msg = "Ne changez rien aux 4 premières lignes qui définissent <code>enquete_vector</code> et <code>factor_enquete_vector</code>."
 test_object("enquete_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_enquete_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
-test_output_contains("factor_enquete_vector[1] > factor_enquete_vector[2]", incorrect_msg = "Ne changez rien &#224; la derni&#232;re commande, nous voulons que cette bataille aie lieu une fois pour toutes ! ")
-success_msg("Ouf, il semble que R soit neutre. Ou peut-&#234;tre veut-il juste rester en dehors de ces discussions ;-).")
+test_output_contains("factor_enquete_vector[1] > factor_enquete_vector[2]", incorrect_msg = "Ne changez rien à la dernière commande, nous voulons que cette bataille aie lieu une fois pour toutes ! ")
+success_msg("Ouf, il semble que R soit neutre. Ou peut-être veut-il juste rester en dehors de ces discussions ;-).")
 ```
 
 *** =skills
@@ -379,9 +379,9 @@ vitesse_vector <- c("Rapide", "Lent", "Lent", "Rapide", "Ultra-Rapide")
 *** =sct
 ```{r eval=FALSE}
 test_object("vitesse_vector", 
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>vitesse_vector</code>.",
-            incorrect_msg = "Faites attention &#224; bien assigner le bon vecteur &#224; vitesse_vector. Souvenez-vous que R est sensible &#224; la différence entre les majuscules et les minuscules ! ")
-success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant.")
+            undefined_msg = "Faites attention à bien définir la variable <code>vitesse_vector</code>.",
+            incorrect_msg = "Faites attention à bien assigner le bon vecteur à vitesse_vector. Souvenez-vous que R est sensible à la différence entre les majuscules et les minuscules ! ")
+success_msg("Bien joué ! On passe à l'exercice suivant.")
 ```
 
 *** =skills
@@ -452,16 +452,16 @@ summary(factor_vitesse_vector)
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien au code qui d&#233;fini <code>vitesse_vector</code>."
+msg = "Ne changez rien au code qui définit <code>vitesse_vector</code>."
 test_object("vitesse_vector", undefined_msg = msg, incorrect_msg = msg)
 test_correct({
   test_object("factor_vitesse_vector", eq_condition = "equal",
-              undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>factor_vitesse_vector</code>.",
-              incorrect_msg = "Faites attention &#224; bien assigner les bons niveaux &#224; factor_vitesse_vector. Faites aussi attention &#224; l'ordre des &#233;l&#233;ments dans le param&#224;tre levels.")
+              undefined_msg = "Faites attention à bien définir la variable <code>factor_vitesse_vector</code>.",
+              incorrect_msg = "Faites attention à bien assigner les bons niveaux à factor_vitesse_vector. Faites aussi attention à l'ordre des éléments dans le paramètre levels.")
 },{
   test_function("factor", c("x", "levels", "ordered"))
 })
-success_msg("Bien ! Regardez dans la console. On voit maintenant qu'il y a une notion d'ordre entre les niveaux de facteurs, on voit cela gr&#226;ce au signe <code><</code>. On passe &#224; l'exercice suivant.");
+success_msg("Bien ! Regardez dans la console. On voit maintenant qu'il y a une notion d'ordre entre les niveaux de facteurs, on voit cela grâce au signe <code><</code>. On passe à l'exercice suivant.");
 ```
 
 *** =skills
@@ -479,7 +479,7 @@ Le fait que `factor_vitesse_vector` est maintenant ordonné permet de comparer l
 
 *** =instructions
 
-Vérifiez si le statisticien numéro 2 est plus rapide que statisticien numéro 5 et assignez le résultat à `la_comparaison`. N'oubliez pas l'opérateur `>` permet de vérifier si un élément est plus grand que l'autre.
+Vérifiez si le statisticien numéro 2 est plus rapide que statisticien numéro 5 et assignez le résultat à `la_comparaison`. N'oubliez pas, l'opérateur `>` permet de vérifier si un élément est plus grand que l'autre.
 
 *** =hint
 Vous pouvez comparer les éléments du vecteur avec l'opérateur `>`. 
@@ -520,13 +520,13 @@ la_comparaison
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne changez rien aux instructions qui d&#233;finissent <code>vitesse_vector</code> et <code>factor_vitesse_vector</code> ! "
+msg = "Ne changez rien aux instructions qui définissent <code>vitesse_vector</code> et <code>factor_vitesse_vector</code> ! "
 test_object("vitesse_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("factor_vitesse_vector", eq_condition = "equal", undefined_msg = msg, incorrect_msg = msg)
 test_object("la_comparaison",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>la_comparaison</code>.",
-            incorrect_msg = "Il semblerait que <code>la_comparaison</code> ne soit pas correctement effectu&#233;e. V&#233;rifiez les indices.");
-success_msg("G&#233;nial ! Que nous apprend ce r&#233;sultat ? le statisticien 2 se plaint au sujet du num&#233;ro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voil&#224; qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous &#234;tes pr&#234;ts &#224; plonger dans le monde magnifique des data.frame, une structuration des donn&#233;es tr&#232;s importante en R ! ")
+            undefined_msg = "Faites attention à bien définir la variable <code>la_comparaison</code>.",
+            incorrect_msg = "Il semblerait que <code>la_comparaison</code> ne soit pas correctement effectuée. Vérifiez les indices.");
+success_msg("Génial ! Que nous apprend ce résultat ? le statisticien 2 se plaint au sujet du numéro 5 alors qu'en fait il est celui qui fait tout ralentir ! Voilà qui termine le chapitre sur les facteurs. Avec une base solide sur les vecteurs, les matrices et les facteurs, vous êtes prêts à plonger dans le monde magnifique des data.frame, une structuration des données très importante en R ! ")
 ```
 
 *** =skills

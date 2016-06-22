@@ -16,7 +16,7 @@ Lors d'une enquête vous avez souvent des questions telles que :
 
 Les réponses des enquêtés aux questions formulées ci-dessus forment un ensemble de données de différents types. Et généralement vous-même vous travaillez avec des ensembles de données qui contiennent des types de données différents au lieu d'un seul.
 
-Un data frame est structuré avec les individus en lignes et les différentes variables en colonne. Il s'agit d'un concept familier pour ceux qui viennent de différents logiciels de statistiques telles que SAS ou SPSS.
+Un data frame est structuré avec les individus en lignes et les différentes variables en colonnes. Il s'agit d'un concept familier pour ceux qui viennent de différents logiciels de statistiques telles que SAS ou SPSS.
 
 *** =instructions
 Cliquez sur 'Submit Answer'. Les données de la base de données [`mtcars`] (http://www.rdocumentation.org/packages/datasets/functions/mtcars) seront imprimées dans la console (il s'agit d'un jeu de données d'exemple qui est proposé avec R)
@@ -86,11 +86,11 @@ head(mtcars)
 
 *** =sct
 ```{r eval=FALSE}
-test_function("head", "x", incorrect_msg = "Avez-vous pass&#233; le bon param&#232;tre &#224; la fonction <code>head()</code> ? Assurez-vous de passer le jeu de donn&#233;es que vous voulez inspecter, <code>mtcars</code> dans ce cas.")
+test_function("head", "x", incorrect_msg = "Avez-vous passé le bon paramètre à la fonction <code>head()</code> ? Assurez-vous de passer le jeu de données que vous voulez inspecter, <code>mtcars</code> dans ce cas.")
 
 test_output_contains("head(mtcars)",
-                     incorrect_msg = "Faites attention &#224; bien utiliser la fonction <code>head()</code> sur <code>mtcars</code>.")
-success_msg("Magnifique ! Alors, qu'avons-nous dans ce jeu de donn&#233;es ? Par exemple, <code>hp</code> représente par exemple la puissance de la voiture ; la Datsun a la plus faible puissance: 6 chevaux sont affich&#233;es. Pour une pr&#233;sentation compl&#232;te de la signification des variables, tapez <code> ? mtcars</code> dans la console et regardez la page d'aide. On passe &#224; l'exercice suivant ! ");
+                     incorrect_msg = "Faites attention à bien utiliser la fonction <code>head()</code> sur <code>mtcars</code>.")
+success_msg("Magnifique ! Alors, qu'avons-nous dans ce jeu de données ? Par exemple, <code>hp</code> représente par exemple la puissance de la voiture ; la Datsun a la plus faible puissance: 6 chevaux sont affichés. Pour une présentation complète de la signification des variables, tapez <code> ? mtcars</code> dans la console et regardez la page d'aide. On passe à l'exercice suivant ! ");
 ```
 
 *** =skills
@@ -134,9 +134,9 @@ str(mtcars)
 
 *** =sct
 ```{r eval=FALSE}
-test_function("str","object",incorrect_msg = "Soyez certain de bien avoir regard&#233; la structure du jeu de donn&#233;es <code>mtcars</code>.")
-test_output_contains("str(mtcars)", incorrect_msg = "Faites attention &#224; bien utiliser la fonction <code>str()</code> sur <code>mtcars</code>.")
-success_msg("Tr&#232;s beau travail ! Avez-vous trouv&#233; toutes les informations qui figurent dans la session pr&#233;c&#233;dente de l'exercice ? On passe &#224; l'exercice suivant.")
+test_function("str","object",incorrect_msg = "Soyez certain de bien avoir regardé la structure du jeu de données <code>mtcars</code>.")
+test_output_contains("str(mtcars)", incorrect_msg = "Faites attention à bien utiliser la fonction <code>str()</code> sur <code>mtcars</code>.")
+success_msg("Très beau travail ! Avez-vous trouvé toutes les informations qui figurent dans la session précédente de l'exercice ? On passe à l'exercice suivant.")
 ```
 
 *** =skills
@@ -147,7 +147,7 @@ success_msg("Tr&#232;s beau travail ! Avez-vous trouv&#233; toutes les informati
 
 Utiliser un jeu de données intégré à R n'est pas ce qu'il y a de plus intéressant, nous allons construire notre propre jeu de données. 
 
-Comme premier objectif, vous voulez construire un data frame qui décrit les principales caractéristiques des huit planètes dans notre système solaire. Selon votre bon ami Buzz, les principales caractéristiques d'une planète sont :
+Comme premier objectif, vous voulez construire un data frame qui décrit les principales caractéristiques des huit planètes dans notre système solaire. Selon votre bon ami Buzz l'éclair, les principales caractéristiques d'une planète sont :
 
 - Le type de planète (tellurique ou gazeuse).
 - Le diamètre de la planète par rapport au diamètre de la terre.
@@ -205,10 +205,10 @@ planetes_df  <- data.frame(planetes,type,diametre,rotation,anneaux)
 
 test_correct({
   test_object("planetes_df",
-              undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>planetes_df</code>.",
-              incorrect_msg = "Faites attention &#224; bien donner les arguments dans le bon ordre pour la cr&#233;ation du data frame <code>planetes_df</code>. Le bon ordre est planetes, type, diametre, rotation et anneaux.") 
+              undefined_msg = "Faites attention à bien définir la variable <code>planetes_df</code>.",
+              incorrect_msg = "Faites attention à bien donner les arguments dans le bon ordre pour la création du data frame <code>planetes_df</code>. Le bon ordre est planetes, type, diametre, rotation et anneaux.") 
 }, {
-  msg = "Ne changez rien &#224; la d&#233;finition des vecteurs. Rajoutez simplement le code qui permet de cr&#233;er <code>planetes_df</code> ! "
+  msg = "Ne changez rien à la définition des vecteurs. Rajoutez simplement le code qui permet de créer <code>planetes_df</code> ! "
   test_object("planetes", undefined_msg = msg, incorrect_msg = msg)
   test_object("type", undefined_msg = msg, incorrect_msg = msg)
   test_object("diametre", undefined_msg = msg, incorrect_msg = msg)
@@ -216,7 +216,7 @@ test_correct({
   test_object("anneaux", undefined_msg = msg, incorrect_msg = msg)
 })
 
-success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant. La prochaine &#233;tape, comme vous le savez maintenant, est d'inspecter le jeu de donn&#233;es que vous venez de cr&#233;er. Dirigez-vous vers le prochain exercice.");
+success_msg("Bien joué ! On passe à l'exercice suivant. La prochaine étape, comme vous le savez maintenant, est d'inspecter le jeu de données que vous venez de créer. Dirigez-vous vers le prochain exercice.");
 ```
 
 *** =skills
@@ -258,8 +258,8 @@ str(planetes_df)
 ```{r eval=FALSE}
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code>"
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
-test_function("str", "object", incorrect_msg = "Faites attention &#224; bien utiliser la fonction <code>str()</code> sur <code>planetes_df</code>.")
-success_msg("G&#233;nial ! Maintenant que vous avez une compr&#233;hension claire de <code>planetes_df</code>, il est temps de voir comment vous pouvez en s&#233;lectionner des &#233;l&#233;ments. Vous verrez &#231;a dans les exercices suivant ! ")
+test_function("str", "object", incorrect_msg = "Faites attention à bien utiliser la fonction <code>str()</code> sur <code>planetes_df</code>.")
+success_msg("Génial ! Maintenant que vous avez une compréhension claire de <code>planetes_df</code>, il est temps de voir comment vous pouvez y sélectionner des éléments. Vous verrez ça dans les exercices suivant ! ")
 ```
 
 *** =skills
@@ -328,12 +328,12 @@ lointaines_planetes_df
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("proches_planetes_df",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>proches_planetes_df</code>.",
-            incorrect_msg = "Avez-vous bien s&#233;lectionn&#233; les 3 premi&#232;res lignes de <code>planetes_df</code> ? ")
+            undefined_msg = "Faites attention à bien définir la variable <code>proches_planetes_df</code>.",
+            incorrect_msg = "Avez-vous bien sélectionné les 3 premières lignes de <code>planetes_df</code> ? ")
 test_object("lointaines_planetes_df",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>lointaines_planetes_df</code>.",
-            incorrect_msg = "Avez-vous bien s&#233;lectionn&#233; les 3 derni&#232;res lignes de <code>planetes_df</code>.")
-success_msg("Bien ! En plus de la s&#233;lection des &#233;l&#233;ments de votre base de donn&#233;es par leurs indices, vous pouvez &#233;galement utiliser les noms de colonne. Pour apprendre comment, dirigez-vous vers le prochain exercice.")
+            undefined_msg = "Faites attention à bien définir la variable <code>lointaines_planetes_df</code>.",
+            incorrect_msg = "Avez-vous bien sélectionné les 3 dernières lignes de <code>planetes_df</code>.")
+success_msg("Bien ! En plus de la sélection des éléments de votre base de données par leurs indices, vous pouvez également utiliser les noms de colonne. Pour apprendre comment, dirigez-vous vers le prochain exercice.")
 ```
 
 *** =skills
@@ -385,9 +385,9 @@ lointaines_planetes_diametre <- planetes_df[3:8,"diametre"]
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("lointaines_planetes_diametre",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>lointaines_planetes_diametre</code>.",
-            incorrect_msg = "Faites attention &#224; bien choisir les 6 derni&#232;res lignes et la colonne <code>diametre</code>.")
-success_msg("C'est beau ! On passe &#224; l'exercice suivant ! ")
+            undefined_msg = "Faites attention à bien définir la variable <code>lointaines_planetes_diametre</code>.",
+            incorrect_msg = "Faites attention à bien choisir les 6 dernières lignes et la colonne <code>diametre</code>.")
+success_msg("C'est beau ! On passe à l'exercice suivant ! ")
 ```
 
 *** =skills
@@ -396,7 +396,7 @@ success_msg("C'est beau ! On passe &#224; l'exercice suivant ! ")
 --- type:NormalExercise xp:100
 ## Seulement les planètes avec anneaux
 
-Souvent, vous voudrez choisir une colonne entière, i.e une variable spécifique d'un jeu de données. Si vous souhaitez sélectionner tous les éléments de la variable `anneaux`, les deux instructions `planetes_df[ ,5]` et `planetes_df[ ,"anneaux"]` font le job.
+Souvent, vous voudrez choisir une colonne entière, i.e. une variable spécifique d'un jeu de données. Si vous souhaitez sélectionner tous les éléments de la variable `anneaux`, les deux instructions `planetes_df[ ,5]` et `planetes_df[ ,"anneaux"]` font le job.
 
 Cependant, il y a un raccourci. Utilisez le  symbole `$` pour dire à R qu'il n'a qu'à garder tous les éléments de la variable derrière le symbole :
 
@@ -445,9 +445,9 @@ anneaux_vector <- planetes_df$anneaux
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("anneaux_vector",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>anneaux_vector</code>.",
-            incorrect_msg = "Il semblerait que <code>anneaux_vector</code> ne contienne pas tous les &#233;l&#233;ments de <code>ring</code> du jeu de donn&#233;es <code>planetes_df</code>.")
-success_msg("Bien ! On passe &#224; l'exercice suivant et d&#233;couvrez une nouvelle fa&#231;on de faire des extractions ! ")
+            undefined_msg = "Faites attention à bien définir la variable <code>anneaux_vector</code>.",
+            incorrect_msg = "Il semblerait que <code>anneaux_vector</code> ne contienne pas tous les éléments de <code>ring</code> du jeu de données <code>planetes_df</code>.")
+success_msg("Bien ! On passe à l'exercice suivant et découvrez une nouvelle façon de faire des extractions ! ")
 ```
 
 *** =skills
@@ -507,13 +507,13 @@ planetes_avec_anneaux_df <- planetes_df[anneaux_vector,]
 
 *** =sct
 ```{r eval=FALSE}
-msg = "Ne supprimez ou n'&#233;ditez pas <code>planetes_df</code> ou <code>anneaux_vector</code> ! "
+msg = "Ne supprimez ou n'éditez pas <code>planetes_df</code> ou <code>anneaux_vector</code> ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("anneaux_vector", undefined_msg = msg, incorrect_msg = msg)
 test_object("planetes_avec_anneaux_df",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>planetes_avec_anneaux_df</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>planetes_avec_anneaux_df</code>.",
             incorrect_msg = "Il semblerait que <code>planetes_avec_anneaux_df</code> ne contienne pas toutes les informations sur les planetes avec anneaux");
-success_msg("Magnifique ! Cette solution est assez fastidieuse. Le prochain exercice va vous apprendre comment le faire de fa&#231;on plus concise.")
+success_msg("Magnifique ! Cette solution est assez fastidieuse. Le prochain exercice va vous apprendre comment le faire de façon plus concise.")
 ```
 
 *** =skills
@@ -523,7 +523,7 @@ success_msg("Magnifique ! Cette solution est assez fastidieuse. Le prochain exer
 ## Seulement les planètes avec anneaux (Version courte)
 
 
-Alors... Qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov ! la NASA est probablement déjà en train de flirter avec votre CV;-).
+Alors... Qu'est-ce que vous avez appris dans les exercices précédents ? Vous avez sélectionné un sous-ensemble d'un jeu de données (de `planetes_df`) sur la base de si, oui ou non, une certaine condition était vraie (anneaux ou pas d'anneaux), et vous avez réussi à retirer toutes les données pertinentes. Mazel Tov ! la NASA est probablement déjà en train de flirter avec votre CV ;-).
 
 Maintenant, passons au niveau supérieur et utilisons la fonction [`subset()`] (http://www.rdocumentation.org/packages/base/functions/subset). Vous devriez voir la fonction [`subset()`](http://www.rdocumentation.org/packages/base/functions/subset) comme un raccourci pour faire exactement la même chose que ce que vous avez fait dans les exercices précédents.
 
@@ -542,7 +542,7 @@ subset(planetes_df, subset = planetes_df$anneaux == TRUE)
 R va renvoyer exactement le même résultat qu'à l'exercice précédent, mais cette fois sans nécessiter la création de `anneaux_vector` ! 
 
 *** =instructions
-Créez un data frame `petite_planetes_df` avec les planètes qui ont un diamètre plus petit que celui de la Terre (donc inférieur à 1, puisque le diamètre est ici une mesure relative par rapport à celui de la Terre).
+Créez un data frame `petite_planetes_df` avec les planètes qui ont un diamètre plus petit que celui de la Terre (donc inférieur à 1, puisque le diamètre est ici une mesure relative à celle de la Terre).
 
 *** =hint
 Désolé, vous êtes tout seul pour cette fois.
@@ -578,9 +578,9 @@ petite_planetes_df  <- subset(planetes_df, subset = diametre < 1)
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("petite_planetes_df",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>petite_planetes_df</code>.",
-            incorrect_msg = "Il semblerait que <code>petite_planetes_df</code> ne contienne pas la bonne extraction de <code>plan&#232;tes_df</code>.");
-success_msg("Bien ! Non seulement la fonction <code>subset()</code> est plus concise, mais aussi elle est plus lisible pour quelqu'un qui lirait votre code. On passe &#224; l'exercice suivant.");
+            undefined_msg = "Faites attention à bien définir la variable <code>petite_planetes_df</code>.",
+            incorrect_msg = "Il semblerait que <code>petite_planetes_df</code> ne contienne pas la bonne extraction de <code>planètes_df</code>.");
+success_msg("Bien ! Non seulement la fonction <code>subset()</code> est plus concise, mais aussi elle est plus lisible pour quelqu'un qui lirait votre code. On passe à l'exercice suivant.");
 ```
 
 *** =skills
@@ -600,13 +600,13 @@ Dans vos analyses de données vous allez trier vos données selon certaines vari
 order(a)
 ```
 
-renvoie le  vector {2, 1, 3} car 100 est le deuxième plus grand élément du vector, 9 est le plus petit et 101 est le plus grand.
+renvoie le  vector {2, 1, 3} car 100 est le deuxième plus grand élément du vecteur, 9 est le plus petit et 101 est le plus grand.
    
 ```
 a[order(a)]
 ```
 
-va vous donner le vecteur ordonné {9, 100, 101}, car il prend d'abord le deuxième élément de `a`, puis le premier et enfin le dernier. Compris ? Si vous n'êtes pas sûr, utiliser la console pour jouer avec [`order()`] (http://www.rdocumentation.org/packages/base/functions/order).`
+va vous renvoyer le vecteur ordonné {9, 100, 101}, car il prend d'abord le deuxième élément de `a`, puis le premier et enfin le dernier. Compris ? Si vous n'êtes pas sûr, utilisez la console pour jouer avec [`order()`] (http://www.rdocumentation.org/packages/base/functions/order).`
 
 *** =instructions
 Faites des essais avec la fonction [`order()`](http://www.rdocumentation.org/packages/base/functions/order) dans la console. Cliquez sur 'Submit Answer' lorsque vous êtes prêts à continuer.
@@ -635,7 +635,7 @@ order(c(5,4,6,7))
 
 *** =sct
 ```{r eval=FALSE}
-success_msg("Bien ! Maintenant, nous allons utiliser le <code>order()</code> pour trier votre jeu de donn&#233;es ! ")
+success_msg("Bien ! Maintenant, nous allons utiliser le <code>order()</code> pour trier votre jeu de données ! ")
 ```
 
 *** =skills
@@ -644,7 +644,7 @@ success_msg("Bien ! Maintenant, nous allons utiliser le <code>order()</code> pou
 --- type:NormalExercise xp:100
 ## Classer un jeu de données
 
-Bon, maintenant que vous comprenez la fonction [`order()`](http://www.rdocumentation.org/packages/base/functions/order), on va faire quelque chose d'utile avec elle. Vous voulez réorganiser votre jeu de données de telle sorte qu'il commence avec la plus grande planète et se termine par la plus petite. Un tri sur la colonne `diametre` donc.
+Bon, maintenant que vous comprenez la fonction [`order()`](http://www.rdocumentation.org/packages/base/functions/order), on va tenter de faire quelque chose d'utile avec cette dernière. Vous voulez réorganiser votre jeu de données de telle sorte qu'il commence avec la plus grande planète et se termine par la plus petite. Un tri sur la colonne `diametre` donc.
 
  
 
@@ -696,12 +696,12 @@ grande_en_premier_df <- planetes_df[positions, ]
 msg = "Ne modifiez ou ne supprimez pas <code>planetes_df</code> data frame ! "
 test_object("planetes_df", undefined_msg = msg, incorrect_msg = msg)
 test_object("positions",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>positions</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>positions</code>.",
             incorrect_msg = "Il semblerait que <code>positions</code> ne contienne pas les bons indices de position de la colonne diametre")
 test_object("grande_en_premier_df",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>grande_en_premier_df</code>.",
-            incorrect_msg = "Il semblerait que <code>grande_en_premier_df</code> ne correspondent pas &#224; <code>planetes_df</code> tri&#233; dans le bon ordre.")
-success_msg("Magnifique ! Pensez &#224; regarder grande_en_premier_df pour voir &#224; quoi il ressemble. Cet exercice conclut le chapitre sur les jeux de donn&#233;es. N'oubliez pas que les data frame sont extr&#234;mement importants en R, vous aurez besoin d'eux tout le temps. Une autre structure de donn&#233;es tr&#232;s souvent utilis&#233;e est la liste. Ce sera l'objet du prochain chapitre ! ")
+            undefined_msg = "Faites attention à bien définir la variable <code>grande_en_premier_df</code>.",
+            incorrect_msg = "Il semblerait que <code>grande_en_premier_df</code> ne correspondent pas à <code>planetes_df</code> trié dans le bon ordre.")
+success_msg("Magnifique ! Pensez à regarder grande_en_premier_df pour voir à quoi il ressemble. Cet exercice conclut le chapitre sur les jeux de données. N'oubliez pas que les data frame sont extrêmement importants en R, vous aurez besoin d'eux tout le temps. Une autre structure de données très souvent utilisée est la liste. Ce sera l'objet du prochain chapitre ! ")
 ```
 
 *** =skills
