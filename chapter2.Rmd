@@ -3,7 +3,7 @@ title_meta  : Chapitre 2
 title       : les vecteurs
 description : Nous allons faire un voyage à Las Vegas, vous allez y apprendre à analyser vos résultats au casino en utilisant des vecteurs. Une fois ce chapitre terminé, vous serez capable de créer des vecteurs, de les nommer, d'en extraire des éléments et de les comparer entre eux. 
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:393a58b291
 ## Créer un vecteur
 
 Vous vous sentez chanceux ? 
@@ -51,7 +51,7 @@ success_msg("Bien ! On passe &#224; la suite.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:4dcb3557bc
 ## Créez un vecteur (2)
 
 Concentrons-nous un peu ! 
@@ -109,7 +109,7 @@ success_msg("Parfait ! En rajoutant des espaces apr&#232;s les virgules dans la 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:53a46b887b
 ## Créer un vecteur (3)
 
 Une semaine passée à Las Vegas, et toujours aucune Ferrari dans votre garage... vous décidez, qu'il est temps d'utiliser vos super-pouvoirs de statisticien.
@@ -171,7 +171,7 @@ success_msg("C'est bien ! Pour v&#233;rifier le contenu de vos vecteurs, n'oubli
 *** =skills
 1
 
----  type:NormalExercise xp:100
+---  type:NormalExercise xp:100 key:3913283606
 ## Nommer les éléments d'un vecteur
 
 En tant que statisticien il est important d'avoir une bonne vue d'ensemble des données que vous êtes en train d'utiliser. Ainsi savoir ce à quoi chaque élément fait référence est essentiel ! 
@@ -251,7 +251,7 @@ success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:3315f1e9be
 ## Nommer les éléments d'un vecteur (2)
 
 Si vous voulez devenir un bon statisticien, vous devez devenir fainéant ( si vous l'êtes déjà: tant mieux :-) )
@@ -329,7 +329,7 @@ success_msg("Tr&#232;s bien ! Petit conseil : essayez le plus possible d'&#233;v
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a3debb2391
 ## Calcul des gains totaux
 
 Maintenant que vous avez un beau `vector` contenant vos gains au poker et à la roulette, vous allez pouvoir commencer à faire quelques calculs.
@@ -405,7 +405,7 @@ success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:37f6026162
 ## Calcul des gains totaux (2)
 
 Avez-vous compris comment R fait des calculs avec des vecteurs ? 
@@ -475,7 +475,7 @@ success_msg("Bien ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:c911211595
 ## Calcul des gains totaux (3)
 
 En regardant les analyses précédentes, il semblerait que vous ayez un mélange de bons et de mauvais jours. 
@@ -561,7 +561,7 @@ test_object("total_semaine",
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:85cd163ec2
 ## Comparaisons des gains totaux
 
 Oups, il semblerait que vous soyez en train de perdre de l'argent. Il est grand temps de repenser et d'adapter votre stratégie. Il va falloir faire des analyses un peu plus poussées.
@@ -649,7 +649,7 @@ success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:70f01a048c
 ## Sélection dans un vecteur
 
 Votre intuition était la bonne. Il semblerait que le poker soit plus votre tasse de thé que la roulette.
@@ -722,7 +722,7 @@ success_msg("Bien ! Il est aussi possible de s&#233;lectionner plusieurs &#233;l
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:3879482097
 ## Sélection dans un vecteur (2)
 
 Que diriez-vous d'analyser vos résultats du milieu de semaine ? 
@@ -792,7 +792,7 @@ success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant pour avancer da
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:d2567a30e7
 ## Sélection dans un vecteur (3)
 
 Sélectionner plusieurs éléments de `poker_vector` avec `c(2,3,4)` n'est pas le plus pratique. Beaucoup de statisticiens sont fainéants par nature, et donc
@@ -857,7 +857,7 @@ success_msg("G&#233;nial ! L'op&#233;rateur <code>:</code> est tr&#232;s pratiqu
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:5dcde24cc0
 ## Sélection dans un vecteur (4)
 
 L'autre façon de résoudre l'exercice précédent est d'utiliser les noms des éléments des vecteurs (Lundi, Mardi,...) au lieu de leurs indices de position. Par exemple,
@@ -931,7 +931,7 @@ success_msg("Bon boulot ! Vous savez extraire des &#233;l&#233;ments d' un vecte
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:c870ff5182
 ## Sélection par comparaison - Étape 1
 
 En utilisant les opérateurs de comparaisons, on peut aborder la question précédente de manière plus astucieuse.
@@ -1014,7 +1014,7 @@ success_msg("Bien ! Plut&#244;t que de faire recycler &#224; R cinq fois la vale
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a2caabe031
 ## Sélection par comparaison - Étape 2
 
 
@@ -1095,7 +1095,7 @@ success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:ca94af8b6c
 ## Sélections avancées
 
 Comme vous l'avez fait pour le poker, vous voulez aussi connaître les jours où vous avez réalisé un gain à la roulette.
