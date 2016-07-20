@@ -5,7 +5,7 @@ description : Très souvent, les données sont qualitatives. Par exemple, les in
 framework   : datacamp
 mode        : selfcontained
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:f5da7b110b
 ## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ? 
 
 Dans ce chapitre, vous plongez dans le monde magnifique des **facteurs**. 
@@ -68,7 +68,7 @@ success_msg("Bien ! Si vous voulez en savoir plus sur la fonction <code>factor()
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:035c13837d
 ## Qu'est ce qu'un facteur et pourquoi devrais-je en utiliser ? (2)
 
 Il existe deux types de variables nominales : les variables non ordonnées et les variables ordonnées. 
@@ -130,7 +130,7 @@ success_msg("Vous avez compris ce qui s'est pass&#233; dans cet exercice ? G&#23
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:c8ac1a60ae
 ## Niveau de facteurs
 
 Lorsque vous importez un jeu de données, vous remarquerez généralement qu'il contient des facteurs avec des niveaux spécifiques. Parfois vous allez vouloir changer les noms de ces niveaux, pour des raisons de clarté ou autre. R vous permet de le faire avec la fonction [`levels()`] (http://www.rdocumentation.org/packages/base/functions/levels) :
@@ -209,7 +209,7 @@ success_msg("Magnifique ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:3b26500eac
 ## Décrire un factor
 
 Après avoir terminé ce cours, une de vos fonctions préférées dans R sera [`summary()`] (http://www.rdocumentation.org/packages/base/functions/summary). Cela vous donnera un aperçu rapide de `une_variable` : 
@@ -274,7 +274,7 @@ success_msg("Bien ! Regardez la sortie dans la console. Le fait que vous ayez id
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:4fbc8f1e25
 ## Bataille des sexes
 
 _"Tous les animaux sont égaux, mais certains animaux sont plus égaux que d'autres." -- George Orwell_
@@ -331,7 +331,7 @@ success_msg("Ouf, il semble que R soit neutre. Ou peut-&#234;tre veut-il juste r
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:4cd29dda9c
 ## Les facteurs ordonnés
 
 `"Masculin"` et `"Feminin"` étant des niveaux non ordonnés (ou nominaux) de facteurs, R retourne un message d'avertissement vous indiquant que le l'opérateur de comparaison n'est pas explicite. Comme vu auparavant, R attache une valeur égale aux niveaux de tels facteurs. 
@@ -387,7 +387,7 @@ success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:7b2bf68c54
 ## Les facteurs ordonnés (2)
 
 `vitesse_vector` doit être converti en un facteur ordinal puisque ses niveaux ont un ordre naturel. Par défaut, la fonction [`factor()`] (http://www.rdocumentation.org/packages/base/functions/factor) transforme `vitesse_vector` en un factor non ordonné. Pour créer un factor ordonné, vous devez ajouter deux arguments supplémentaires: `ordered` et `levels`. 
@@ -467,7 +467,7 @@ success_msg("Bien ! Regardez dans la console. On voit maintenant qu'il y a une n
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:09dff7e67b
 ## Comparaison de facteurs ordonnés
 
 
