@@ -4,7 +4,7 @@ title       : Matrices
 description : Dans ce chapitre, vous apprendrez comment utiliser des matrices dans R. À la fin du chapitre, vous serez en mesure de créer des matrices et de comprendre comment vous pouvez faire des calculs simples avec elles. Vous analyserez les chiffres du box-office de Star Wars pour illustrer l'utilisation des matrices dans R. Que la force soit avec vous ! 
 
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:78c79794ec
 ## Qu'est-ce qu'une matrice ? 
 
 En R, une `matrix` est une collection d'éléments du même type de données (`numeric`, `character`, ou `logical`) disposée en un nombre fixe de lignes et de colonnes. Puisque vous travaillez uniquement avec des lignes et des colonnes, une matrice a deux dimensions.
@@ -53,7 +53,7 @@ success_msg("Bien ! On passe à l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:6e36ed0bef
 ## Analyse des matrices
 
 Il est maintenant temps de vous salir les mains. Dans les exercices suivants, vous analyserez les chiffres de la billetterie de la franchise Star Wars. Que la force soit avec vous ! 
@@ -119,7 +119,7 @@ success_msg("La force semble &#234;tre avec vous ! On passe &#224; l'exercice su
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a625353563
 ## Nommer une matrice
 
 Pour vous aider à vous souvenir ce qui est stocké dans `star_wars_matrix`, vous aimeriez pouvoir rajouter le nom des films sur les lignes. Non seulement cela va simplifier votre lecture des données, mais cela sera aussi utile pour extraire certains éléments.
@@ -208,7 +208,7 @@ success_msg("Bien ! Vous &#234;tes sur le chemin pour devenir un jedi de R ! On 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:43ddf24a43
 ## Calcul du box-office mondial
 
 La chose la plus importante pour un film afin de devenir mythique est ses chiffres au box-office dans le monde entier. 
@@ -276,7 +276,7 @@ success_msg("Bien jou&#233; ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:0c30e2b3ca
 ## Ajout d'une colonne pour le box-office dans le monde entier 
 
 Dans l'exercice précédent, vous avez calculé le vecteur qui contenait le box-office dans le monde entier pour chacun des trois films Star Wars. Toutefois, ce vecteur n'est pas encore intégré dans la matrice `star_wars_matrix`.
@@ -358,7 +358,7 @@ success_msg("Beau boulot ! Apr&#232;s avoir rajout&#233; des colonnes &#224; une
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:9c6a9cdfcd
 ## Ajouter une ligne
 
 De la même façon que vous avez utilisé [`cbind()`] (http://www.rdocumentation.org/packages/base/functions/cbind) vous pouvez utiliser [`rbind()`] (http://www.rdocumentation.org/packages/base/functions/cbind). 
@@ -431,7 +431,7 @@ success_msg("Magnifique ! Continuez avec le prochain exercice pour voir comment 
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:26dae6f34f
 ## Le revenu total de la billetterie pour l'intégralité de la saga
 
 Tout comme [`cbind()`](http://www.rdocumentation.org/packages/base/functions/cbind) a [`rbind()`](http://www.rdocumentation.org/packages/base/functions/cbind), [`colSums()`](http://www.rdocumentation.org/packages/base/functions/colSums) a [`rowSums()`](http://www.rdocumentation.org/packages/base/functions/colSums). Votre espace de travail R contient déjà le `complete_wars_matrix` de l'exercice précédent (Tapez `complete_wars_matrix` dans la console si vous ne vous rappelez pas ce qu'elle contient). Calculons maintenant le revenu total de la billetterie pour l'intégralité de la saga.
@@ -494,7 +494,7 @@ success_msg("Top ! Dirigez-vous vers le prochain exercice pour apprendre l'extra
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:9b2635c7d3
 ## Sélection d'éléments d'une matrice
 
 Comme pour les vecteurs, vous pouvez utiliser les crochets `[]` pour sélectionner un ou plusieurs éléments dans une matrice. Cependant les vecteurs sont unidimensionnels, alors que les matrices ont deux dimensions. Vous devez donc utiliser une virgule pour séparer que ce qu'il faut sélectionner dans les lignes de ce que vous souhaitez sélectionner dans les colonnes. Par exemple : 
@@ -582,7 +582,7 @@ success_msg("Tr&#232;s bien ! On passe &#224; l'exercice suivant.")
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:64e6ed16d1
 ## Un peu de calcul avec les matrices
 
 Tout commence avec ce que vous avez appris sur les vecteurs, les opérateurs standard `+`, `-`, `/`, `*`, etc. Ils fonctionnent termes à termes avec les matrices dans R. 
@@ -653,7 +653,7 @@ success_msg("Bien ! Que vous disent ces r&#233;sultats ? 92 millions de personne
 *** =skills
 1
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:3850c63f39
 ## Un peu de calcul avec les matrices (2) 
 
 Tout comme `2*ma_matrix` multiplie tous les éléments de `ma_matrix` par deux, `ma_matrix1 * ma_matrix2` crée une matrice où chaque élément est le produit des éléments correspondants de `ma_matrix1` et `ma_matrix2`. 
