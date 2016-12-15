@@ -4,3 +4,4 @@
 !README.md
 !.gitignore
 .Rproj.user
+!requirements.r
