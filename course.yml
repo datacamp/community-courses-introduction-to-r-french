@@ -13,4 +13,4 @@ description: 'Avec plus de 2 millions d''utilisateurs à travers le monde, R est
   allez être capable de mener à bien, en autonomie, votre première analyse de données.'
 author_bio: 'Vincent Guyader est statisticien et formateur logiciel R. Il est gérant de la société ThinkR (<a class="white-link" href="http://www.thinkr.fr" target="_blank">www.thinkr.fr</a>) qui propose aux entreprises et laboratoires un accompagnement pour leur besoins statistiques: formation R, migration depuis un autre outils et développement spécifique en R.<br><br>
 Vincent Guyader is a french statistician and R trainer. His company ThinkR (<a class="white-link" href="http://www.thinkr.fr" target="_blank">www.thinkr.fr</a>) offers support to companies that want to adopt R: training, migration from other software suites and IT development.'
-from: "r-base-prod:10"
+from: "r-base-prod:27"
