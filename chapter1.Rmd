@@ -58,7 +58,7 @@ demo("graphics")
 
 *** =sct
 ```{r eval=FALSE}
-success_msg("Super ! Maintenant que vous &#234;tes familiaris&#233;s avec l'interface, rentrons un peu plus dans le vif du sujet ! ")
+success_msg("Super ! Maintenant que vous êtes familiarisés avec l'interface, rentrons un peu plus dans le vif du sujet ! ")
 ```
 
 *** =skills
@@ -143,9 +143,9 @@ msg = "N'enlevez pas les autres exemples de calculs ! "
 test_output_contains("5 + 5", incorrect_msg = msg)
 test_output_contains("5 - 5", incorrect_msg = msg)
 test_output_contains("(5 + 5)/2", incorrect_msg = msg)
-test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous &#234;tes certain de bien avoir suivi les instructions ? ")
+test_output_contains("2^5", incorrect_msg = "L'exponentiation ne semble pas correcte. Vous êtes certain de bien avoir suivi les instructions ? ")
 test_output_contains("28 %% 6", incorrect_msg = "Il y a un souci avec le modulo. Relisez bien les instructions.")
-success_msg("Bien jou&#233;. On continue...")
+success_msg("Bien joué. On continue...")
 ```
 
 *** =skills
@@ -197,9 +197,9 @@ x
 
 *** =sct
 ```{r eval=FALSE}
-test_object("x", undefined_msg = "Faites attention &#224; bien cr&#233;er une variable ayant pour nom <code>x</code>.",
-            incorrect_msg = "la valeur que vous avez donn&#233; &#224;  <code>x</code> ne semble pas correcte.") 
-success_msg("Bon boulot ! Avez-vous remarqu&#233; que R n'imprime pas la valeur d'une variable dans la console lorsque vous la cr&#233;ez ? <code>x <- 42</code> n'a pas g&#233;n&#233;r&#233; de sortie, car R suppose que vous aurez besoin cette variable &#224; l'avenir. Sinon vous n'auriez pas stock&#233; cette valeur dans une variable, n'est-ce pas ? Vous pouvez passer &#224; l'exercice suivant ! ")
+test_object("x", undefined_msg = "Faites attention à bien créer une variable ayant pour nom <code>x</code>.",
+            incorrect_msg = "la valeur que vous avez donné à  <code>x</code> ne semble pas correcte.") 
+success_msg("Bon boulot ! Avez-vous remarqué que R n'imprime pas la valeur d'une variable dans la console lorsque vous la créez ? <code>x <- 42</code> n'a pas généré de sortie, car R suppose que vous aurez besoin cette variable à l'avenir. Sinon vous n'auriez pas stocké cette valeur dans une variable, n'est-ce pas ? Vous pouvez passer à l'exercice suivant ! ")
 ```
 
 *** =skills
@@ -245,11 +245,11 @@ mes_pommes
 *** =sct
 ```{r eval=FALSE}
 test_object("mes_pommes", 
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mes_pommes</code>.",
-            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>mes_pommes</code>.")
+            undefined_msg = "Faites attention à bien définir la variable <code>mes_pommes</code>.",
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_pommes</code>.")
 test_output_contains("mes_pommes", 
-                     incorrect_msg = "Avez-vous dit explicitement &#224; R d'afficher la variable <code>mes_pommes</code> dans la console ? ")
-success_msg("Bien ! Passons &#224; l'exercice suivant ! ")
+                     incorrect_msg = "Avez-vous dit explicitement à R d'afficher la variable <code>mes_pommes</code> dans la console ? ")
+success_msg("Bien ! Passons à l'exercice suivant ! ")
 ```
 
 *** =skills
@@ -305,17 +305,17 @@ mes_fruits <- mes_pommes + mes_oranges
 *** =sct
 ```{r eval=FALSE}
 test_object("mes_pommes", 
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mes_pommes</code>.",
+            undefined_msg = "Faites attention à bien définir la variable <code>mes_pommes</code>.",
             incorrect_msg = "Ne modifiez pas l'assignation de la variable <code>mes_pommes</code> ! ")
 test_object("mes_oranges", 
-            undefined_msg = "Avez-vous d&#233;fini la variable <code>mes_oranges</code> ? ",
-            incorrect_msg = "Avez-vous assign&#233; la bonne valeur &#224; la variable <code>mes_oranges</code> ? ")
+            undefined_msg = "Avez-vous défini la variable <code>mes_oranges</code> ? ",
+            incorrect_msg = "Avez-vous assigné la bonne valeur à la variable <code>mes_oranges</code> ? ")
 test_output_contains("mes_pommes + mes_oranges",
-                     incorrect_msg = "La sortie ne contient pas la somme des variables <code>mes_pommes</code> et <code>mes_oranges</code>. Essayez &#224; nouveau")
+                     incorrect_msg = "La sortie ne contient pas la somme des variables <code>mes_pommes</code> et <code>mes_oranges</code>. Essayez à nouveau")
 test_object("mes_fruits",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mes_fruits</code>.",
-            incorrect_msg = "Faites attention &#224; bien avoir défini la bonne valeur &#224; <code>mes_fruits</code>.")
-success_msg("Tr&#232;s bien ! Le grand avantage de faire des calculs avec les variables est que vous pouvez les r&#233;utiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur &#224; 12 au lieu de 5 et que vous ex&#233;cutez de nouveau le script (et seulement si vous l'&#233;xecutez &#224; nouveau), la valeur de <code>mes_fruits</code> sera automatiquement mis &#224; jour. On passe &#224; l'exercice suivant.")
+            undefined_msg = "Faites attention à bien définir la variable <code>mes_fruits</code>.",
+            incorrect_msg = "Faites attention à bien avoir défini la bonne valeur à <code>mes_fruits</code>.")
+success_msg("Très bien ! Le grand avantage de faire des calculs avec les variables est que vous pouvez les réutiliser. Si vous modifiez simplement <code>mes_pommes</code> en changeant la valeur à 12 au lieu de 5 et que vous exécutez de nouveau le script (et seulement si vous l'éxecutez à nouveau), la valeur de <code>mes_fruits</code> sera automatiquement mise à jour. On passe à l'exercice suivant.")
 ```
 
 *** =skills
@@ -332,7 +332,7 @@ Les variables `mes_pommes` et `mes_oranges` de l'exercice précédent contiennen
 - Ajustez le code afin que R soit au courant que vous avez 6 oranges et donc un panier de fruits avec 11 fruits.
 
 *** =hint
-Vous devez affecter la valeur numérique `6` à la variable `mes_oranges` au lieu de la chaîne de caractère `"six"`. Notez comment les guillemets servent à indiquer que `"six"` est un caractère.
+Vous devez affecter la valeur numérique `6` à la variable `mes_oranges` au lieu de la chaîne de caractère `"six"`. Notez comment les guillemets servent à indiquer que `"six"` est une chaîne de caractère.
 
 *** =pre_exercise_code
 ```{r eval=FALSE}
@@ -377,14 +377,14 @@ mes_fruits
 ```{r eval=FALSE}
 test_error()
 test_object("mes_oranges",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mes_oranges</code>.",
-            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>mes_oranges</code>. Nombre et cha&#238;nes de caract&#232;res ne sont pas &#233;quivalent ! ")
+            undefined_msg = "Faites attention à bien définir la variable <code>mes_oranges</code>.",
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_oranges</code>. Nombre et cha&#238;nes de caractères ne sont pas équivalent ! ")
 test_output_contains("mes_pommes + mes_oranges", 
-                     incorrect_msg = "La sortie dans la console ne contient pas le r&#233;sultat de l'addition de <code>mes_pommes</code> et <code>mes_oranges</code>.")
+                     incorrect_msg = "La sortie dans la console ne contient pas le résultat de l'addition de <code>mes_pommes</code> et <code>mes_oranges</code>.")
 test_object("mes_fruits", 
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mes_fruits</code>.",
-            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>mes_fruits</code>.")
-success_msg("G&#233;nial ! on peut passer &#224; l'exercice suivant.")
+            undefined_msg = "Faites attention à bien définir la variable <code>mes_fruits</code>.",
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mes_fruits</code>.")
+success_msg("Génial ! On peut passer à l'exercice suivant.")
 ```
 
 *** =skills
@@ -396,8 +396,8 @@ success_msg("G&#233;nial ! on peut passer &#224; l'exercice suivant.")
 R travaille avec de nombreux types de données. Voici les types les plus élémentaires pour débuter :
 
 - Les valeurs décimales comme `4.5` que l'on appelle **numeric**.
-- Les nombres entiers comme `4` que l'on appelle **integer**. Les integer sont aussi des numeric.
-- Les valeurs booléennes (`TRUE` ou `FALSE`) sont appelées **logical** (`TRUE` signifie `VRAI` et `FALSE` signifie `FAUX`) mais R ne comprend pas le français, il faudra donc utiliser (`TRUE` et `FALSE`).`TRUE` peut être abrégé en `T` et `FALSE` en `F`.
+- Les nombres entiers comme `4` que l'on appelle **integer**. Les `integer` sont aussi des `numeric`.
+- Les valeurs booléennes (`TRUE` ou `FALSE`) sont appelées **logical** (`TRUE` signifie `VRAI` et `FALSE` signifie `FAUX`) mais R ne comprend pas le français, il faudra donc utiliser (`TRUE` et `FALSE`).`TRUE` peut-être abrégé en `T` et `FALSE` en `F`.
 - Les chaînes de caractères (c'est-à-dire du texte) que l'on nomme **character**.
 
 Notez que les guillemets permettent de définir `"du texte"` en tant que `character`.
@@ -445,15 +445,15 @@ mon_logical <- FALSE
 *** =sct
 ```{r eval=FALSE}
 test_object("mon_numeric", 
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mon_numeric</code>.",
-            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>mon_numeric</code>")
+            undefined_msg = "Faites attention à bien définir la variable <code>mon_numeric</code>.",
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mon_numeric</code>")
 test_object("mon_character",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mon_character</code>.",
-            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>mon_character</code>. N'oubliez pas les guillemets.")
+            undefined_msg = "Faites attention à bien définir la variable <code>mon_character</code>.",
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mon_character</code>. N'oubliez pas les guillemets.")
 test_object("mon_logical",
-            undefined_msg = "Faites attention &#224; bien d&#233;finir la variable <code>mon_logical</code>.",
-            incorrect_msg = "Faites attention &#224; bien d&#233;finir la bonne valeur &#224; <code>mon_logical</code>.") 
-success_msg("Bon boulot ! On passe &#224; l'exercice suivant.")
+            undefined_msg = "Faites attention à bien définir la variable <code>mon_logical</code>.",
+            incorrect_msg = "Faites attention à bien définir la bonne valeur à <code>mon_logical</code>.") 
+success_msg("Bon boulot ! On passe à l'exercice suivant.")
 ```
 
 *** =skills
@@ -509,12 +509,12 @@ test_object("mon_numeric")
 test_object("mon_character")
 test_object("mon_logical")
 test_output_contains("class(mon_numeric)",
-                     incorrect_msg = "La sortie ne contient pas la classe de  <code>mon_numeric</code>. Essayez &#224; nouveau.")
+                     incorrect_msg = "La sortie ne contient pas la classe de  <code>mon_numeric</code>. Essayez à nouveau.")
 test_output_contains("class(mon_character)",
                      incorrect_msg = "La sortie ne contient pas la classe de  <code>mon_character</code>. Essayez encore.")
 test_output_contains("class(mon_logical)",
                      incorrect_msg = "La sortie ne contient pas la classe de  <code>mon_logical</code>.")
-success_msg("F&#233;licitations ! C'&#233;tait le dernier exercice pour ce chapitre. Dirigez-vous vers le prochain chapitre et plongez dans le monde merveilleux des vecteurs ! ")
+success_msg("Félicitations ! C'était le dernier exercice pour ce chapitre. Dirigez-vous vers le prochain chapitre et plongez dans le monde merveilleux des vecteurs ! ")
 ```
 
 *** =skills
